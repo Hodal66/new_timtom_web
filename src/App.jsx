@@ -1,12 +1,15 @@
 import "./App.css";
+import MainNavigationBar from "./components/navBar/MainNavigationBar";
+import TopNavigationBar from "./components/navBar/TopNavigationBar";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      </div>
-    </>
+    <div>
+      <TopNavigationBar />
+      <MainNavigationBar />
+      <HomePage />
+    </div>
   );
 }
 
