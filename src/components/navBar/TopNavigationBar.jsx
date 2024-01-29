@@ -2,7 +2,7 @@
 function TopNavigationBar() {
   return (
     <div className="grid grid-cols-2">
-      <ul className="flex gap-2 bg-blue pl-8 text-white">
+      <ul className="flex gap-2 bg-blue pl-8 cursor-no-drop text-white">
         <li className="flex justify-center items-center">
           {" "}
           <svg
@@ -62,7 +62,7 @@ function TopNavigationBar() {
         </li>
       </ul>
       <div className="flex justify-end pr-8 bg-gray-light py-2">
-        <ul className="flex gap-8 ">
+        <ul className="flex gap-8  cursor-pointer">
           <li className="shadow-md rounded-full">
             <svg
               width="44"
