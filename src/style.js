@@ -1,3 +1,5 @@
 export const style ={
- heading1:"bg-green"
+ heading1:"bg-green",
+ pragraph:"bg-green",
 }
+

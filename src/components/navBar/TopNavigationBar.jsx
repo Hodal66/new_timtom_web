@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unknown-property */
 function TopNavigationBar() {
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 sticky">
       <ul className="flex gap-2 bg-blue pl-8 cursor-no-drop text-white">
         <li className="flex justify-center items-center">
-          {" "}
           <svg
             width="44"
             height="45"
