@@ -1,3 +1,4 @@
+import Blog from "./Blog"
 import ClientTestmonials from "./ClientTestmonials"
 import CoursesSection from "./CoursesSection"
 import ExpertTeam from "./ExpertTeam"
@@ -16,6 +17,7 @@ function HomePageIndex() {
         <CoursesSection />
         <ExpertTeam />
         <ClientTestmonials />
+        <Blog />
     </div>
   )
 }
