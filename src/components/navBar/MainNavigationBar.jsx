@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function MainNavigationBar() {
   return (
-    <div className=" bg-gray-light font-medium hover:cursor-pointer pt-2 pb-2">
-      <div className="flex justify-between px-8 bg-white items-center">
+    <div className=" bg-gray-light font-medium hover:cursor-pointer pt-2 pb-2 sticky">
+      <div className="flex justify-between px-8 bg-white items-center ">
         <Link to={"/"}>
         <img src="/images/Logo1.png" alt="" className="w-40 h-20" />
         </Link>

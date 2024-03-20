@@ -6,5 +6,4 @@ function HeadingOne({ title }) {
     </div>
   );
 }
-
 export default HeadingOne;

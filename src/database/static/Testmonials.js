@@ -1,0 +1,33 @@
+export const TestmonialsData =[{
+    id:1,
+    content:"The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans.",
+    image:"/images/HomeImage4.png",
+    altImage:"",
+    role:"",
+    name:"Calorina",
+    location:"USA",
+},{
+    id:2,
+    content:"The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans.",
+    image:"/images/HomeImage4.png",
+    altImage:"",
+    role:"",
+    name:"Calorina",
+    location:"USA",
+},{
+    id:3,
+    content:"The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans.",
+    image:"/images/HomeImage4.png",
+    altImage:"",
+    role:"",
+    name:"Calorina",
+    location:"USA",
+},{
+    id:4,
+    content:"The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans.",
+    image:"/images/HomeImage4.png",
+    altImage:"",
+    role:"",
+    name:"Calorina",
+    location:"USA",
+}]

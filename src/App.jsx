@@ -12,7 +12,7 @@ function App() {
     <div>
       <BrowserRouter>
         <TopNavigationBar />
-        <MainNavigationBar />
+        <nav className="sticky"><MainNavigationBar/></nav>
         <Routes>
           <Route path="/" element={<HomePageIndex/>} />
           <Route path="/about" element={<AboutUs />} />
