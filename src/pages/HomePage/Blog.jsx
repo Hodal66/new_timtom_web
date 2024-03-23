@@ -1,4 +1,6 @@
-import CallIcon from "../../assets/icons/CallIcon";
+import IconUser from "../../assets/icons/IconUser";
+import Message from "../../assets/icons/Message";
+import ReadMore from "../../components/Buttons/ReadMore";
 import HeadingOne from "../../components/Headings/HeadingOne";
 import HeadingThree from "../../components/Headings/HeadingThree";
 import Pragraph from "../../components/Pragraph";
@@ -10,8 +12,8 @@ function Blog() {
     <div>
       <header>
         <div>
-          <HeadingThree title={"The News & Updates From Blog"} />
-          <HeadingOne title={"Read Latest News About Timtom Aviation"} />
+          <HeadingThree headingTitle={"The News & Updates From Blog"} />
+          <HeadingOne headingTitle={"Read Latest News About Timtom Aviation"} />
         </div>
         <div></div>
         <div>
@@ -33,13 +35,42 @@ function Blog() {
                   className="w-64 h-72"
                 />
                 <div>
-                  <CallIcon
-                    width={45}
-                    height={45}
-                    fill={"none"}
-                    strokeColor={"red"}
-                  />
-                  
+                  <div className="">
+                    <p>{blog.dateOfPost}</p>
+                    <p>{blog.monthOfPost}</p>
+                  </div>
+                  <div className="flex">
+                    <div className="flex gap-2">
+                      <IconUser
+                        width={35}
+                        height={35}
+                        fill={"none"}
+                        strokeCollor={"red"}
+                        strokeWidth={0.5}
+                      />
+                      <span>by</span>
+                      <p>{blog.writer}</p>
+                    </div>
+                    <div className="flex gap-2">
+                      <Message
+                        width={45}
+                        height={45}
+                        fill={"none"}
+                        strokeCollor={"red"}
+                      />
+                      <span>{blog.numberOfComments}</span>
+                      {blog.numberOfComments > 1 ? (
+                        <p>Comments</p>
+                      ) : (
+                        <p>Comment</p>
+                      )}
+                    </div>
+                  </div>
+                  <div>
+                    <HeadingOne headingTitle={blog.title} />
+                    <Pragraph pragraphContent={blog.basicContent} />
+                    <ReadMore headingTitle={"ReadMore...."} />
+                  </div>
                 </div>
               </div>
             );

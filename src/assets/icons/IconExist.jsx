@@ -15,7 +15,7 @@ function IconExist({width, height, fill, strokeCollor,strokeWidth, strokeLineJoi
           stroke={strokeCollor}
           strokeWidth={strokeWidth}
           strokeLinecap={strokeLineJoin}
-          strokeLinejoin="round"
+          strokeLinejoin={strokeLineJoin}
         />
         <path
           d="M3.5 9.5V6.5C3.5 4.84315 4.84315 3.5 6.5 3.5H18.5C20.1569 3.5 21.5 4.84315 21.5 6.5V18.5C21.5 20.1569 20.1569 21.5 18.5 21.5H6.5C4.84315 21.5 3.5 20.1569 3.5 18.5V15.5"

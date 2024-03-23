@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-function HeadingThree({ title }) {
+function HeadingThree({ headingTitle }) {
   return (
     <div>
-      <h3>{title}</h3>
+      <h3 className="font-bold text-orange">---{headingTitle}</h3>
     </div>
   );
 }
-
 export default HeadingThree;

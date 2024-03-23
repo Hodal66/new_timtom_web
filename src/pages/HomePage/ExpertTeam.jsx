@@ -8,13 +8,11 @@ function ExpertTeam() {
   return (
     <div>
       <div>
-        <HeadingThree title={"Meet Our Expert Team"} />
-        <HeadingOne title={"Our Company Leaders"} />
-        <p>
-          They are our expert leaders who work hard night and day to grow our
-          business worldwide andkeep the erdunt at the highest position in the
-          world.
-        </p>
+        <HeadingThree headingTitle={"Meet Our Expert Team"} />
+        <HeadingOne headingTitle={"Our Company Leaders"} />
+        <Pragraph pragraphContent={" They are our expert leaders who work hard night and day to grow our\
+          business worldwide andkeep the erdunt at the highest position in the\
+          world."} />
       </div>
       <section>
         <div className="cardContainer flex gap-4">
@@ -22,8 +20,8 @@ function ExpertTeam() {
             return (
               <div key={team.id}>
                 <img src={team.image} alt={team.altImage} role={team.role} />
-                <HeadingOne title={team.title} />
-                <Pragraph title={team.position} />
+                <HeadingOne headingTitle={team.title} />
+                <Pragraph pragraphContent={team.position} />
                 <div className="flex gap-4">
                   <Link to={team.socialMedia.facebook} target="_blank">
                     <img src={team.socialMedia.facebookImage} alt="" />

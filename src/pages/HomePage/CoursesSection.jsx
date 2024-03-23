@@ -6,12 +6,12 @@ function CoursesSection() {
   return (
     <div>
       <div>
-        <HeadingThree title={"The Timtom Aviation Courses"} />
-        <HeadingOne title={"We Have special Courses for you!!"} />
+        <HeadingThree headingTitle={"The Timtom Aviation Courses"} />
+        <HeadingOne headingTitle={"We Have special Courses for you!!"} />
       </div>
       <div>
         <Pragraph
-          title={
+          pragraphContent={
             "TIMTOM AVIATION  is a private company which offers consultancy services in the field of management and also offers training in the field of aviation management, hospitality, tourism and ICT, after training we awards international professional certificate and diplomas like ICAO and IATA."
           }
         />

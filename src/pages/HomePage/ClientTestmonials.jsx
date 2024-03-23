@@ -7,10 +7,10 @@ import { TestmonialsData } from "../../database/static/Testmonials";
 function ClientTestmonials() {
   return (
     <div>
-      <HeadingThree title={"Read Our Client Testmonials"} />
-      <HeadingOne title={"what Peaple Are Saying"} />
+      <HeadingThree headingTitle={"Read Our Client Testmonials"} />
+      <HeadingOne headingTitle={"what Peaple Are Saying"} />
       <Pragraph
-        title={
+        pragraphContent={
           "These are our happiest clients who are satisfied with our work and support..They Gave us their gratitude to our erdunt team"
         }
       />
@@ -18,12 +18,12 @@ function ClientTestmonials() {
         {TestmonialsData.map((testmonial)=>{
             return(<div key={testmonial.id}>
                 <div>
-                    <Pragraph title={testmonial.content}/>
+                    <Pragraph pragraphContent={testmonial.content}/>
                     <div className="imageContainer flex">
                         <img src={testmonial.image} alt={testmonial.altImage} className="w-12 rounded-full"/>
                         <div>
-                            <HeadingTwo title={testmonial.name}/>
-                            <Pragraph title={testmonial.location}/>
+                            <HeadingTwo headingTitle={testmonial.name}/>
+                            <Pragraph pragraphContent={testmonial.location}/>
                         </div>
                     </div>
                 </div>

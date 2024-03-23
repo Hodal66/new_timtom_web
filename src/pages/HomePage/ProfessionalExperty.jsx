@@ -10,9 +10,9 @@ function ProfessionalExperty() {
       <section>
         <div className="flex">
           <div className="leftpart">
-            <HeadingThree title={"Welcome to the heading 3"} />
+            <HeadingThree headingTitle={"Welcome to the heading 3"} />
             <Pragraph
-              title={
+              pragraphContent={
                 "As a professional and expert, we have acquired a high level of knowledge, skills, and experience in a particular field or industry. We have dedicated significant time and effort to develop our expertise through education, training, and hands-on experience."
               }
             />

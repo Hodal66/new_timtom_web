@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-function HeadingOne({ title }) {
+function HeadingOne({ headingTitle,classNameProps }) {
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className={`font-bold text-2xl text-gray-dark ${classNameProps}`}>
+      <h1>{headingTitle}</h1>
     </div>
   );
 }

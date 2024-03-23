@@ -4,8 +4,10 @@ export const BlogData = [
     image: "/public/images/HomeImage2.png",
     imageAlt: "",
     role: "",
-    writer: "Admin",
-    numberOfComments: 2,
+    writer: "Hodal",
+    numberOfComments: 1,
+    dateOfPost:"01",
+    monthOfPost:"12",
     title: "The Construction Sector To Maintain Growth",
     basicContent:
       "Maecenas arcu urna, condimentum nec posuere nec, blandit a nunc. Quisque interdum ullamcorper ...",
@@ -19,8 +21,10 @@ export const BlogData = [
     image: "/public/images/HomeImage2.png",
     imageAlt: "",
     role: "",
-    writer: "Admin",
-    numberOfComments: 2,
+    writer: "Keza",
+    numberOfComments: 0,
+    dateOfPost:"01",
+    monthOfPost:"12",
     title: "The Construction Sector To Maintain Growth",
     basicContent:
       "Maecenas arcu urna, condimentum nec posuere nec, blandit a nunc. Quisque interdum ullamcorper ...",
@@ -36,6 +40,8 @@ export const BlogData = [
     role: "",
     writer: "Admin",
     numberOfComments: 2,
+    dateOfPost:"01",
+    monthOfPost:"12",
     title: "The Construction Sector To Maintain Growth",
     basicContent:
       "Maecenas arcu urna, condimentum nec posuere nec, blandit a nunc. Quisque interdum ullamcorper ...",
@@ -51,6 +57,8 @@ export const BlogData = [
     role: "",
     writer: "Admin",
     numberOfComments: 2,
+    dateOfPost:"01",
+    monthOfPost:"12",
     title: "The Construction Sector To Maintain Growth",
     basicContent:
       "Maecenas arcu urna, condimentum nec posuere nec, blandit a nunc. Quisque interdum ullamcorper ...",

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-function HeadingTwo({ title }) {
+function HeadingTwo({ headingTitle }) {
   return (
     <div>
-      <h2>{title}</h2>
+      <h2 className="">{headingTitle}</h2>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-function Pragraph({ title }) {
+function Pragraph({ pragraphContent }) {
   return (
     <div>
-      <p>{title}</p>
+      <p>{pragraphContent}</p>
     </div>
   );
 }

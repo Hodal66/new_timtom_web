@@ -6,20 +6,24 @@ import HeroArea from "./HeroArea"
 import ProfessionalExperty from "./ProfessionalExperty"
 import ServicesHome from "./ServicesHome"
 import Statistics from "./Statistics"
+import Subscribe from "./Subscribe";
 
 function HomePageIndex() {
   return (
-    <div className="flex flex-col gap-24 px-12">
-        <HeroArea/>
-        <ProfessionalExperty/>
-        <Statistics />   
+    <div>
+      <HeroArea />
+      <section className="flex flex-col gap-24 px-12">
+        <ProfessionalExperty />
+        <Statistics />
         <ServicesHome />
         <CoursesSection />
         <ExpertTeam />
         <ClientTestmonials />
         <Blog />
+        <Subscribe />
+      </section>
     </div>
-  )
+  );
 }
 
 export default HomePageIndex
