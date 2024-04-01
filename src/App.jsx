@@ -7,6 +7,7 @@ import CoursesPage from "./pages/CoursesPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import HomePageIndex from "./pages/HomePage/Index";
 import GalleryPage from "./pages/GalleryPage";
+import Services from "./pages/Services";
 // import Footer from "./components/footer/Footer";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePageIndex />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />

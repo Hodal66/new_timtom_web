@@ -15,7 +15,7 @@ function MainNavigationBar() {
   const [heading, setHeading] = useState("");
   return (
     //Mobile View
-    <div className="text-black">
+    <div className="text-black absolute top-12 w-full left-0 z-10 ">
       <nav className="lg:hidden flex  justify-between items-center p-4 text-xl font-normal cursor-pointer ">
         <Link to={"/"}>
           <img src="/images/Logo1.png" alt="" className="w-36 h-16" />
@@ -153,7 +153,7 @@ function MainNavigationBar() {
               <img src="/images/Logo1.png" alt="" className="w-40 h-20" />
             </Link>
             <ul className="flex gap-8 justify-center items-center">
-              <Link to={"/about"}>
+              <Link to={"/"}>
                 <li>Home</li>
               </Link>
               {NavLinks.map((link) => (

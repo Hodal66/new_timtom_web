@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unknown-property */
 function TopNavigationBar() {
   return (
-    <div className="hidden lg:grid grid-cols-2 sticky">
-      <ul className="flex gap-2 bg-blue pl-8 cursor-no-drop textWhite">
+    <div className="hidden lg:grid grid-cols-2 absolute z-20 w-full">
+      <ul className="flex gap-2 bg-blue text-white text-md font-semibold pl-8 cursor-no-drop textWhite">
         <li className="flex justify-center items-center">
           <svg
             width="44"

@@ -2,7 +2,7 @@
 // import ClientTestmonials from "./ClientTestmonials"
 // import CoursesSection from "./CoursesSection"
 // import ExpertTeam from "./ExpertTeam"
-// import HeroArea from "./HeroArea"
+import HeroArea from "./HeroArea"
 // import ProfessionalExperty from "./ProfessionalExperty"
 // import ServicesHome from "./ServicesHome"
 // import Statistics from "./Statistics"
@@ -11,7 +11,7 @@
 function HomePageIndex() {
   return (
     <div>
-     {/* <HeroArea />  */}
+     <HeroArea /> 
       <section className="">
         {/* <ProfessionalExperty />
         <Statistics />
