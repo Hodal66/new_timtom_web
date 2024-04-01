@@ -6,24 +6,23 @@ import AboutUs from "./pages/AboutUs";
 import CoursesPage from "./pages/CoursesPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import HomePageIndex from "./pages/HomePage/Index";
-import Footer from "./components/footer/Footer";
+import GalleryPage from "./pages/GalleryPage";
+// import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <TopNavigationBar />
-        <nav className="sticky">
-          <MainNavigationBar />
-        </nav>
+        <MainNavigationBar />
         <Routes>
           <Route path="/" element={<HomePageIndex />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<AboutUs />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/contact" element={<ContactUsPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );
