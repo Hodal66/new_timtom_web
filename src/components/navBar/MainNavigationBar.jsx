@@ -15,8 +15,8 @@ function MainNavigationBar() {
   const [heading, setHeading] = useState("");
   return (
     //Mobile View
-    <div className="text-black absolute top-12 w-full left-0 z-10 ">
-      <nav className="lg:hidden flex  justify-between items-center p-4 text-xl font-normal cursor-pointer ">
+    <div className="text-black absolute top-0 lg:top-12 w-full left-0 z-10 ">
+      <nav className="lg:hidden bg-white  flex  justify-between items-center p-4 text-xl font-normal cursor-pointer ">
         <Link to={"/"}>
           <img src="/images/Logo1.png" alt="" className="w-36 h-16" />
         </Link>
