@@ -1,8 +1,10 @@
+
+
 /* eslint-disable react/prop-types */
 function HeadingOne({ headingTitle,classNameProps }) {
   return (
-    <div className={`font-bold text-2xl text-gray-dark ${classNameProps}`}>
-      <h1>{headingTitle}</h1>
+    <div className={`krona-one-regular lg:text-[40px] md:text-[32px] text-[24px] text-gray-dark ${classNameProps}`}>
+      <span>{headingTitle}</span>
     </div>
   );
 }

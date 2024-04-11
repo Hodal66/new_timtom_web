@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-function Pragraph({ pragraphContent }) {
+function Pragraph({ pragraphContent, classNameText }) {
   return (
-    <div>
-      <p>{pragraphContent}</p>
+    <div className={` text-lg font-medium ${classNameText}`}>
+      <span>{pragraphContent}</span>
     </div>
   );
 }

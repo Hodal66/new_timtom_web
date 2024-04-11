@@ -5,8 +5,6 @@ import HeadingOne from "../../components/Headings/HeadingOne";
 import HeadingThree from "../../components/Headings/HeadingThree";
 import Pragraph from "../../components/Pragraph";
 import { BlogData } from "../../database/static/BlogData";
-// import { ReactComponent as IconCall } from './src/assets/call.svg';
-
 function Blog() {
   return (
     <div>

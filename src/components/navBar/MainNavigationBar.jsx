@@ -15,7 +15,7 @@ function MainNavigationBar() {
   const [heading, setHeading] = useState("");
   return (
     //Mobile View
-    <div className="text-black absolute top-0 lg:top-12 w-full left-0 z-10 ">
+    <div className="text-black text-lg absolute top-0 lg:top-12 w-full left-0 z-10 ">
       <nav className="lg:hidden bg-white  flex  justify-between items-center p-4 text-xl font-normal cursor-pointer ">
         <Link to={"/"}>
           <img src="/images/Logo1.png" alt="" className="w-36 h-16" />
@@ -154,7 +154,7 @@ function MainNavigationBar() {
             </Link>
             <ul className="flex gap-8 justify-center items-center">
               <Link to={"/"}>
-                <li>Home</li>
+                <li className="text-black font-semibold hover:text-primary hover:transition hover:duration-150">Home</li>
               </Link>
               {NavLinks.map((link) => (
                 <div key={link.id}>
@@ -181,7 +181,7 @@ function MainNavigationBar() {
                           {link.sublinks.map((mysublinks) => (
                             <li
                               key={mysublinks.id}
-                              className="text-lg text-black font-semibold hover:text-blue py-2"
+                              className="text-black font-semibold hover:text-primary hover:transition hover:duration-150 py-2"
                             >
                               <Link to={mysublinks.linkname}>
                                 {mysublinks.subLinkTitle}
@@ -195,14 +195,14 @@ function MainNavigationBar() {
                 </div>
               ))}
               <Link to={"/about"}>
-                <li>About</li>
+                <li className="text-black font-semibold hover:text-primary hover:transition hover:duration-150">About</li>
               </Link>
               <Link to={"/contact"}>
-                <li>ContactUs</li>
+                <li className="text-black font-semibold hover:text-primary hover:transition hover:duration-150">ContactUs</li>
               </Link>
               <Link to={"/gallery"}>
                 {" "}
-                <li>Gallery</li>
+                <li className="text-black font-semibold hover:text-primary hover:transition hover:duration-150">Gallery</li>
               </Link>
             </ul>
           </div>

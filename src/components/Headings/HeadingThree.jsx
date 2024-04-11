@@ -2,7 +2,7 @@
 function HeadingThree({ headingTitle }) {
   return (
     <div>
-      <h3 className="font-bold text-orange">---{headingTitle}</h3>
+      <span className="font-bold text-orange text-xl">---{headingTitle}</span>
     </div>
   );
 }

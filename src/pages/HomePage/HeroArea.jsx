@@ -43,7 +43,7 @@ function HeroArea() {
           <h1 className="text-purple lg:text-[48px] md:text-[36px] text-[24px] font-bold text-white  lg:border-x-8 md:border-x-6 border-x-4 border-orange p-4">
             Fly High with us !!
           </h1>
-          <p className="text-[20px] md:text-24 hidden  text-white font-semibold lg:flex flex-col justify-center place-items-center justify-items-start">
+          <div className="text-[20px] md:text-24 hidden  text-white font-semibold lg:flex flex-col justify-center place-items-center justify-items-start">
             <Pragraph
               pragraphContent={
                 " Elevate your travel experience with our air ticketing services.\
@@ -56,7 +56,7 @@ function HeroArea() {
                   with ease. "
               }
             />
-          </p>
+          </div>
           <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {images.map((_, index) => (
               <button

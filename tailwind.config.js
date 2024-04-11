@@ -7,9 +7,14 @@ export default {
   theme: {
     extend: {},
     colors: {
-      'blue': '#3539AA',
+      'blue': '#0C0D2F',
+      'primary':'#1766EF',
+      'secondary':'#17A6E5',
       'white': '#eef',
+      'textWhite':'#C4C4C4',
       'pink': '#ff49db',
+      'pink2':'#E49F9F',
+      'pink3':'#FCDEDE',
       'orange': '#ff7849',
       'black':'#235',
       'green': '#13ce66',
@@ -18,6 +23,10 @@ export default {
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
     },
+    radialGradientColors: {
+      'blue-blue2': ['#17A6E5', '#3539AE'],
+      // Add more gradients as needed
+    }
   },
   plugins: [],
 }

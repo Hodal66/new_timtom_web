@@ -1,29 +1,40 @@
 import { Link } from "react-router-dom";
 import Arrow from "../../assets/icons/Arrow";
 import Message from "../../assets/icons/Message";
-import HeadingOne from "../Headings/HeadingOne";
 import HeadingThree from "../Headings/HeadingThree";
 import Pragraph from "../Pragraph";
+import HeadingTwo from "../Headings/HeadingTwo";
+import { style } from "../../style";
 
 function Footer() {
   const phoneNumber = "+250782439775";
   const facebookUsername = "timtom.aviation";
   const instagramUsername = "timtomaviation7";
-  const linkedInUsername = "timtom-aviation-ltd-901301271/?originalSubdomain=rw";
+  const linkedInUsername =
+    "timtom-aviation-ltd-901301271/?originalSubdomain=rw";
   const twitterUsername = "TimtomAviation";
   return (
-    <div className="bg-blue py-4 flex flex-col gap-4">
-      <main className="mainContainer grid grid-cols-4 px-12 gap-4">
-        <section>
-          <HeadingOne
+    <div className=" px-4 md:px-8 lg:px-12 py-16 bg-blue text-textWhite flex flex-col gap-4">
+      <main className="mainContainer grid lg:grid-cols-4 gap-4">
+        <section className="cursor-pointer">
+         <Link to={"/"}>
+         <HeadingTwo
             className={"bg-orange"}
             headingTitle={"TIMTOM AVIATION LTD"}
-          />
-          <Pragraph
-            pragraphContent={
-              "To become an African hub in providing knowledge and consultancy service in the field of aviation, hospitality and tourism, and also ensure to provide the best, updated and relevant knowledge tour students so that they are competitive on the world job market."
+            classNameProps={
+              "text-textWhite font-black hover:transition hover:scale-150 "
             }
           />
+         </Link>
+         <Link to={"/"}>
+         <Pragraph
+            pragraphContent={
+              "To become an African hub in providing knowledge and consultancy service in the field of aviation, hospitality, tourism, and ICT."
+            }
+            classNameText={"font-normal"}
+          />
+         </Link>
+         
           <div className="flex">
             <Message
               width={45}
@@ -41,18 +52,21 @@ function Footer() {
         <section>
           <ul>
             <li>
-              <HeadingOne headingTitle={"The Industry  Package"} />
+              <HeadingTwo
+                headingTitle={"The Industry  Package"}
+                classNameProps={"text-orange"}
+              />
             </li>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
-                <span>
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
+                <span className="hover:text-primary">
                   <Arrow />
                 </span>
                 <span>Airline and airport management</span>
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -60,7 +74,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -68,7 +82,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -76,7 +90,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -88,10 +102,13 @@ function Footer() {
         <section>
           <ul>
             <li>
-              <HeadingOne headingTitle={"The Industry  Package"} />
+              <HeadingTwo
+                headingTitle={"The Industry  Package"}
+                classNameProps={"text-orange"}
+              />
             </li>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -99,7 +116,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -107,7 +124,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -115,7 +132,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -123,7 +140,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -131,7 +148,7 @@ function Footer() {
               </li>
             </Link>
             <Link to={"#"}>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-primary hover:font-semibold hover:translate-x-2 transition duration-150">
                 <span>
                   <Arrow />
                 </span>
@@ -142,45 +159,174 @@ function Footer() {
         </section>
         <section>
           <div className="grid grid-cols-3">
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
-            <img src="/images/HomeImage44.png" alt="altImage" />
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage44.png"
+                alt="altImage"
+                 className="h-full"
+  
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Ticketing </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage1.png"
+                alt="altImage"
+                className="h-full"
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>ICT </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage44.png"
+                alt="altImage"
+                 className="h-full"
+                
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Visa </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage44.png"
+                alt="altImage"
+                 className="h-full"
+                
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Consultancy </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage44.png"
+                alt="altImage"
+                 className="h-full"
+                
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Airport </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage44.png"
+                alt="altImage"
+                 className="h-full"
+                
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Aviation </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage1.png"
+                alt="altImage"
+                 className="h-full"
+                
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Ticketing </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage2.png"
+                alt="altImage"
+                 className="h-full"
+                
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Ticketing </p>
+              </div>
+             </Link>
+            </div>
+            <div className={`${style.hoverTransitionScale} relative group`}>
+             <Link to={"/services"}>
+             <img
+                src="/images/HomeImage4.png"
+                alt="altImage"
+                 className="h-full"
+        
+              />
+              <div className="hidden absolute top-0 left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
+                <p>Ticketing </p>
+              </div>
+             </Link>
+            </div>
+         
+           
           </div>
         </section>
       </main>
-      <section className="px-12">
-        <div className="grid grid-cols-2">
-          <p>© 2023 | Timtom Aviation | All Rights Reserved</p>
-          <div className="flex gap-4">
+      <section className="">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <p>© 2024 | Timtom Aviation | All Rights Reserved</p>
+          <div className="flex gap-4 ">
             <Link
               to={`https://www.facebook.com/${facebookUsername}`}
               target="_blank"
             >
-              <img src="/images/SocialMedia/Facebook.png" alt="" />
+              <img
+                src="/images/SocialMedia/Facebook.png"
+                alt=""
+                className={`${style.hoverTransitionScale}`}
+              />
             </Link>
             <Link to={`https://wa.me/${phoneNumber}`} target="_blank">
-              <img src="/public/images/SocialMedia/WhatSap.png" alt="" />
+              <img
+                src="/public/images/SocialMedia/WhatSap.png"
+                alt=""
+                className={`${style.hoverTransitionScale}`}
+              />
             </Link>
             <Link
               to={`https://www.linkedin.com/in/${linkedInUsername}`}
               target="_blank"
             >
-              <img src="/images/SocialMedia/LinkedIn.png" alt="" />
+              <img
+                src="/images/SocialMedia/LinkedIn.png"
+                alt=""
+                className={`${style.hoverTransitionScale}`}
+              />
             </Link>
             <Link to={`https://twitter.com/${twitterUsername}`} target="_blank">
-              <img src="/images/SocialMedia/Twitter.png" alt="" />
+              <img
+                src="/images/SocialMedia/Twitter.png"
+                alt=""
+                className={`${style.hoverTransitionScale}`}
+              />
             </Link>
             <Link
               to={`https://www.instagram.com/${instagramUsername}`}
               target="_blank"
             >
-              <img src="/images/SocialMedia/Instagram.png" alt="" />
+              <img
+                src="/images/SocialMedia/Instagram.png"
+                alt=""
+                className={`${style.hoverTransitionScale}`}
+              />
             </Link>
           </div>
         </div>

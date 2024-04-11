@@ -8,7 +8,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import HomePageIndex from "./pages/HomePage/Index";
 import GalleryPage from "./pages/GalleryPage";
 import Services from "./pages/Services";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
-        {/* <Footer /> */}
+         <Footer /> 
       </BrowserRouter>
     </div>
   );
