@@ -8,7 +8,7 @@ import { NavLinks } from "../../database/links/NavLinks";
 // import { AiOutlineDown } from "react-icons/ai";
 // import Button1 from "../button/Button1";
 
-function MainNavigationBar() {
+function OtherThirdMainNavigationBar() {
   const [navMenu, setNavMenu] = useState(true); //in Mobile
   const [showService, setShowService] = useState(false); //in Mobile
   const [showCourse, setShowCourses] = useState(false); //in Mobile
@@ -213,4 +213,4 @@ function MainNavigationBar() {
   );
 }
 
-export default MainNavigationBar;
+export default OtherThirdMainNavigationBar;
