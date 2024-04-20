@@ -5,7 +5,7 @@ import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNav
 
 import Services from "./Services";
 import HeaderSection from "../../components/sections/HeaderSection";
-import backgroundImage from "/images/bgImage/bg1.png";
+import backgroundImage from "/images/bgImage/bg2.png";
 
 function ServicesIndex() {
   const [isVisible, setIsVisible] = useState(true);
@@ -34,9 +34,11 @@ function ServicesIndex() {
             backgroundImage={backgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
             headingTitle={"All Our Services"}
-            nexNavLink={"/courses"}
+            nexNavLink={"/"}
+            currentNavLink={"/services"}
+            currentNavName ={"Services"}
             prevNavLink={"/"}
-            nexNavName={"Services"}
+        
           />
         </section>
       </header>

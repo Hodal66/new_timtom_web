@@ -1,24 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLinks } from "../../database/links/NavLinks";
 function OtherSecondMainNavigationBar() {
 const [heading, setHeading] = useState("");
-const [isVisible, setIsVisible] = useState(true);
+// const [isVisible, setIsVisible] = useState(true);
 
-useEffect(() => {
-  const timeout = setTimeout(() => {
-    setIsVisible(false);
-  }, 8000); // 60000 milliseconds = 1 minute
-
-  return () => clearTimeout(timeout);
-}, []); // Runs only once when the component mounts
 
   return (
     <div>
        <div className="hidden lg:flex w-full justify-center items-center">
         <div className=" bg-gray-light font-medium hover:cursor-pointer pt-2 pb-2 ">
           <div className="flex justify-between px-8 bg-white items-center ">
-            <ul className="flex gap-8 justify-center items-center">
+            <ul className="flex gap-32 mx-2 justify-center items-center">
               <Link to={"/"}>
                 <li className="text-black font-semibold hover:text-primary hover:transition hover:duration-150">Home</li>
               </Link>
@@ -36,7 +29,7 @@ useEffect(() => {
                       {link.name}
                     </h1>
                     <div>
-                      <div className={`absolute ${isVisible ? "top-56" : "top-40"} top-40  hidden group-hover:md:block hover:md:block`}>
+                      <div className={`absolute top-40  hidden group-hover:md:block hover:md:block`}>
                         <div className="py-3">
                           <div
                             className="w-4 h-4 left-3 absolute 
