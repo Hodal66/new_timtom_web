@@ -1,6 +1,7 @@
 function Services() {
   return (
     <div className="h-full w-full">
+      <img src="images/HomeImage1.png" alt="" />
       <h1>All About Services</h1>
       <p>
        okokokok  ooooooooooooooooooooooook Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam

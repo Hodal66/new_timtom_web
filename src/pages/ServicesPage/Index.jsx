@@ -6,6 +6,8 @@ import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNav
 import Services from "./Services";
 import HeaderSection from "../../components/sections/HeaderSection";
 import backgroundImage from "/images/bgImage/bg2.png";
+import { style } from "../../style";
+import AsideServices from "../../components/sections/AsideServices";
 
 function ServicesIndex() {
   const [isVisible, setIsVisible] = useState(true);
@@ -23,7 +25,7 @@ function ServicesIndex() {
   // };
 
   return (
-    <main className="bg-primary">
+    <main className="bg-white">
       <header>
         {isVisible && <OtherFirstTopNavigationBar />}
         <div className={`bg-orange pt-32}`}>
@@ -42,8 +44,11 @@ function ServicesIndex() {
           />
         </section>
       </header>
-      <main>
-        <section>
+      <main className={`${style.mainPaddingX} grid grid-cols-12`}>
+      <section className="col-span-3">
+        <AsideServices />
+      </section>
+        <section className="col-span-9">
           <Services />
         </section>
       </main>

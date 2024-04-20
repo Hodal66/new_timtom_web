@@ -16,7 +16,7 @@ function HeaderSection({
   return (
     <div
       style={{ backgroundImage: `url(${backgroundImage})` }}
-      className={`h-80 w-full ${style.heading1}`}
+      className={`h-80 w-full ${style.heading1} text-black`}
     >
       {MainHeading}
       <main className="px-4 grid grid-cols-1 gap-24 md:px-8 lg:px-32 pt-20">
@@ -25,21 +25,21 @@ function HeaderSection({
           <nav>
             <ul className="flex gap-2 bg-white rounded-sm px-6 py-3 w-fit shadow-sm">
               <Link to={"/"}>
-                <li>Home</li>
+                <li className="text-lg font-semibold">Home</li>
               </Link>
               <Link to={prevNavLink}>
-                <li className="border border-r-2 px-2 border-gray-dark">
+                <li className="border border-r-2 px-2 text-lg font-semibold border-gray-dark">
                   {prevNavName}
                 </li>
               </Link>
               {nexNavLink && (
                 <Link to={nexNavLink}>
-                  <li>{nexNavName}</li>
+                  <li className="text-lg font-semibold">{nexNavName}</li>
                 </Link>
               )}
               {currentNavLink && (
                 <Link to={currentNavLink}>
-                  <li>{currentNavName}</li>
+                  <li className="text-lg font-semibold">{currentNavName}</li>
                 </Link>
               )}
             </ul>

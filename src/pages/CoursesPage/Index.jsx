@@ -5,6 +5,8 @@ import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNav
 import HeaderSection from "../../components/sections/HeaderSection";
 import CoursesPage from "./CoursesPage";
 import backgroundImage from "/images/bgImage/bg2.png";
+import { style } from "../../style";
+import AsideCourses from "../../components/sections/AsideCourses";
 
 function CoursesIndex() {
     const [isVisible, setIsVisible] = useState(true);
@@ -18,7 +20,7 @@ function CoursesIndex() {
       }, []); // Runs only once when the component mounts
     
   return (
-    <main className="bg-primary">
+    <main className="bg-white">
     <header>
       {isVisible && <OtherFirstTopNavigationBar />}
       <div className={`bg-orange pt-32}`}>
@@ -37,8 +39,11 @@ function CoursesIndex() {
         />
       </section>
     </header>
-    <main>
-      <section>
+    <main className={`${style.mainPaddingX} grid grid-cols-12`}>
+      <section className="col-span-3">
+        <AsideCourses />
+      </section>
+      <section className="col-span-9">
         < CoursesPage/>
       </section>
     </main>
