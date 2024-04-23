@@ -5,7 +5,6 @@ import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNav
 import HeaderSection from "../../components/sections/HeaderSection";
 import CoursesPage from "./CoursesPage";
 import backgroundImage from "/images/bgImage/bg2.png";
-import { style } from "../../style";
 import AsideCourses from "../../components/sections/AsideCourses";
 
 function CoursesIndex() {
@@ -39,7 +38,7 @@ function CoursesIndex() {
         />
       </section>
     </header>
-    <main className={`${style.mainPaddingX} grid grid-cols-12`}>
+    <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
       <section className="col-span-3">
         <AsideCourses />
       </section>
