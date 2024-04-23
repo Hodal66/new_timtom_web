@@ -1,10 +1,13 @@
 import IconExist from "../../assets/icons/IconExist";
 import { style } from "../../style";
+import AsideDownloads from "./AsideDownloads";
+import AsideGetQuote from "./AsideGetQuote";
 
 function AsideServices() {
   return (
-    <aside>
-      <main className="flex gap-2 flex-col text-white">
+    <aside >
+      <main className="flex gap-8 flex-col text-white">
+        <section className="flex gap-2 flex-col">
         <div className={`${style.asidePaddingEffect} group`}>
           <span>Air Ticketing</span>
           <span className="group-hover:scale-110">
@@ -70,7 +73,15 @@ function AsideServices() {
             />
           </span>
         </div>
+        </section>
+        <section>
+          <AsideDownloads />
+        </section>
+        <section>
+           <AsideGetQuote />
+        </section>
       </main>
+
     </aside>
   );
 }

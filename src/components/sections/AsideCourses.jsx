@@ -1,5 +1,6 @@
 import IconExist from "../../assets/icons/IconExist";
 import { style } from "../../style";
+import AsideDownloads from "./AsideDownloads";
 
 function AsideCourses() {
   return (
@@ -44,6 +45,7 @@ function AsideCourses() {
             />
           </span>
         </div>
+        <AsideDownloads />
       </main>
     </aside>
   );
