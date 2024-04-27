@@ -7,7 +7,7 @@ import AsideGetQuote from "./AsideGetQuote";
 function AsideServices() {
   return (
     <aside>
-      <main className="flex gap-8 flex-col text-white">
+      <main className="flex gap-24 cursor-pointer flex-col text-white">
         <section className="flex gap-2 flex-col">
           <div className={`${style.asidePaddingEffect} group`}>
             <span>Air Ticketing</span>

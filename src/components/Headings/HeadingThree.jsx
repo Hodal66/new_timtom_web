@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-function HeadingThree({ headingTitle }) {
+function HeadingThree({ headingTitle, classNameProps}) {
   return (
-    <div>
+    <div className={classNameProps}>
       <span className="font-bold text-orange text-xl">---{headingTitle}</span>
     </div>
   );
