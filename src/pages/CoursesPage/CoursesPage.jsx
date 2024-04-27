@@ -1,14 +1,29 @@
+import CoursesCard from "../../components/Cards/CoursesCard";
+import HeadingOne from "../../components/Headings/HeadingOne";
+import { CourseData } from "../../database/static/CoursesData";
+
 function CoursesPage() {
   return (
-    <div>
-      <h1>All About Courses Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorem
-        assumenda quas exercitationem corporis ratione. Eveniet perspiciatis
-        iusto, quidem necessitatibus cupiditate laudantium veritatis nam aut
-        deserunt id tempora, sunt aspernatur.
-      </p>
-    </div>
+    <main>
+      <HeadingOne headingTitle={"Courses Offered at Timtom Aviation"} />
+      <section className="grid grid-cols-2 gap-4 py-8">
+        {CourseData.map((course) => {
+          return (
+            <div key={course.id}>
+              <CoursesCard
+                content={course.contents}
+                image={course.image}
+                imageAlt={course.imageAlt}
+                link={course.link}
+                title={course.courseName}
+                key={course.id}
+                money={course.money}
+              />
+            </div>
+          );
+        })}
+      </section>
+    </main>
   );
 }
 

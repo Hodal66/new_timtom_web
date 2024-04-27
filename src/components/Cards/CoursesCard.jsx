@@ -4,21 +4,22 @@ import Pragraph from "../Pragraph";
 import Button1 from "../Buttons/Button1";
 
 /* eslint-disable react/prop-types */
-function CoursesCard({ image, imageAlt, title, content, link }) {
+function CoursesCard({ image, money, imageAlt, title, content, link }) {
   return (
-    <div className="card_container grid md:grid-cols-12 grid-cols-1 md:h-64 gap-4 shadow-md rounded-r-lg hover:scale-105 hover:shadow-lg hover:transition duration-75 m-2">
+    <div className="card_container grid md:grid-cols-12 grid-cols-1 md:h-64 gap-2 shadow-md rounded-r-lg hover:scale-105 hover:shadow-lg hover:transition duration-75 m-1">
       <div className="image_container md:col-span-5 h-full">
         <img
           src={image}
           alt={imageAlt}
-          className="min-h-full md:rounded-l-lg"
+          className="h-full md:rounded-l-lg"
         />
       </div>
-      <div className="content_container md:col-span-7 flex flex-col gap-2 px-4 ">
+      <div className="content_container md:col-span-7 flex flex-col gap-2 px-4 justify-between py-4 ">
         <HeadingThree headingTitle={title} />
         <Pragraph pragraphContent={content} classNameText={"font-normal"} />
-        <div className="py-4">
-          <Link ko={link}>
+        <div className="py-4 grid grid-cols-2 justify-between items-center">
+          <p className="font-medium text-xl">{money} Rwf</p>
+          <Link ko={link} className="flex justify-end">
             <Button1 title={"ReadMore..."} />
           </Link>
         </div>

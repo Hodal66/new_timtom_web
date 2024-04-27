@@ -74,39 +74,48 @@ function ServicesHome() {
           </header>
         </div>
         <section className=" text-black">
-
-              <Slider {...settings}>
-                <CoursesCard 
-                image ={"/images/HomeImage1.png"}
-                imageAlt={"Ticketing ImageContent"}
-                title={"Air ticketing"}
-                content={"We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"}
-                link={"/"}
-                 />
-                  <CoursesCard 
-                image ={"/images/HomeImage2.png"}
-                imageAlt={"Admission & Visa Assistance"}
-                title={"Admission & Visa Assistance"}
-                content={"We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"}
-                link={"/"}
-                 />
-                  <CoursesCard 
-                image ={"/images/HomeImage4.png"}
-                imageAlt={"Ticketing ImageContent"}
-                title={"Air ticketing"}
-                content={"We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"}
-                link={"/"}
-                 />
-                  <CoursesCard 
-                image ={"/images/HomeImage4.png"}
-                imageAlt={"ICT & Computer Skills"}
-                title={"ICT & Computer Skills"}
-                content={"We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"}
-                link={"/"}
-                 />
-              
-              </Slider>
-
+          <Slider {...settings}>
+            <CoursesCard
+              image={"/images/HomeImage1.png"}
+              imageAlt={"Ticketing ImageContent"}
+              title={"Air ticketing"}
+              money={200000}
+              content={
+                "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"
+              }
+              link={"/"}
+            />
+            <CoursesCard
+              image={"/images/HomeImage2.png"}
+              imageAlt={"Admission & Visa Assistance"}
+              title={"Admission & Visa Assistance"}
+              money={200000}
+              content={
+                "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"
+              }
+              link={"/"}
+            />
+            <CoursesCard
+              image={"/images/HomeImage4.png"}
+              imageAlt={"Ticketing ImageContent"}
+              title={"Air ticketing"}
+              money={200000}
+              content={
+                "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"
+              }
+              link={"/"}
+            />
+            <CoursesCard
+              image={"/images/HomeImage4.png"}
+              imageAlt={"ICT & Computer Skills"}
+              title={"ICT & Computer Skills"}
+              money={200000}
+              content={
+                "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world"
+              }
+              link={"/"}
+            />
+          </Slider>
         </section>
       </div>
     </div>
