@@ -3,7 +3,7 @@ export const CourseData =[{
     courseName:"Airport & Ground Handling",
     image:"/images/HomeImage4.png",
     imageAlt:"Airport & Ground Handling",
-    category:"Ict",
+    category:"ICTSkills",
     link:"/",
     money:400000,
     role:"This is UI/UX Design Courses designed for begginers",
@@ -14,7 +14,7 @@ export const CourseData =[{
     courseName:"Travel Customer Care and Interpersonal Skills",
     image:"/images/HomeImage4.png",
     imageAlt:"Travel Customer Care and Interpersonal Skills",
-    category:"Ticketing",
+    category:"travelAndTouirsm",
     link:"/",
     money:200000,
     role:"This is UI/UX Design Courses designed for begginers",
@@ -48,11 +48,48 @@ export const CourseData =[{
     courseName:"Airport & Ground Handling",
     image:"/images/HomeImage4.png",
     imageAlt:"Airport & Ground Handling",
-    category:"Ict",
+    category:"airlineAndAiport",
     link:"/",
     money:100000,
     role:"This is UI/UX Design Courses designed for begginers",
     contents:"This is UI/UX Design Courses designed for begginers"
 
-}
+},
+{
+    id:6,
+    courseName:"Airport & Ground Handling",
+    image:"/images/HomeImage4.png",
+    imageAlt:"Airport & Ground Handling",
+    category:"airlineAndAiport",
+    link:"/",
+    money:100000,
+    role:"This is UI/UX Design Courses designed for begginers",
+    contents:"This is UI/UX Design Courses designed for begginers"
+
+},
+{
+    id:7,
+    courseName:"Airport & Ground Handling",
+    image:"/images/HomeImage4.png",
+    imageAlt:"Airport & Ground Handling",
+    category:"airlineAndAiport",
+    link:"/",
+    money:100000,
+    role:"This is UI/UX Design Courses designed for begginers",
+    contents:"This is UI/UX Design Courses designed for begginers"
+
+},
+{
+    id:8,
+    courseName:"Airport & Ground Handling",
+    image:"/images/HomeImage4.png",
+    imageAlt:"Airport & Ground Handling",
+    category:"ICTSkills",
+    link:"/",
+    money:100000,
+    role:"This is UI/UX Design Courses designed for begginers",
+    contents:"This is UI/UX Design Courses designed for begginers"
+
+},
+
 ]

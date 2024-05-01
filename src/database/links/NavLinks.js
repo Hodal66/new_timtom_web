@@ -7,32 +7,32 @@ export const NavLinks = [
           {
             id: 1,
             subLinkTitle: "Air Ticketing",
-            linkname: "/services",
+            linkname: "/services/air-ticket",
           },
           {
             id: 2,
             subLinkTitle: "Training in Aviation Courses",
-            linkname: "/services",
+            linkname: "/services/training-in-aviation-courses",
           },
           {
             id: 3,
             subLinkTitle: "Hotel Booking",
-            linkname: "/services",
+            linkname: "/services/hotel-booking",
           },
           {
             id: 4,
             subLinkTitle: "Administration & Visa Assistance",
-            linkname: "/services",
+            linkname: "/services/admission-and-visa-assistance",
           },
           {
             id: 5,
             subLinkTitle: "Consultance",
-            linkname: "/services",
+            linkname: "/services/counsultancy",
           },
           {
             id: 6,
             subLinkTitle: "ICT Skills",
-            linkname: "/services",
+            linkname: "/services/ict-skills",
           },
         ],
       },

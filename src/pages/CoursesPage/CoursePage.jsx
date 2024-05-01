@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
-import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import OtherFirstTopNavigationBar from "../../components/navBar/OtherFirstTopNavigationBar";
-import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
-
-import Services from "./Services";
+import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import HeaderSection from "../../components/sections/HeaderSection";
 import backgroundImage from "/images/bgImage/bg2.png";
-import AsideServices from "../../components/sections/AsideServices";
+import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
+import { useParams } from "react-router-dom";
 
-function ServicesIndex() {
+function CoursePage() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -19,40 +17,33 @@ function ServicesIndex() {
     return () => clearTimeout(timeout);
   }, []); // Runs only once when the component mounts
 
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // };
+  let Id = useParams();
+  console.log("The Id of this Element is ",Id);
 
   return (
-    <main className="bg-white">
+    <div>
       <header>
         {isVisible && <OtherFirstTopNavigationBar />}
         <div className={`bg-orange pt-32}`}>
           <CompanyInfoNav />
         </div>
-        <section >
+        <section>
           <HeaderSection
             backgroundImage={backgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
-            headingTitle={"All Our Services"}
+            headingTitle={"All About Our Courses"}
             nexNavLink={"/"}
-            currentNavLink={"/services"}
-            currentNavName ={"Services"}
+            currentNavLink={"/courses"}
+            currentNavName={"Our Courses"}
             prevNavLink={"/"}
-        
           />
         </section>
       </header>
-      <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
-      <section className="col-span-3">
-        <AsideServices />
-      </section>
-        <section className="col-span-9">
-          <Services />
-        </section>
-      </main>
-    </main>
+      <div>
+        <h1>Here More Information Page</h1>
+      </div>
+    </div>
   );
 }
 
-export default ServicesIndex;
+export default CoursePage;

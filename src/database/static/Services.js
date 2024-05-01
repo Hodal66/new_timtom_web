@@ -3,7 +3,7 @@ export const ServicesDb = [ {
     title: "Air ticketing",
     image:"/images/HomeImage4.png",
     imageAlt:"Ticketing ImageContent",
-    link: "/",
+    link: "/servicesair-ticket",
     content:
       "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world",
     spanned:

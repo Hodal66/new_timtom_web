@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import AngleRight from "../../assets/icons/AngleRignt";
 import Progress1 from "../../assets/icons/Progress1";
 import HeadingOne from "../../components/Headings/HeadingOne";
@@ -5,34 +6,53 @@ import HeadingTwo from "../../components/Headings/HeadingTwo";
 import Pragraph from "../../components/Pragraph";
 import FAQ from "../../components/sections/FAQ";
 
-function Services() {
+function Services({
+  mainImage1,
+  roleOnImage1,
+  altImage1,
+  headingTitle1,
+  headingTitle2,
+  pragraphContent1,
+  pragraphContent2,
+  whyTitleHeading,
+  whyMainPragraphContent,
+  whyPragraphContent1,
+  whyPragraphContent2,
+  whyPragraphContent3,
+  whyPragraphContent4,
+  howTitleHeading,
+  howMainImage,
+  howMainPragraphContent,
+  howPragraphContent1,
+  howPragraphContent2,
+  howPragraphContent3,
+  howPragraphContent4,
+  howPragraphContent5,
+
+}) {
   return (
     <main className="h-full w-full md:pr-8 lg:pr-12">
-      <img src="images/HomeImage1.png" alt="" className="w-full" />
-      <HeadingOne
-        headingTitle={"All About Services"}
-        classNameProps={"pt-16"}
+      <img
+        src={mainImage1}
+        alt={altImage1}
+        role={roleOnImage1}
+        className="w-full h-96"
       />
-      <HeadingTwo headingTitle={"Services overview"} />
+      <HeadingOne headingTitle={headingTitle1} classNameProps={"pt-16"} />
+      <HeadingTwo headingTitle={headingTitle2} />
       <Pragraph
-        pragraphContent={
-          "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
-        }
+        pragraphContent={pragraphContent1}
         classNameText={"font-medium"}
       />
-      <Pragraph
-        pragraphContent={
-          "Curabitur iaculis ligula ac sapien cursus convallis, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comds do consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident sunt in culpa."
-        }
-      />
+      <Pragraph pragraphContent={pragraphContent2} />
 
       <section className="mainSectionContainer flex flex-col gap-16 pt-16">
         <section>
-          <HeadingTwo headingTitle={"Why Choose Timtom Aviation Ltd ?"} />
+          <HeadingTwo headingTitle={whyTitleHeading} />
 
           <Pragraph
             pragraphContent={
-              "People choose Timtom Aviation Ltd because our guides are the face of the company who are very well trained in sharing great stories and accurate information for your benefit."
+              whyMainPragraphContent
             }
           />
           <div className="cardContainer grid grid-cols-2 gap-8 py-2">
@@ -43,8 +63,7 @@ function Services() {
                 </div>
                 <Pragraph
                   pragraphContent={
-                    " We have partnership with internationally recognized Aviation\
-              management institutes from CANADA and INDIA,"
+                  whyPragraphContent1
                   }
                 />
               </div>
@@ -54,8 +73,7 @@ function Services() {
                 </div>
                 <Pragraph
                   pragraphContent={
-                    " We have partnership with internationally recognized Aviation\
-              management institutes from CANADA and INDIA,"
+                    whyPragraphContent2
                   }
                 />
               </div>
@@ -67,8 +85,7 @@ function Services() {
                 </div>
                 <Pragraph
                   pragraphContent={
-                    " We have partnership with internationally recognized Aviation\
-              management institutes from CANADA and INDIA,"
+                   whyPragraphContent3
                   }
                 />
               </div>
@@ -78,8 +95,7 @@ function Services() {
                 </div>
                 <Pragraph
                   pragraphContent={
-                    " We have partnership with internationally recognized Aviation\
-              management institutes from CANADA and INDIA,"
+                   whyPragraphContent4
                   }
                 />
               </div>
@@ -89,19 +105,16 @@ function Services() {
         <section className="grid grid-cols-5 gap-4">
           <div className="col-span-2">
             <img
-              src="public/images/HomeImage2.png"
+              src={howMainImage}
               alt="This the Home Image on our services"
               className="h-full"
             />
           </div>
           <div className="col-span-3 flex flex-col gap-4">
-            <HeadingTwo headingTitle={"How We Can Help"} />
+            <HeadingTwo headingTitle={howTitleHeading} />
             <Pragraph
               pragraphContent={
-                " We help our clients by keeping up with ever-changing technology\
-              and providing the finest available answer. The breadth of these\
-              commercial projects, which span from offices to industrial plants,\
-              offers us the expertise to take on any commercial project."
+               howMainPragraphContent
               }
             />
 
@@ -112,7 +125,7 @@ function Services() {
                 </span>
                 <Pragraph
                   pragraphContent={
-                    " Leading industrial solutions with machinery"
+                    howPragraphContent1
                   }
                 />
               </div>
@@ -121,9 +134,9 @@ function Services() {
                   <AngleRight />
                 </span>
                 <Pragraph
-                  pragraphContent={
-                    " Leading industrial solutions with machinery"
-                  }
+                      pragraphContent={
+                        howPragraphContent2
+                      }
                 />
               </div>
               <div className="flex gap-4 items-center">
@@ -131,9 +144,9 @@ function Services() {
                   <AngleRight />
                 </span>
                 <Pragraph
-                  pragraphContent={
-                    " Leading industrial solutions with machinery"
-                  }
+                       pragraphContent={
+                        howPragraphContent3
+                      }
                 />
               </div>
               <div className="flex gap-4 items-center">
@@ -141,9 +154,9 @@ function Services() {
                   <AngleRight />
                 </span>
                 <Pragraph
-                  pragraphContent={
-                    " Leading industrial solutions with machinery"
-                  }
+                     pragraphContent={
+                      howPragraphContent4
+                    }
                 />
               </div>
               <div className="flex gap-4 items-center">
@@ -151,9 +164,9 @@ function Services() {
                   <AngleRight />
                 </span>
                 <Pragraph
-                  pragraphContent={
-                    " Leading industrial solutions with machinery"
-                  }
+                      pragraphContent={
+                        howPragraphContent5
+                      }
                 />
               </div>
             </div>

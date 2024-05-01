@@ -12,7 +12,16 @@ function HeaderSection({
   nexNavName,
   currentNavLink,
   currentNavName,
+  selectedServiceOption,
 }) {
+  let newHeaderName=selectedServiceOption;
+  if(selectedServiceOption === "AirTcket"){
+    newHeaderName = "In Air Ticket";
+  }else if(selectedServiceOption === "Consultancy"){
+    newHeaderName = "In Consultancy";
+  }else{
+    newHeaderName ="";
+  }
   return (
     <div
       style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -21,7 +30,7 @@ function HeaderSection({
       {MainHeading}
       <main className="px-4 grid grid-cols-1 gap-24 md:px-8 lg:px-32 pt-20">
         <section className="flex flex-col gap-4">
-          <HeadingOne headingTitle={headingTitle} classNameProps={"text-white"}/>
+          <HeadingOne headingTitle={headingTitle + newHeaderName} classNameProps={"text-white"}/>
           <nav>
             <ul className="flex gap-2 bg-white rounded-sm px-6 py-3 w-fit shadow-sm">
               <Link to={"/"}>

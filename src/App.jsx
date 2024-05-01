@@ -1,12 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import HomePageIndex from "./pages/HomePage/Index";
-import Footer from "./components/footer/Footer";
-import ServicesIndex from "./pages/ServicesPage/Index";
 import AboutUsIndex from "./pages/AboutUsPage/Index";
 import CoursesIndex from "./pages/CoursesPage/Index";
 import ContactIndex from "./pages/contactUsPage/Index";
 import GalleryIndex from "./pages/GalleryPage/Index";
+import AirTicket from "./pages/ServicesPage/subServices/AirTicket";
+import TrainingAviationCourses from "./pages/ServicesPage/subServices/TrainingAviationCourses";
+import HotelBooking from "./pages/ServicesPage/subServices/HotelBooking";
+import AdmisionAndVisa from "./pages/ServicesPage/subServices/AdmisionAndVisa";
+import Consultancy from "./pages/ServicesPage/subServices/Consultancy";
+import ICTSkills from "./pages/ServicesPage/subServices/ICTSkills";
+import CoursePage from "./pages/CoursesPage/CoursePage";
 
 function App() {
   return (
@@ -15,12 +19,19 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePageIndex />} />
           <Route path="/about" element={<AboutUsIndex />} />
-          <Route path="/services" element={<ServicesIndex/>} />
+          {/* Static Services Routes />} */}
+          <Route path="/services/air-ticket" element={<AirTicket/>} />
+          <Route path="/services/training-in-aviation-courses" element={<TrainingAviationCourses/>} />
+          <Route path="/services/hotel-booking" element={<HotelBooking/>} />
+          <Route path="/services/admission-and-visa-assistance" element={<AdmisionAndVisa/>} />
+          <Route path="/services/counsultancy" element={<Consultancy/>} />
+          <Route path="/services/ict-skills" element={<ICTSkills/>} />
+          {/*About Courses */}
           <Route path="/courses" element={<CoursesIndex />} />
+          <Route path="/courses/:moreInformation" element={<CoursePage />} />
           <Route path="/contact" element={<ContactIndex />} />
-          <Route path="/gallery" element={<GalleryIndex/>} />
+          <Route path="/gallery" element={<GalleryIndex />} />
         </Routes>
-         <Footer /> 
       </BrowserRouter>
     </div>
   );
