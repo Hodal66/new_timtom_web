@@ -200,12 +200,13 @@ function CoursesIndex() {
           return (
             <div key={course.id}>
               <CoursesCard
-                content={course.contents}
+                content={course.courseName}
                 image={course.image}
                 imageAlt={course.imageAlt}
                 link={course.link}
                 title={course.courseName}
                 key={course.id}
+                myId ={course.id}
                 money={course.money}
               />
             </div>

@@ -11,6 +11,7 @@ import AdmisionAndVisa from "./pages/ServicesPage/subServices/AdmisionAndVisa";
 import Consultancy from "./pages/ServicesPage/subServices/Consultancy";
 import ICTSkills from "./pages/ServicesPage/subServices/ICTSkills";
 import CoursePage from "./pages/CoursesPage/CoursePage";
+import FooterComponent from "./components/footer/FooterComponent";
 
 function App() {
   return (
@@ -20,18 +21,25 @@ function App() {
           <Route path="/" element={<HomePageIndex />} />
           <Route path="/about" element={<AboutUsIndex />} />
           {/* Static Services Routes />} */}
-          <Route path="/services/air-ticket" element={<AirTicket/>} />
-          <Route path="/services/training-in-aviation-courses" element={<TrainingAviationCourses/>} />
-          <Route path="/services/hotel-booking" element={<HotelBooking/>} />
-          <Route path="/services/admission-and-visa-assistance" element={<AdmisionAndVisa/>} />
-          <Route path="/services/counsultancy" element={<Consultancy/>} />
-          <Route path="/services/ict-skills" element={<ICTSkills/>} />
+          <Route path="/services/air-ticket" element={<AirTicket />} />
+          <Route
+            path="/services/training-in-aviation-courses"
+            element={<TrainingAviationCourses />}
+          />
+          <Route path="/services/hotel-booking" element={<HotelBooking />} />
+          <Route
+            path="/services/admission-and-visa-assistance"
+            element={<AdmisionAndVisa />}
+          />
+          <Route path="/services/counsultancy" element={<Consultancy />} />
+          <Route path="/services/ict-skills" element={<ICTSkills />} />
           {/*About Courses */}
           <Route path="/courses" element={<CoursesIndex />} />
           <Route path="/courses/:moreInformation" element={<CoursePage />} />
           <Route path="/contact" element={<ContactIndex />} />
           <Route path="/gallery" element={<GalleryIndex />} />
         </Routes>
+        <FooterComponent />
       </BrowserRouter>
     </div>
   );

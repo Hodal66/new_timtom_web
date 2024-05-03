@@ -11,6 +11,7 @@ export default {
       'primary':'#1766EF',
       'secondary':'#17A6E5',
       'white': '#eef',
+      'whiteWhite':'#fff',
       'textWhite':'#C4C4C4',
       'pink': '#ff49db',
       'pink2':'#E49F9F',

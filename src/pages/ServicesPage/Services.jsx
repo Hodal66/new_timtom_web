@@ -32,12 +32,14 @@ function Services({
 }) {
   return (
     <main className="h-full w-full md:pr-8 lg:pr-12">
-      <img
-        src={mainImage1}
-        alt={altImage1}
-        role={roleOnImage1}
-        className="w-full h-96"
-      />
+      <div className="bg-whiteWhite p-4 rounded-xl">
+        <img
+          src={mainImage1}
+          alt={altImage1}
+          role={roleOnImage1}
+          className="w-full h-96 rounded-sm "
+        />
+      </div>
       <HeadingOne headingTitle={headingTitle1} classNameProps={"pt-16"} />
       <HeadingTwo headingTitle={headingTitle2} />
       <Pragraph
@@ -50,32 +52,20 @@ function Services({
         <section>
           <HeadingTwo headingTitle={whyTitleHeading} />
 
-          <Pragraph
-            pragraphContent={
-              whyMainPragraphContent
-            }
-          />
+          <Pragraph pragraphContent={whyMainPragraphContent} />
           <div className="cardContainer grid grid-cols-2 gap-8 py-2">
             <div>
               <div className="flex gap-2 py-2">
                 <div>
                   <Progress1 />
                 </div>
-                <Pragraph
-                  pragraphContent={
-                  whyPragraphContent1
-                  }
-                />
+                <Pragraph pragraphContent={whyPragraphContent1} />
               </div>
               <div className="flex gap-2 py-2">
                 <div>
                   <Progress1 />
                 </div>
-                <Pragraph
-                  pragraphContent={
-                    whyPragraphContent2
-                  }
-                />
+                <Pragraph pragraphContent={whyPragraphContent2} />
               </div>
             </div>
             <div>
@@ -83,21 +73,13 @@ function Services({
                 <div>
                   <Progress1 />
                 </div>
-                <Pragraph
-                  pragraphContent={
-                   whyPragraphContent3
-                  }
-                />
+                <Pragraph pragraphContent={whyPragraphContent3} />
               </div>
               <div className="flex gap-2 py-2">
                 <div>
                   <Progress1 />
                 </div>
-                <Pragraph
-                  pragraphContent={
-                   whyPragraphContent4
-                  }
-                />
+                <Pragraph pragraphContent={whyPragraphContent4} />
               </div>
             </div>
           </div>
@@ -112,62 +94,38 @@ function Services({
           </div>
           <div className="col-span-3 flex flex-col gap-4">
             <HeadingTwo headingTitle={howTitleHeading} />
-            <Pragraph
-              pragraphContent={
-               howMainPragraphContent
-              }
-            />
+            <Pragraph pragraphContent={howMainPragraphContent} />
 
             <div className="flex flex-col gap-2">
               <div className="flex gap-4 items-center">
                 <span>
                   <AngleRight />
                 </span>
-                <Pragraph
-                  pragraphContent={
-                    howPragraphContent1
-                  }
-                />
+                <Pragraph pragraphContent={howPragraphContent1} />
               </div>
               <div className="flex gap-4 items-center">
                 <span>
                   <AngleRight />
                 </span>
-                <Pragraph
-                      pragraphContent={
-                        howPragraphContent2
-                      }
-                />
+                <Pragraph pragraphContent={howPragraphContent2} />
               </div>
               <div className="flex gap-4 items-center">
                 <span>
                   <AngleRight />
                 </span>
-                <Pragraph
-                       pragraphContent={
-                        howPragraphContent3
-                      }
-                />
+                <Pragraph pragraphContent={howPragraphContent3} />
               </div>
               <div className="flex gap-4 items-center">
                 <span>
                   <AngleRight />
                 </span>
-                <Pragraph
-                     pragraphContent={
-                      howPragraphContent4
-                    }
-                />
+                <Pragraph pragraphContent={howPragraphContent4} />
               </div>
               <div className="flex gap-4 items-center">
                 <span>
                   <AngleRight />
                 </span>
-                <Pragraph
-                      pragraphContent={
-                        howPragraphContent5
-                      }
-                />
+                <Pragraph pragraphContent={howPragraphContent5} />
               </div>
             </div>
           </div>
