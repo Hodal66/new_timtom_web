@@ -12,6 +12,7 @@ import Consultancy from "./pages/ServicesPage/subServices/Consultancy";
 import ICTSkills from "./pages/ServicesPage/subServices/ICTSkills";
 import CoursePage from "./pages/CoursesPage/CoursePage";
 import FooterComponent from "./components/footer/FooterComponent";
+import AdminDashboard from "./pages/dashboardPages/AdminDashboard";
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
           <Route path="/courses/:moreInformation" element={<CoursePage />} />
           <Route path="/contact" element={<ContactIndex />} />
           <Route path="/gallery" element={<GalleryIndex />} />
+          {/*Admin Dashboards*/}
+          <Route path="/admin/*" element={<AdminDashboard/>} />
         </Routes>
         <FooterComponent />
       </BrowserRouter>

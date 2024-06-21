@@ -18,7 +18,7 @@ function AboutUsIndex() {
       }, []); // Runs only once when the component mounts
     
   return (
-    <main className="bg-primary">
+    <main >
     <header>
       {isVisible && <OtherFirstTopNavigationBar />}
       <div className={`bg-orange pt-32}`}>
