@@ -37,7 +37,7 @@ function AboutUsIndex() {
         />
       </section>
     </header>
-    <main>
+    <main className="bg-white">
       <section>
         <AboutUs />
       </section>

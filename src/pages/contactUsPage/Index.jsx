@@ -42,7 +42,7 @@ function ContactIndex() {
             />
           </section>
         </header>
-        <main>
+        <main className="bg-white">
           <section>
             <ContactUsPage />
           </section>

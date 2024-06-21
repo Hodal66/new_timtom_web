@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
-import { FaBell, FaUserCircle } from 'react-icons/fa';
 import { CourseData } from '../../database/static/CoursesData';
 const Overview = () => {
   const [submissions, setSubmissions] = useState([]);
   const [selectedMenu, setSelectedMenu] = useState('overview');
 
   useEffect(() => {
-    const storedSubmissions = JSON.parse(localStorage.getItem('submissions')) || [];
+    const storedSubmissions = JSON.parse(localStorage.getItem('submitedInfo')) || [];
     setSubmissions(storedSubmissions);
   }, []);
 
@@ -52,7 +51,7 @@ const Overview = () => {
                   category !== 'Aviation' && (
                     <div key={category} className="p-4 bg-white rounded-lg shadow-md">
                       <h3 className="text-xl font-bold">{category}</h3>
-                      <p>{overviewData[category]}</p>
+                      <p>{overviewData[category]}....</p>
                     </div>
                   )
               )}

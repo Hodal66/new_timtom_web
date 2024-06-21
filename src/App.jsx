@@ -3,7 +3,6 @@ import HomePageIndex from "./pages/HomePage/Index";
 import AboutUsIndex from "./pages/AboutUsPage/Index";
 import CoursesIndex from "./pages/CoursesPage/Index";
 import ContactIndex from "./pages/contactUsPage/Index";
-import GalleryIndex from "./pages/GalleryPage/Index";
 import AirTicket from "./pages/ServicesPage/subServices/AirTicket";
 import TrainingAviationCourses from "./pages/ServicesPage/subServices/TrainingAviationCourses";
 import HotelBooking from "./pages/ServicesPage/subServices/HotelBooking";
@@ -13,6 +12,7 @@ import ICTSkills from "./pages/ServicesPage/subServices/ICTSkills";
 import CoursePage from "./pages/CoursesPage/CoursePage";
 import FooterComponent from "./components/footer/FooterComponent";
 import AdminDashboard from "./pages/dashboardPages/AdminDashboard";
+import GalleryIndex from "./pages/mediaPage/Index";
 
 function App() {
   return (

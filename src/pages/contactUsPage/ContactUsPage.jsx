@@ -82,10 +82,10 @@ const ContactUs = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg md:w-1/2 md:ml-4">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
             <p className="text-gray-700 mb-4">
-              <strong>Address:</strong> 123 Aviation Lane, Kigali, Rwanda
+              <strong>Address:</strong> Kanombe, Kigali, Rwanda
             </p>
             <p className="text-gray-700 mb-4">
-              <strong>Phone:</strong> +250 123 456 789
+              <strong>Phone:</strong> +250 788 519 634
             </p>
             <p className="text-gray-700 mb-4">
               <strong>Email:</strong> info@timtomaviation.com
