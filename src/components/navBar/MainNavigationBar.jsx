@@ -13,6 +13,7 @@ function MainNavigationBar() {
   const [showService, setShowService] = useState(false); //in Mobile
   const [showCourse, setShowCourses] = useState(false); //in Mobile
   const [heading, setHeading] = useState("");
+  
   return (
     //Mobile View
     <div className="text-black text-lg absolute top-0 lg:top-12 w-full left-0 z-10 ">
