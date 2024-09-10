@@ -5,6 +5,7 @@ import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNav
 import HeaderSection from "../../components/sections/HeaderSection";
 import backgroundImage from "/images/bgImage/bg2.png";
 import MediaPage from "./MediaPage";
+import MainNavigationBar from "../../components/navBar/MainNavigationBar";
 
 function GalleryIndex() {
     const [isVisible, setIsVisible] = useState(true);
@@ -20,6 +21,9 @@ function GalleryIndex() {
   return (
     <main className="bg-textWhite">
     <header>
+    <div className="md:hidden">
+      <MainNavigationBar/>
+      </div>
       {isVisible && <OtherFirstTopNavigationBar />}
       <div className={`bg-orange pt-32}`}>
         <CompanyInfoNav />

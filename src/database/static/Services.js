@@ -3,7 +3,7 @@ export const ServicesDb = [ {
     title: "Air ticketing",
     image:"/images/HomeImage4.png",
     imageAlt:"Ticketing ImageContent",
-    link: "/servicesair-ticket",
+    link: "air-ticket",
     content:
       "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world",
     spanned:
@@ -14,7 +14,7 @@ export const ServicesDb = [ {
     title: "Training In Aviation Courses",
     image:"/images/HomeImage4.png",
     imageAlt:"Training In Aviation Courses ImageContent",
-    link: "/",
+    link: "training-in-aviation-courses",
     content:
       "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world",
     spanned:
@@ -25,7 +25,7 @@ export const ServicesDb = [ {
     title: "Hotel Booking",
     image:"/images/HomeImage4.png",
     imageAlt:"Hotel Booking ImageContent",
-    link: "/",
+    link: "hotel-booking",
     content:
       "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world",
     spanned:
@@ -36,18 +36,18 @@ export const ServicesDb = [ {
     title: "Admission and Visa Assistance",
     image:"/images/HomeImage4.png",
     imageAlt:"Admission and Visa Assistance ImageContent",
-    link: "/",
+    link: "admission-and-visa-assistance",
     content:
       "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world",
     spanned:
       "visa assistance application online free of cost to their employees.",
   },
   {
-    id:4,
+    id:5,
     title: "Consultancy",
     image:"/images/HomeImage4.png",
     imageAlt:"Admission and Visa Assistance ImageContent",
-    link: "/",
+    link: "consultancy",
     content:
       "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world",
     spanned:
@@ -57,7 +57,7 @@ export const ServicesDb = [ {
     title: "ICT & Computer Skills",
     image:"/images/HomeImage4.png",
     imageAlt:"Admission and Visa Assistance ImageContent",
-    link: "/",
+    link: "ict-skills",
     content:
       "We The company has helped quite number of individuals and corporates to get affordable air tickets to any destination around the world",
     spanned:

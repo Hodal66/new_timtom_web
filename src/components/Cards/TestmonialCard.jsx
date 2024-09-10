@@ -5,7 +5,7 @@ import Pragraph from "../Pragraph";
 function TestmonialCard({ content, image, altImage, location, name }) {
   return (
     <div className="mb-8">
-      <div className="shadow-inner rounded-l-2xl">
+      <div className="shadow-inner rounded-l-2xl p-4">
         <Pragraph pragraphContent={content} classNameText={"p-8 font-normal italic"} />
         <div className="flex gap-4 px-8 pb-4">
           <img src={image} alt={altImage} className="h-20 w-20 rounded-full" />

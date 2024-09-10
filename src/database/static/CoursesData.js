@@ -1,14 +1,16 @@
 export const CourseData = [
   {
     id: 1,
-    courseName: "Airport & Ground Handling",
+   courseName: "Travel Customer Care & Interpersonal Skills",
     image: "/images/HomeImage4.png",
     imageAlt: "Airport & Ground Handling",
     category: "ICTSkills",
     link: "/",
+    smallDescription:"This is Small Descrition ",
     money: 400000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
+    role: "This course covers essential skills in airport operations and ground handling.",
+    mainPragrapContents:
+      "This course is designed to introduce students to airport operations and ground handling processes.",
     numberOfStudents: 20,
     rating: 10,
     teacher: [
@@ -22,54 +24,43 @@ export const CourseData = [
       "timtomaviation7",
       "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
     ],
-    lastUpdated: "02/05/2024",
+    lastUpdated: "At Any Time",
     languageNeeded: "English",
     aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+      "Learn the fundamentals of airport ground handling procedures, including safety protocols, equipment usage, and logistics management.",
+      "Understand the key responsibilities in ground handling such as baggage management, aircraft marshalling, and passenger services.",
+      "Explore how to manage the coordination between airport personnel, airlines, and passengers for smooth operations.",
     ],
     benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+      "Gain practical knowledge of airport ground handling operations.",
+      "Understand safety protocols and regulations in airport environments.",
+      "Enhance your logistics and operational skills in aviation.",
+      "Build expertise in passenger services and baggage management.",
+      "Prepare for roles in airport and airline operations.",
     ],
     courseContents: [
       {
         id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Introduction to Airport Operations",
+        courseSubHeadingInfo:
+          "Basic understanding of airport functions and services.",
+        courseHours: "15:00:00",
         courseLevel: "Basic",
       },
       {
         id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        courseHeading: "Ground Handling Procedures",
+        courseSubHeadingInfo:
+          "Step-by-step guide to handling aircraft on the ground.",
+        courseHours: "20:00:00",
+        courseLevel: "Intermediate",
       },
       {
         id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Safety Protocols in Aviation",
+        courseSubHeadingInfo:
+          "In-depth training on safety measures and regulations.",
+        courseHours: "25:00:00",
         courseLevel: "Advanced",
       },
     ],
@@ -77,7 +68,7 @@ export const CourseData = [
       60.99,
       84.99,
       "10",
-      "05/05/2024",
+      "At Any Time",
       100,
       2,
       "Basic",
@@ -89,14 +80,16 @@ export const CourseData = [
   },
   {
     id: 2,
-    courseName: "Travel Customer Care and Interpersonal Skills",
+    courseName: "Travel Customer Care & Interpersonal Skills",
     image: "/images/HomeImage4.png",
     imageAlt: "Travel Customer Care and Interpersonal Skills",
     category: "travelAndTouirsm",
     link: "/",
+    smallDescription:"This is Small Descrition ",
     money: 200000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
+    role: "This course focuses on developing customer care and interpersonal skills specific to the travel and tourism industry.",
+    mainPragrapContents:
+      "Learn the art of customer service and interpersonal communication to excel in the travel and tourism sector.",
     numberOfStudents: 20,
     rating: 10,
     teacher: [
@@ -110,54 +103,43 @@ export const CourseData = [
       "timtomaviation7",
       "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
     ],
-    lastUpdated: "02/05/2024",
+    lastUpdated: "At Any Time",
     languageNeeded: "English",
     aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+      "Develop strong customer care skills tailored to the needs of travelers.",
+      "Learn effective communication techniques for handling diverse client needs.",
+      "Gain insights into how to create memorable travel experiences through personalized service.",
     ],
     benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+      "Master customer service best practices in the travel industry.",
+      "Improve interpersonal skills to manage various client situations.",
+      "Enhance your communication abilities for better customer satisfaction.",
+      "Learn how to handle customer complaints and resolve issues effectively.",
+      "Boost your confidence in delivering top-notch customer care.",
     ],
     courseContents: [
       {
         id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Introduction to Travel Customer Care",
+        courseSubHeadingInfo:
+          "Overview of customer service fundamentals in tourism.",
+        courseHours: "10:00:00",
         courseLevel: "Basic",
       },
       {
         id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        courseHeading: "Interpersonal Communication Skills",
+        courseSubHeadingInfo:
+          "Effective communication strategies for diverse clientele.",
+        courseHours: "15:00:00",
+        courseLevel: "Intermediate",
       },
       {
         id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Handling Difficult Customers",
+        courseSubHeadingInfo:
+          "Techniques to manage and resolve conflicts with clients.",
+        courseHours: "12:00:00",
         courseLevel: "Advanced",
       },
     ],
@@ -165,7 +147,7 @@ export const CourseData = [
       60.99,
       84.99,
       "10",
-      "05/05/2024",
+      "At Any Time",
       100,
       2,
       "Basic",
@@ -182,9 +164,11 @@ export const CourseData = [
     imageAlt: "Airport & Ground Handling",
     category: "Aviation",
     link: "/",
+    smallDescription:"This is Small Descrition ",
     money: 200000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
+    role: "This course focuses on airport operations and ground handling techniques.",
+    mainPragrapContents:
+      "Gain insights into the essential aspects of airport ground handling services.",
     numberOfStudents: 20,
     rating: 10,
     teacher: [
@@ -198,54 +182,43 @@ export const CourseData = [
       "timtomaviation7",
       "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
     ],
-    lastUpdated: "02/05/2024",
+    lastUpdated: "At Any Time",
     languageNeeded: "English",
     aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+      "Learn the essential ground handling tasks and responsibilities.",
+      "Understand the coordination between various teams in an airport environment.",
+      "Master safety regulations and protocols for smooth operations.",
     ],
     benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+      "Develop practical skills in managing airport operations.",
+      "Understand logistics, baggage handling, and passenger services.",
+      "Gain experience in handling aircraft and ground safety procedures.",
+      "Learn how to coordinate airport personnel for seamless operations.",
+      "Prepare for a career in the aviation industry with a focus on ground handling.",
     ],
     courseContents: [
       {
         id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Introduction to Ground Handling",
+        courseSubHeadingInfo:
+          "Overview of ground handling roles and functions.",
+        courseHours: "12:00:00",
         courseLevel: "Basic",
       },
       {
         id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        courseHeading: "Aircraft Handling Techniques",
+        courseSubHeadingInfo:
+          "Hands-on learning of handling aircraft on the ground.",
+        courseHours: "18:00:00",
+        courseLevel: "Intermediate",
       },
       {
         id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Safety and Regulations",
+        courseSubHeadingInfo:
+          "In-depth understanding of safety measures in ground operations.",
+        courseHours: "20:00:00",
         courseLevel: "Advanced",
       },
     ],
@@ -253,7 +226,7 @@ export const CourseData = [
       60.99,
       84.99,
       "10",
-      "05/05/2024",
+      "At Any Time",
       100,
       2,
       "Basic",
@@ -270,85 +243,76 @@ export const CourseData = [
     imageAlt: "Airport & Ground Handling",
     category: "Aviation",
     link: "/",
+    smallDescription:"This is Small Descrition ",
     money: 300000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
+    role: "This is a specialized course for beginners in UI/UX Design.",
+    mainPragrapContents:
+      "This course is designed to introduce students to the essentials of UI/UX design.",
     numberOfStudents: 20,
     rating: 10,
-    teacher: [
-      "Muheto Hodal",
-      "/public/images/Labors/Timothee.png",
-      "This is an ImageOf Teacher Timothee Haguma",
-      "Information Technology",
-      "info@timtomaviation.com",
-      "+250782439775",
-      "https://www.facebook.com/timtom.aviation",
-      "timtomaviation7",
-      "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
-    ],
-    lastUpdated: "02/05/2024",
+    teacher: {
+      name: "Muheto Hodal",
+      profilePicture: "/public/images/Labors/Timothee.png",
+      bio: "Information Technology expert with a focus on UI/UX Design.",
+      contactInfo: {
+        email: "info@timtomaviation.com",
+        phone: "+250782439775",
+        facebook: "https://www.facebook.com/timtom.aviation",
+        username: "timtomaviation7",
+        linkedIn: "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
+      },
+    },
+    lastUpdated: "At Any Time",
     languageNeeded: "English",
     aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+      "This course dives into UI/UX fundamentals, focusing on user-centered design.",
+      "Students will learn how to design responsive layouts, wireframes, and prototypes.",
+      "Introduction to Figma and Adobe XD for creating design mockups.",
+      "Basic design principles including color theory, typography, and grid systems.",
+      "Practical projects to implement user research and testing methods.",
     ],
     benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+      "Gain a foundational understanding of UI/UX design principles.",
+      "Develop skills in designing intuitive user interfaces.",
+      "Learn how to conduct user research and testing effectively.",
+      "Hands-on practice with popular design tools like Figma.",
+      "Create portfolio-ready projects.",
     ],
     courseContents: [
       {
         id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Introduction to UI/UX",
+        courseSubHeadingInfo: "An overview of UI/UX design principles.",
+        courseHours: "10:30:00",
         courseLevel: "Basic",
       },
       {
         id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        courseHeading: "Design Tools",
+        courseSubHeadingInfo: "Learn to use Figma and Adobe XD.",
+        courseHours: "15:00:00",
+        courseLevel: "Intermediate",
       },
       {
         id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "User Testing",
+        courseSubHeadingInfo: "Implementing user feedback into design.",
+        courseHours: "12:45:00",
         courseLevel: "Advanced",
       },
     ],
     courseAsideContent: [
-      60.99,
-      84.99,
-      "10",
-      "05/05/2024",
-      100,
-      2,
-      "Basic",
-      "English",
-      10,
-      "Yes",
-      95,
+      60.99, // Price (in USD)
+      84.99, // Discounted Price
+      "10", // Rating
+      "At Any Time", // Last Updated
+      100, // Enrolled Students
+      2, // Course Level
+      "Basic", // Difficulty Level
+      "English", // Language of Instruction
+      10, // Number of Modules
+      "Yes", // Certificate Available
+      95, // Satisfaction Rate
     ],
   },
   {
@@ -356,17 +320,19 @@ export const CourseData = [
     courseName: "Airport & Ground Handling",
     image: "/images/HomeImage4.png",
     imageAlt: "Airport & Ground Handling",
-    category: "airlineAndAiport",
+    category: "airlineAndAirport",
     link: "/",
+    smallDescription:"This is Small Descrition ",
     money: 100000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
+    role: "This is an Airport & Ground Handling course designed for beginners.",
+    mainPragrapContents:
+      "This course covers essential knowledge and practical skills for airport and ground handling operations, aimed at preparing students for careers in the aviation industry.",
     numberOfStudents: 20,
     rating: 10,
     teacher: [
       "Muheto Hodal",
       "/public/images/Labors/Timothee.png",
-      "This is an ImageOf Teacher Timothee Haguma",
+      "This is an image of Teacher Timothee Haguma",
       "Information Technology",
       "info@timtomaviation.com",
       "+250782439775",
@@ -374,54 +340,42 @@ export const CourseData = [
       "timtomaviation7",
       "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
     ],
-    lastUpdated: "02/05/2024",
+    lastUpdated: "At Any Time",
     languageNeeded: "English",
     aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+      "This course offers a comprehensive overview of airport and ground handling operations, focusing on safety, logistics, and customer service.",
+      "Learn about the key roles and responsibilities in airport ground handling, including baggage handling, aircraft marshaling, and refueling.",
+      "Understand international standards and regulations that guide ground handling procedures.",
+      "Get hands-on experience with ground support equipment, and learn how to handle emergencies and irregular operations efficiently.",
     ],
     benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+      "Gain a strong understanding of airport ground operations and procedures.",
+      "Enhance your skills in handling ground support equipment and managing logistics.",
+      "Develop the ability to work in a fast-paced and safety-conscious environment.",
+      "Prepare for certification and job opportunities in the aviation industry.",
     ],
     courseContents: [
       {
         id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Introduction to Airport Operations",
+        courseSubHeadingInfo: "Overview of airport functions and services.",
+        courseHours: "12:30:00",
         courseLevel: "Basic",
       },
       {
         id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        courseHeading: "Ground Handling Procedures",
+        courseSubHeadingInfo:
+          "Learn about baggage handling, aircraft marshaling, and refueling.",
+        courseHours: "15:45:00",
+        courseLevel: "Intermediate",
       },
       {
         id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Safety and Emergency Procedures",
+        courseSubHeadingInfo:
+          "Focus on emergency handling, safety regulations, and best practices.",
+        courseHours: "18:00:00",
         courseLevel: "Advanced",
       },
     ],
@@ -429,7 +383,7 @@ export const CourseData = [
       60.99,
       84.99,
       "10",
-      "05/05/2024",
+      "At Any Time",
       100,
       2,
       "Basic",
@@ -441,20 +395,22 @@ export const CourseData = [
   },
   {
     id: 6,
-    courseName: "Airport & Ground Handling",
+    courseName: "Dangerous Goods",
     image: "/images/HomeImage4.png",
-    imageAlt: "Airport & Ground Handling",
-    category: "airlineAndAiport",
+    imageAlt: "Dangerous Goods",
+    category: "airlineAndAirport",
     link: "/",
+    smallDescription:"This is Small Descrition ",
     money: 100000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
+    role: "This course covers the essentials of handling dangerous goods in aviation.",
+    mainPragrapContents:
+      "Learn how to safely and legally handle and transport dangerous goods in compliance with international aviation standards.",
     numberOfStudents: 20,
     rating: 10,
     teacher: [
       "Muheto Hodal",
       "/public/images/Labors/Timothee.png",
-      "This is an ImageOf Teacher Timothee Haguma",
+      "This is an image of Teacher Timothee Haguma",
       "Information Technology",
       "info@timtomaviation.com",
       "+250782439775",
@@ -462,54 +418,43 @@ export const CourseData = [
       "timtomaviation7",
       "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
     ],
-    lastUpdated: "02/05/2024",
+    lastUpdated: "At Any Time",
     languageNeeded: "English",
     aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+      "This Dangerous Goods course is designed to provide comprehensive training on the regulations and best practices for handling hazardous materials in aviation.",
+      "Gain in-depth knowledge of the International Air Transport Association (IATA) Dangerous Goods Regulations (DGR).",
+      "Learn how to classify, pack, and label dangerous goods, ensuring safe transportation by air.",
+      "Understand the legal responsibilities and consequences of mishandling hazardous materials.",
     ],
     benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+      "Acquire essential skills in the safe handling of dangerous goods in aviation.",
+      "Understand and apply IATA Dangerous Goods Regulations in real-world situations.",
+      "Prepare for roles that involve the transport and management of hazardous materials.",
+      "Increase your employability in the aviation and logistics sectors.",
     ],
     courseContents: [
       {
         id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Introduction to Dangerous Goods",
+        courseSubHeadingInfo:
+          "Overview of the types and classifications of dangerous goods.",
+        courseHours: "10:30:00",
         courseLevel: "Basic",
       },
       {
         id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        courseHeading: "Regulations and Compliance",
+        courseSubHeadingInfo:
+          "Understanding IATA Dangerous Goods Regulations and legal requirements.",
+        courseHours: "12:45:00",
+        courseLevel: "Intermediate",
       },
       {
         id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Handling and Transport",
+        courseSubHeadingInfo:
+          "Practical handling of dangerous goods and emergency procedures.",
+        courseHours: "15:00:00",
         courseLevel: "Advanced",
       },
     ],
@@ -517,7 +462,7 @@ export const CourseData = [
       60.99,
       84.99,
       "10",
-      "05/05/2024",
+      "At Any Time",
       100,
       2,
       "Basic",
@@ -529,20 +474,22 @@ export const CourseData = [
   },
   {
     id: 7,
-    courseName: "Airport & Ground Handling",
+    courseName: "Travel and Tourism Foundation",
     image: "/images/HomeImage4.png",
-    imageAlt: "Airport & Ground Handling",
-    category: "airlineAndAiport",
+    imageAlt: "Travel and Tourism Foundation",
+    category: "airlineAndAirport",
     link: "/",
+    smallDescription:"This is Small Descrition ",
     money: 100000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
+    role: "This course provides a comprehensive foundation in travel and tourism, covering key concepts and industry practices.",
+    mainPragrapContents:
+      "Gain essential knowledge and skills for a successful career in travel and tourism with this foundational course. Explore the dynamics of the industry and learn about customer service, travel planning, and tourism management.",
     numberOfStudents: 20,
     rating: 10,
     teacher: [
       "Muheto Hodal",
       "/public/images/Labors/Timothee.png",
-      "This is an ImageOf Teacher Timothee Haguma",
+      "This is an image of Teacher Timothee Haguma",
       "Information Technology",
       "info@timtomaviation.com",
       "+250782439775",
@@ -550,54 +497,42 @@ export const CourseData = [
       "timtomaviation7",
       "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
     ],
-    lastUpdated: "02/05/2024",
+    lastUpdated: "At Any Time",
     languageNeeded: "English",
     aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+      "Explore the fundamentals of the travel and tourism industry, including key concepts, industry trends, and career opportunities.",
+      "Learn about the roles and responsibilities of travel agents, tour operators, and tourism managers.",
+      "Understand the importance of customer service and communication skills in the travel and tourism sector.",
+      "Gain insights into travel planning, itinerary development, and tourism marketing strategies.",
     ],
     benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+      "Acquire foundational knowledge in travel and tourism industry practices.",
+      "Prepare for entry-level roles in travel agencies, tour operations, and tourism management.",
+      "Develop essential skills in customer service, travel planning, and industry regulations.",
+      "Enhance employability with practical insights into the travel and tourism sector.",
     ],
     courseContents: [
       {
         id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Introduction to Travel and Tourism",
+        courseSubHeadingInfo: "Overview of the travel and tourism industry.",
+        courseHours: "15:30:00",
         courseLevel: "Basic",
       },
       {
         id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        courseHeading: "Customer Service and Communication",
+        courseSubHeadingInfo:
+          "Effective communication and service skills for the travel industry.",
+        courseHours: "18:45:00",
+        courseLevel: "Intermediate",
       },
       {
         id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
+        courseHeading: "Travel Planning and Management",
+        courseSubHeadingInfo:
+          "Skills and knowledge for planning and managing travel and tourism services.",
+        courseHours: "22:00:00",
         courseLevel: "Advanced",
       },
     ],
@@ -605,7 +540,7 @@ export const CourseData = [
       60.99,
       84.99,
       "10",
-      "05/05/2024",
+      "At Any Time",
       100,
       2,
       "Basic",
@@ -616,80 +551,66 @@ export const CourseData = [
     ],
   },
   {
-    id: 8,
-    courseName: "Airport & Ground Handling",
-    image: "/images/HomeImage4.png",
-    imageAlt: "Airport & Ground Handling",
-    category: "ICTSkills",
-    link: "/",
-    money: 100000,
-    role: "This is UI/UX Design Courses designed for begginers",
-    mainPragrapContents: "This is UI/UX Design Courses designed for begginers",
-    numberOfStudents: 20,
-    rating: 10,
-    teacher: [
+    "id": 8,
+    "courseName": "Travel and Tourism Consultant",
+    "image": "/images/HomeImage4.png",
+    "imageAlt": "Travel and Tourism Consultant",
+    "category": "airlineAndAirport",
+    "link": "/",
+    "money": 100000,
+    "role": "This course provides a comprehensive foundation in travel and tourism consultancy, covering essential concepts and industry practices.",
+    "mainPragrapContents": "Gain essential knowledge and skills for a successful career as a travel and tourism consultant. This course explores the dynamics of the industry, focusing on client consultation, travel planning, and effective management strategies.",
+    "numberOfStudents": 20,
+    "rating": 10,
+    "teacher": [
       "Muheto Hodal",
       "/public/images/Labors/Timothee.png",
-      "This is an ImageOf Teacher Timothee Haguma",
+      "This is an image of Teacher Timothee Haguma",
       "Information Technology",
       "info@timtomaviation.com",
       "+250782439775",
       "https://www.facebook.com/timtom.aviation",
       "timtomaviation7",
-      "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
+      "timtom-aviation-ltd-901301271/?originalSubdomain=rw"
     ],
-    lastUpdated: "02/05/2024",
-    languageNeeded: "English",
-    aboutCourses: [
-      "Embark on a comprehensive React journey with our React Front To Back course. Designed for beginners and seasoned developers alike, this course covers the fundamentals and dives deep into advanced topics. From building interactive user interfaces to managing state and integrating with APIs, you’ll gain hands-on experience. Elevate your React skills and stay at the forefront of web development trends with this immersive and practical learning experience.",
-      "Develop a strong understanding of JavaScript basics, including variables, data types, and control flow, building a solid foundation for advanced concepts.",
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
-
-      "Dive into modern JavaScript with ES6+ features like arrow functions, destructuring, and modules, enhancing your code readability and efficiency.",
+    "lastUpdated": "02/05/2024",
+    "languageNeeded": "English",
+    "aboutCourses": [
+      "Explore the fundamentals of travel and tourism consultancy, including key concepts, industry trends, and career opportunities.",
+      "Learn about the roles and responsibilities of travel consultants, including client consultation, travel planning, and itinerary development.",
+      "Understand the importance of effective communication and client service skills in the consultancy sector.",
+      "Gain insights into advanced travel management strategies and tourism marketing techniques."
     ],
-    benefitsOfTheCourse: [
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
-      "Grasp the core concepts and principles of the React JavaScript library.",
+    "benefitsOfTheCourse": [
+      "Acquire foundational knowledge in travel and tourism consultancy practices.",
+      "Prepare for roles in travel consulting, client management, and tourism planning.",
+      "Develop essential skills in client consultation, travel planning, and industry regulations.",
+      "Enhance employability with practical insights and strategies for successful consultancy in the travel and tourism sector."
     ],
-    courseContents: [
+    "courseContents": [
       {
-        id: 1,
-        courseHeading: "Introduction",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Basic",
+        "id": 1,
+        "courseHeading": "Introduction to Travel and Tourism Consultancy",
+        "courseSubHeadingInfo": "Overview of consultancy practices in the travel and tourism industry.",
+        "courseHours": "15:30:00",
+        "courseLevel": "Basic"
       },
       {
-        id: 2,
-        courseHeading: "Understunding React",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Medium",
+        "id": 2,
+        "courseHeading": "Client Consultation and Communication",
+        "courseSubHeadingInfo": "Skills for effective client consultation and communication in travel consultancy.",
+        "courseHours": "18:45:00",
+        "courseLevel": "Intermediate"
       },
       {
-        id: 3,
-        courseHeading: "Hooks And Ajx",
-        courseSubHeadingInfo: "Let's learn From scratch with project",
-        courseHours: "20:40:21",
-        courseLevel: "Advanced",
-      },
+        "id": 3,
+        "courseHeading": "Advanced Travel Management",
+        "courseSubHeadingInfo": "Techniques for advanced travel management and tourism marketing.",
+        "courseHours": "22:00:00",
+        "courseLevel": "Advanced"
+      }
     ],
-    courseAsideContent: [
+    "courseAsideContent": [
       60.99,
       84.99,
       "10",
@@ -700,7 +621,9 @@ export const CourseData = [
       "English",
       10,
       "Yes",
-      95,
-    ],
-  },
+      95
+    ]
+  }
+  
+  // Update the next entries similarly to avoid redundancy and maintain structure.
 ];

@@ -3,17 +3,17 @@ import HeadingThree from "../../components/Headings/HeadingThree";
 import Pragraph from "../../components/Pragraph";
 import { style } from "../../style";
 import Slider from "react-slick";
-import ServicesCard from "../../components/Cards/ServicesCard";
-import { ServicesDb } from "../../database/static/Services";
+import CoursesCard from "../../components/Cards/CoursesCard";
+import { CourseData } from "../../database/static/CoursesData";
 
-function ServicesHome() {
+function CoursesHome() {
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     swipeToSlide: true,
     responsive: [
       {
@@ -47,8 +47,8 @@ function ServicesHome() {
       <div className="flex flex-col gap-16 ">
         <div className="header_container">
           <header className={`${style.flexColCenterAlignCenter}`}>
-            <HeadingThree headingTitle={"The Timtom Aviation services"} />
-            <HeadingOne headingTitle={"This is Our Services & Solution"} />
+            <HeadingThree headingTitle={"The Timtom Aviation Courses"} />
+            <HeadingOne headingTitle={"This is Our Courses in Aviation and ICT industry"} />
             <div
               className={`${style.flexColCenterAlignCenter} gap-0 text-black`}
             >
@@ -60,14 +60,7 @@ function ServicesHome() {
               />
               <Pragraph
                 pragraphContent={
-                  "and INDIA We also offer other services related to hospitality and tourism, these include;\
-           "
-                }
-              />
-
-              <Pragraph
-                pragraphContent={
-                  "  Air ticketing, Hotel reservation and Visa application"
+                  "and INDIA We also offer other Courses related to hospitality, tourism, and Computer"
                 }
               />
             </div>
@@ -75,14 +68,15 @@ function ServicesHome() {
         </div>
         <section className=" text-black">
           <Slider {...settings}>
-            {ServicesDb.map((service) => (
-              <div key={service.id}>
-                <ServicesCard
-                  image={service.image}
-                  imageAlt={service.imageAlt}
-                  title={service.title}
-                  content={service.content}
-                  link={service.link}
+            {CourseData.map((course) => (
+              <div key={course.id}>
+                <CoursesCard
+                  image={course.image}
+                  imageAlt={course.imageAlt}
+                  title={course.courseName}
+                  money={course.money}
+                  content={course.mainPragrapContents}
+                  myId={course.id}
                 />
               </div>
             ))}
@@ -93,4 +87,4 @@ function ServicesHome() {
   );
 }
 
-export default ServicesHome;
+export default CoursesHome;

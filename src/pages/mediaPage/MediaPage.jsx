@@ -29,7 +29,6 @@ const videos = [
 const MediaPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeTab, setActiveTab] = useState(0);
-
   const openOverlay = (index) => {
     setSelectedImage(index);
   };

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Pragraph from "../../components/Pragraph";
 import Button1 from "../../components/Buttons/Button1";
+import { Link } from "react-router-dom";
 
 function HeroArea() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -70,7 +71,9 @@ function HeroArea() {
           </div>
         </div>
         <div>
-          <Button1 title={"Get More ...."} />
+         <Link to={"/courses"}>
+         <Button1 title={"Get More ...."} />
+         </Link>
         </div>
       </div>
     </div>

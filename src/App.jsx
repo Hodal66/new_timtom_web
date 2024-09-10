@@ -32,7 +32,7 @@ function App() {
             path="/services/admission-and-visa-assistance"
             element={<AdmisionAndVisa />}
           />
-          <Route path="/services/counsultancy" element={<Consultancy />} />
+          <Route path="/services/consultancy" element={<Consultancy />} />
           <Route path="/services/ict-skills" element={<ICTSkills />} />
           {/*About Courses */}
           <Route path="/courses" element={<CoursesIndex />} />

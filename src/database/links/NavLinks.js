@@ -43,23 +43,28 @@ export const NavLinks = [
     sublinks: [
       {
         id: 1,
-        subLinkTitle: "Civil Aviation Mngt",
+        subLinkTitle: "All Courses",
         linkname: "/courses",
       },
       {
         id: 2,
-        subLinkTitle: "Airline & Airport Mngt",
-        linkname: "/courses",
+        subLinkTitle: "Civil Aviation Mngt",
+        linkname: "/courses/1",
       },
       {
         id: 3,
-        subLinkTitle: "Travel & Tourism Mngt",
-        linkname: "/courses",
+        subLinkTitle: "Airline & Airport Mngt",
+        linkname: "/courses/2",
       },
       {
         id: 4,
+        subLinkTitle: "Travel & Tourism Mngt",
+        linkname: "/courses/3",
+      },
+      {
+        id: 5,
         subLinkTitle: "ICT Courses",
-        linkname: "/courses",
+        linkname: "/courses/4",
       },
     ],
   },

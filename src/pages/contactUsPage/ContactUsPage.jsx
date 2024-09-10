@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import MainNavigationBar from '../../components/navBar/MainNavigationBar';
 
 const ContactUs = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -16,6 +17,9 @@ const ContactUs = () => {
 
   return (
     <div className="bg-gray-100 p-8">
+       <div className="md:hidden">
+      <MainNavigationBar/>
+      </div>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Contact Us</h2>
 
