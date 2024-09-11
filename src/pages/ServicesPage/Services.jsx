@@ -51,7 +51,6 @@ function Services({
       <section className="mainSectionContainer flex flex-col gap-16 pt-16">
         <section>
           <HeadingTwo headingTitle={whyTitleHeading} />
-
           <Pragraph pragraphContent={whyMainPragraphContent} />
           <div className="cardContainer grid grid-cols-2 gap-8 py-2">
             <div>

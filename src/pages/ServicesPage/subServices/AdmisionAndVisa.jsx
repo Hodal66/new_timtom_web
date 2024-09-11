@@ -14,27 +14,23 @@ function AdmisionAndVisa() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 8000); // 60000 milliseconds = 1 minute
+    }, 8000);
 
     return () => clearTimeout(timeout);
-  }, []); // Runs only once when the component mounts
-
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // };
+  }, []);
 
   return (
     <main className="bg-white">
       <header>
         {isVisible && <OtherFirstTopNavigationBar />}
-        <div className={`bg-orange pt-32}`}>
+        <div className="">
           <CompanyInfoNav />
         </div>
         <section>
           <HeaderSection
             backgroundImage={backgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
-            headingTitle={"All Our Services"}
+            headingTitle={"Admission and Visa Services"}
             nexNavLink={"/"}
             currentNavLink={"/services"}
             currentNavName={"Services"}
@@ -42,54 +38,59 @@ function AdmisionAndVisa() {
           />
         </section>
       </header>
-      <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
         <section className="col-span-3">
-          <AsideServices selectedServiceOption={"AdmissionAndVisa"}/>
+          <AsideServices selectedServiceOption={"AdmissionAndVisa"} />
         </section>
         <section className="col-span-9">
-        <Services
+          <Services
             mainImage1={backgroundImage}
-            altImage1={"This is Air Ticketing Image"}
-            roleOnImage1={"This is Air Ticketing Image"}
-            headingTitle1={"All About Services"}
-            headingTitle2={"Services overview"}
+            altImage1={"Admission and Visa Assistance"}
+            roleOnImage1={"Admission and Visa Services"}
+            headingTitle1={"Comprehensive Admission & Visa Assistance"}
+            headingTitle2={"Service Overview"}
             pragraphContent1={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "At Timtom Aviation Ltd, we offer professional visa application assistance for individuals seeking to travel internationally. Our services include guidance on document preparation, application submission, and tracking for various visa types."
             }
             pragraphContent2={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "In addition to visa assistance, we also provide consultancy on admission to international universities. Our team works with students to help them choose the best academic programs and navigate through the admission process for universities in the USA, Canada, and Europe."
             }
-            whyTitleHeading={"Why Choose Timtom Aviation Ltd ?"}
+            whyTitleHeading={
+              "Why Choose Timtom Aviation Ltd for Admission & Visa Services?"
+            }
             whyMainPragraphContent={
-              "People choose Timtom Aviation Ltd because our guides are the face of the company who are very well trained in sharing great stories and accurate information for your benefit."
+              "We understand the complexities of visa applications and university admissions. With our team’s expertise, we provide reliable assistance ensuring that your applications are accurate, timely, and stress-free."
             }
             whyPragraphContent1={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "We have strong partnerships with international institutions and embassies."
             }
             whyPragraphContent2={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "We provide full visa application support, from documentation to submission."
             }
             whyPragraphContent3={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Our team offers tailored consultancy services for students applying to top universities worldwide."
             }
             whyPragraphContent4={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Affordable service fees with comprehensive support for both admission and visa processes."
             }
-            howTitleHeading={"How We Can Help"}
+            howTitleHeading={"How We Can Help You"}
             howMainImage={howImageIs}
-            howMainPragraphContent={"We help our clients by keeping up with ever-changing technology\
-            and providing the finest available answer. The breadth of these\
-            commercial projects, which span from offices to industrial plants,\
-            offers us the expertise to take on any commercial project."}
-            howPragraphContent1={"Leading industrial solutions with machinery"}
-            howPragraphContent2={"Leading industrial solutions with machinery"}
-            howPragraphContent3={"Leading industrial solutions with machinery"}
-            howPragraphContent4={"Leading industrial solutions with machinery"}
-            howPragraphContent5={"Leading industrial solutions with machinery"}
+            howMainPragraphContent={
+              "Our services include document checks, personalized consultancy on visa requirements, and university admissions. We make sure that clients are fully prepared to meet embassy requirements and university criteria."
+            }
+            howPragraphContent1={
+              "Complete guidance on visa applications for USA, Canada, and Europe."
+            }
+            howPragraphContent2={
+              "Admission consultancy for international academic programs."
+            }
+            howPragraphContent3={"Document review and submission tracking."}
+            howPragraphContent4={
+              "Timely updates on application status and embassy appointments."
+            }
+            howPragraphContent5={
+              "Personalized support to increase the chances of successful applications."
+            }
           />
         </section>
       </main>

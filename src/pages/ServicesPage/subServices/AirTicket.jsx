@@ -7,33 +7,30 @@ import AsideServices from "../../../components/sections/AsideServices";
 import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/AirTicket6.jpg";
 import howImageIs from "/images/ServicesImages/AirTicket4.jpg";
+
 function AirTicket() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 8000); // 60000 milliseconds = 1 minute
+    }, 8000); // Set the visibility timeout for the navigation bar
 
     return () => clearTimeout(timeout);
-  }, []); // Runs only once when the component mounts
-
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // };
+  }, []);
 
   return (
     <main className="bg-white">
       <header>
         {isVisible && <OtherFirstTopNavigationBar />}
-        <div className={`bg-orange pt-32}`}>
+        <div className="">
           <CompanyInfoNav />
         </div>
         <section>
           <HeaderSection
             backgroundImage={backgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
-            headingTitle={"All Our Services"}
+            headingTitle={"Our Air Ticketing Services"}
             nexNavLink={"/"}
             currentNavLink={"/services"}
             currentNavName={"Services"}
@@ -41,54 +38,49 @@ function AirTicket() {
           />
         </section>
       </header>
-      <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
         <section className="col-span-3">
-          <AsideServices selectedServiceOption={"AirTicket"}/>
+          <AsideServices selectedServiceOption={"AirTicket"} />
         </section>
         <section className="col-span-9">
           <Services
             mainImage1={backgroundImage}
-            altImage1={"This is Air Ticketing Image"}
-            roleOnImage1={"This is Air Ticketing Image"}
-            headingTitle1={"All About Services"}
-            headingTitle2={"Services overview"}
+            altImage1={"Air Ticketing Service"}
+            roleOnImage1={"Air Ticketing Service"}
+            headingTitle1={"Comprehensive Air Ticketing Solutions"}
+            headingTitle2={"Service Overview"}
             pragraphContent1={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Timtom Aviation Ltd has been offering air ticketing services since 2017. Our partnership with globally recognized airlines allows us to provide affordable and reliable air ticketing services to individuals and corporate clients."
             }
             pragraphContent2={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Whether you're booking domestic or international flights, we ensure seamless service, including visa assistance for specific destinations. Our goal is to provide clients with hassle-free travel arrangements tailored to their needs."
             }
-            whyTitleHeading={"Why Choose Timtom Aviation Ltd ?"}
+            whyTitleHeading={"Why Choose Timtom Aviation Ltd?"}
             whyMainPragraphContent={
-              "People choose Timtom Aviation Ltd because our guides are the face of the company who are very well trained in sharing great stories and accurate information for your benefit."
+              "At Timtom Aviation Ltd, we offer exceptional air ticketing services through well-established partnerships with recognized airlines. We focus on delivering top-notch service with added benefits such as visa application support."
             }
             whyPragraphContent1={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "We provide customized travel solutions for both individuals and corporate clients."
             }
             whyPragraphContent2={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Partnerships with renowned international airlines."
             }
             whyPragraphContent3={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Visa application assistance for various travel destinations."
             }
             whyPragraphContent4={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Affordable air ticket prices for international and domestic flights."
             }
-            howTitleHeading={"How We Can Help"}
+            howTitleHeading={"How We Can Help You"}
             howMainImage={howImageIs}
-            howMainPragraphContent={"We help our clients by keeping up with ever-changing technology\
-            and providing the finest available answer. The breadth of these\
-            commercial projects, which span from offices to industrial plants,\
-            offers us the expertise to take on any commercial project."}
-            howPragraphContent1={"Leading industrial solutions with machinery"}
-            howPragraphContent2={"Leading industrial solutions with machinery"}
-            howPragraphContent3={"Leading industrial solutions with machinery"}
-            howPragraphContent4={"Leading industrial solutions with machinery"}
-            howPragraphContent5={"Leading industrial solutions with machinery"}
+            howMainPragraphContent={
+              "We provide full-service support from booking your flight to ensuring a smooth check-in experience. With our added visa assistance service, you can travel confidently knowing that all your paperwork is handled."
+            }
+            howPragraphContent1={"Visa assistance for select destinations."}
+            howPragraphContent2={"Specialized support for corporate clients."}
+            howPragraphContent3={"Competitive prices on airfares."}
+            howPragraphContent4={"Customer support available 24/7."}
+            howPragraphContent5={"Reliable partnerships with global airlines."}
           />
         </section>
       </main>

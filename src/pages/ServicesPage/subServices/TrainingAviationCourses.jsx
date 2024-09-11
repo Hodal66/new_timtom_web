@@ -14,27 +14,23 @@ function TrainingAviationCourses() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 8000); // 60000 milliseconds = 1 minute
+    }, 8000);
 
     return () => clearTimeout(timeout);
-  }, []); // Runs only once when the component mounts
-
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // };
+  }, []);
 
   return (
     <main className="bg-white">
       <header>
         {isVisible && <OtherFirstTopNavigationBar />}
-        <div className={`bg-orange pt-32}`}>
+        <div className="">
           <CompanyInfoNav />
         </div>
         <section>
           <HeaderSection
             backgroundImage={backgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
-            headingTitle={"All Our Services"}
+            headingTitle={"Aviation Training Courses"}
             nexNavLink={"/"}
             currentNavLink={"/services"}
             currentNavName={"Services"}
@@ -42,54 +38,61 @@ function TrainingAviationCourses() {
           />
         </section>
       </header>
-      <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
         <section className="col-span-3">
-          <AsideServices selectedServiceOption={"trainingInAviationCourses"}/>
+          <AsideServices selectedServiceOption={"trainingInAviationCourses"} />
         </section>
         <section className="col-span-9">
-        <Services
+          <Services
             mainImage1={backgroundImage}
-            altImage1={"This is Air Ticketing Image"}
-            roleOnImage1={"This is Air Ticketing Image"}
-            headingTitle1={"All About Services"}
-            headingTitle2={"Services overview"}
+            altImage1={"Aviation Training Image"}
+            roleOnImage1={"Aviation Training"}
+            headingTitle1={"Comprehensive Aviation Training"}
+            headingTitle2={"Service Overview"}
             pragraphContent1={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Timtom Aviation Ltd offers a range of training courses in civil aviation, airport operations, and airline management. Our courses are designed to equip students with the necessary skills for a successful career in aviation, offering both local and international certificates in partnership with ICAO, IATA, and SACCA Institute of Freight and Tourism."
             }
             pragraphContent2={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Our training programs cover various aspects of aviation, from ground handling and cabin crew training to advanced courses in aviation safety and airport management. With our internationally recognized certifications, students are well-prepared to enter the global aviation job market."
             }
-            whyTitleHeading={"Why Choose Timtom Aviation Ltd ?"}
+            whyTitleHeading={
+              "Why Choose Timtom Aviation Ltd for Aviation Training?"
+            }
             whyMainPragraphContent={
-              "People choose Timtom Aviation Ltd because our guides are the face of the company who are very well trained in sharing great stories and accurate information for your benefit."
+              "Timtom Aviation Ltd is committed to providing high-quality, industry-relevant training. Our partnerships with international aviation institutes ensure that students receive the best education and are prepared for the challenges of working in the aviation industry."
             }
             whyPragraphContent1={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Partnership with globally recognized aviation institutes like ICAO and IATA."
             }
             whyPragraphContent2={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Hands-on training and practical experience in airport operations."
             }
             whyPragraphContent3={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Comprehensive courses that cover all aspects of civil aviation."
             }
             whyPragraphContent4={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Affordable fees and flexible learning schedules."
             }
-            howTitleHeading={"How We Can Help"}
+            howTitleHeading={"How We Can Help You"}
             howMainImage={howImageIs}
-            howMainPragraphContent={"We help our clients by keeping up with ever-changing technology\
-            and providing the finest available answer. The breadth of these\
-            commercial projects, which span from offices to industrial plants,\
-            offers us the expertise to take on any commercial project."}
-            howPragraphContent1={"Leading industrial solutions with machinery"}
-            howPragraphContent2={"Leading industrial solutions with machinery"}
-            howPragraphContent3={"Leading industrial solutions with machinery"}
-            howPragraphContent4={"Leading industrial solutions with machinery"}
-            howPragraphContent5={"Leading industrial solutions with machinery"}
+            howMainPragraphContent={
+              "We provide industry-standard training courses that cover all aspects of aviation management. Whether you're looking to start a career in aviation or advance your existing skills, we offer flexible training options to fit your needs."
+            }
+            howPragraphContent1={
+              "Comprehensive training in airport operations and ground handling."
+            }
+            howPragraphContent2={
+              "Cabin crew training with a focus on safety and customer service."
+            }
+            howPragraphContent3={
+              "Advanced courses in aviation safety and security management."
+            }
+            howPragraphContent4={
+              "Personalized support and career guidance for students."
+            }
+            howPragraphContent5={
+              "Internationally recognized certifications to enhance career prospects."
+            }
           />
         </section>
       </main>
@@ -98,6 +101,3 @@ function TrainingAviationCourses() {
 }
 
 export default TrainingAviationCourses;
-
-
-

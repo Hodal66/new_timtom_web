@@ -13,7 +13,7 @@ function FAQ() {
 
   return (
     <div>
-      <HeadingTwo headingTitle={"Read Useful FAQ s"} />
+      <HeadingTwo headingTitle={"Read Useful FAQs"} />
       <div className="flex gap-4 flex-col cursor-pointer">
         <div>
           <div
@@ -28,7 +28,10 @@ function FAQ() {
               openFAQ1 && "transition-all animate-pulse duration-200 "
             }`}
           >
-            <HeadingTwo headingTitle={"What does your aviation company specialize in?"} classNameProps={"font-normal text-sm"}/>
+            <HeadingTwo
+              headingTitle={"What does Timtom Aviation specialize in?"}
+              classNameProps={"font-normal text-sm"}
+            />
             <span className={`${openFAQ1 ? "rotate-180" : "rotate-0"}`}>
               <IconDownArrow />
             </span>
@@ -41,10 +44,7 @@ function FAQ() {
             >
               <Pragraph
                 pragraphContent={
-                  "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi\
-               iure harum veritatis! Placeat fugiat officiis sunt consectetur\
-               ipsam veniam soluta sapiente repellat itaque inventore, sequi,\
-               dolor ab? Blanditiis, deleniti consequatur?"
+                  "Timtom Aviation specializes in training and consultancy services in Civil Aviation Management, Airline and Airport Management, and Travel & Tourism Management. We offer internationally recognized certificates and diplomas in partnership with IATA, ICAO, and SACCA Institute of Freight and Tourism."
                 }
               />
             </div>
@@ -60,10 +60,13 @@ function FAQ() {
               setOpenFAQ5(false);
             }}
             className={`flex items-center justify-between border border-gray p-2 rounded-sm ${
-              openFAQ1 && "transition-all animate-pulse duration-200 "
+              openFAQ2 && "transition-all animate-pulse duration-200 "
             }`}
           >
-            <HeadingTwo headingTitle={"What does your aviation company specialize in?"} classNameProps={"font-normal text-sm"}/>
+            <HeadingTwo
+              headingTitle={"What courses do you offer?"}
+              classNameProps={"font-normal text-sm"}
+            />
             <span className={`${openFAQ2 ? "rotate-180" : "rotate-0"}`}>
               <IconDownArrow />
             </span>
@@ -76,10 +79,7 @@ function FAQ() {
             >
               <Pragraph
                 pragraphContent={
-                  "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi\
-               iure harum veritatis! Placeat fugiat officiis sunt consectetur\
-               ipsam veniam soluta sapiente repellat itaque inventore, sequi,\
-               dolor ab? Blanditiis, deleniti consequatur?"
+                  "We offer a range of aviation courses, including Civil Aviation Management, Airline and Airport Operations, Air Cargo Management, Aviation Safety, and Air Cabin Crew courses. Additionally, we provide advanced certificates in specialized areas like Aviation Security and Air Transport Essentials."
                 }
               />
             </div>
@@ -95,10 +95,13 @@ function FAQ() {
               setOpenFAQ5(false);
             }}
             className={`flex items-center justify-between border border-gray p-2 rounded-sm ${
-              openFAQ1 && "transition-all animate-pulse duration-200 "
+              openFAQ3 && "transition-all animate-pulse duration-200 "
             }`}
           >
-            <HeadingTwo headingTitle={"What does your aviation company specialize in?"} classNameProps={"font-normal text-sm"}/>
+            <HeadingTwo
+              headingTitle={"What are the course durations and fees?"}
+              classNameProps={"font-normal text-sm"}
+            />
             <span className={`${openFAQ3 ? "rotate-180" : "rotate-0"}`}>
               <IconDownArrow />
             </span>
@@ -111,10 +114,7 @@ function FAQ() {
             >
               <Pragraph
                 pragraphContent={
-                  "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi\
-               iure harum veritatis! Placeat fugiat officiis sunt consectetur\
-               ipsam veniam soluta sapiente repellat itaque inventore, sequi,\
-               dolor ab? Blanditiis, deleniti consequatur?"
+                  "Our courses vary in duration from 1 to 6 months. Local certificate courses start from 200,000 RWF for a 1-month course, while advanced certificates go up to 700,000 RWF. We also offer international IATA and ICAO certifications with fees ranging from 400,000 RWF to 975 USD."
                 }
               />
             </div>
@@ -130,10 +130,13 @@ function FAQ() {
               setOpenFAQ5(false);
             }}
             className={`flex items-center justify-between border border-gray p-2 rounded-sm ${
-              openFAQ1 && "transition-all animate-pulse duration-200 "
+              openFAQ4 && "transition-all animate-pulse duration-200 "
             }`}
           >
-            <HeadingTwo headingTitle={"What does your aviation company specialize in?"} classNameProps={"font-normal text-sm"}/>
+            <HeadingTwo
+              headingTitle={"What additional services do you provide?"}
+              classNameProps={"font-normal text-sm"}
+            />
             <span className={`${openFAQ4 ? "rotate-180" : "rotate-0"}`}>
               <IconDownArrow />
             </span>
@@ -146,10 +149,7 @@ function FAQ() {
             >
               <Pragraph
                 pragraphContent={
-                  "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi\
-               iure harum veritatis! Placeat fugiat officiis sunt consectetur\
-               ipsam veniam soluta sapiente repellat itaque inventore, sequi,\
-               dolor ab? Blanditiis, deleniti consequatur?"
+                  "Apart from aviation courses, Timtom Aviation provides air ticketing, visa application assistance, project consultancy, and hospitality services, including hotel reservations and international tour packages."
                 }
               />
             </div>
@@ -165,10 +165,13 @@ function FAQ() {
               setOpenFAQ3(false);
             }}
             className={`flex items-center justify-between border border-gray p-2 rounded-sm ${
-              openFAQ1 && "transition-all animate-pulse duration-200 "
+              openFAQ5 && "transition-all animate-pulse duration-200 "
             }`}
           >
-            <HeadingTwo headingTitle={"What does your aviation company specialize in?"} classNameProps={"font-normal text-sm"}/>
+            <HeadingTwo
+              headingTitle={"How can I apply?"}
+              classNameProps={"font-normal text-sm"}
+            />
             <span className={`${openFAQ5 ? "rotate-180" : "rotate-0"}`}>
               <IconDownArrow />
             </span>
@@ -181,10 +184,7 @@ function FAQ() {
             >
               <Pragraph
                 pragraphContent={
-                  "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi\
-               iure harum veritatis! Placeat fugiat officiis sunt consectetur\
-               ipsam veniam soluta sapiente repellat itaque inventore, sequi,\
-               dolor ab? Blanditiis, deleniti consequatur?"
+                  "To apply, visit our offices at Union Plaza 2nd floor, Remera – Giporoso, or contact us at timtomaviation@gmail.com. You can also apply through our online form: https://forms.gle/LkJz3w75ntLoeTyE6."
                 }
               />
             </div>

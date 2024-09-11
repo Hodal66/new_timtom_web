@@ -1,9 +1,37 @@
+/* eslint-disable react/prop-types */
 import Slider from "react-slick";
 import TestmonialCard from "../../components/Cards/TestmonialCard";
-// import { TestmonialsData } from "../../database/static/Testmonials";
+import { TestmonialsData } from "../../database/static/Testmonials";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import icons
+
+// Custom Previous Arrow
+const PrevArrow = ({ onClick, currentSlide }) => (
+  <button
+    onClick={onClick}
+    className={`absolute left-0 z-10 p-3 bg-gray-800 text-primary rounded-full shadow-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-opacity duration-300 ${
+      currentSlide === 0 ? "opacity-0 pointer-events-none" : "opacity-100"
+    }`}
+    style={{ top: "50%" }} // Positions the arrow vertically centered
+  >
+    <FaArrowLeft className="text-2xl" />
+  </button>
+);
+
+// Custom Next Arrow
+const NextArrow = ({ onClick, currentSlide, slideCount }) => (
+  <button
+    onClick={onClick}
+    className={`absolute right-0 z-10 p-3 bg-gray-800 text-primary rounded-full shadow-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-opacity duration-300 ${
+      currentSlide >= slideCount - 2 ? "opacity-0 pointer-events-none" : "opacity-100"
+    }`}
+    style={{ top: "50%" }} // Positions the arrow vertically centered
+  >
+    <FaArrowRight className="text-2xl" />
+  </button>
+);
 
 function ClientTestmonials() {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 2,
@@ -11,6 +39,8 @@ function ClientTestmonials() {
     autoplay: true,
     autoplaySpeed: 3000,
     swipeToSlide: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -24,9 +54,8 @@ function ClientTestmonials() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {
@@ -38,54 +67,27 @@ function ClientTestmonials() {
       },
     ],
   };
+
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        <div className="px-2 lg:px-4 ">
-          <TestmonialCard
-            content={
-              "The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans."
-            }
-            image={"/images/HomeImage4.png"}
-            altImage={"Location Florolida"}
-            location={"Califonia, USA"}
-            name={"Mugabo Fredina"}
-          />
-        </div>
-        <div className="px-2 lg:px-4 ">
-          <TestmonialCard
-            content={
-              "The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans."
-            }
-            image={"/images/HomeImage4.png"}
-            altImage={"Location Florolida"}
-            location={"Califonia, USA"}
-            name={"Uwonkunda Leontina"}
-          />
-        </div>
-        <div className="px-2 lg:px-4 ">
-          <TestmonialCard
-            content={
-              "The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans."
-            }
-            image={"/images/HomeImage4.png"}
-            altImage={"Location Florolida"}
-            location={"Califonia, USA"}
-            name={"Mukamwiza Clere"}
-          />
-        </div>
-        <div className="px-2 lg:px-4 ">
-          <TestmonialCard
-            content={
-              "The booking process was incredibly easy, and I was able to find the perfect flight for my schedule and budget. What really stood out to me was the level of customer service I received. The team at [Your Air Ticketing Service] was not only knowledgeable but also genuinely friendly and patient. They answered all my questions and went the extra mile to ensure I felt confident about my travel plans."
-            }
-            image={"/images/HomeImage4.png"}
-            altImage={"Location Florolida"}
-            location={"Califonia, USA"}
-            name={"Uwera Mary Jane"}
-          />
-        </div>
-      </Slider>
+    <div className="slider-container py-16 bg-gradient-to-r from-gray-100 to-white relative">
+      <h2 className="text-center text-4xl font-bold text-gray-800 mb-8">
+        What Our Clients Say
+      </h2>
+      <div className="md:px-4 lg:px-8">
+        <Slider {...settings}>
+          {TestmonialsData.map((testmonial) => (
+            <div key={testmonial.id} className="px-2"> {/* Added padding to the individual slides */}
+              <TestmonialCard
+                content={testmonial.content}
+                image={testmonial.image}
+                altImage={testmonial.altImage}
+                location={testmonial.location}
+                name={testmonial.name}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

@@ -8,33 +8,29 @@ import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/consultancy1.jpeg";
 import howImageIs from "/images/ServicesImages/consultancy2.jpg";
 
-function AirTicket() {
+function Consultancy() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 8000); // 60000 milliseconds = 1 minute
+    }, 8000);
 
     return () => clearTimeout(timeout);
-  }, []); // Runs only once when the component mounts
-
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // };
+  }, []);
 
   return (
     <main className="bg-white">
       <header>
         {isVisible && <OtherFirstTopNavigationBar />}
-        <div className={`bg-orange pt-32}`}>
+        <div className="">
           <CompanyInfoNav />
         </div>
         <section>
           <HeaderSection
             backgroundImage={backgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
-            headingTitle={"All Our Services"}
+            headingTitle={"Consultancy Services"}
             nexNavLink={"/"}
             currentNavLink={"/services"}
             currentNavName={"Services"}
@@ -42,54 +38,57 @@ function AirTicket() {
           />
         </section>
       </header>
-      <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
         <section className="col-span-3">
-          <AsideServices selectedServiceOption={"Consultancy"}/>
+          <AsideServices selectedServiceOption={"Consultancy"} />
         </section>
         <section className="col-span-9">
-        <Services
+          <Services
             mainImage1={backgroundImage}
-            altImage1={"This Counsultancy Image"}
-            roleOnImage1={"This Counsultancy Image"}
-            headingTitle1={"All About Consultancy"}
-            headingTitle2={"Consultancy overview"}
+            altImage1={"Consultancy Services Image"}
+            roleOnImage1={"Consultancy Services"}
+            headingTitle1={"Expert Consultancy Solutions"}
+            headingTitle2={"Consultancy Service Overview"}
             pragraphContent1={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Timtom Aviation Ltd provides top-notch consultancy services specializing in project evaluation, monitoring, and implementation. We offer services across various domains including aviation, hospitality, and human resources."
             }
             pragraphContent2={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Our consultancy services include program evaluation, learning and evaluation, research studies, and human resource management services such as recruitment, performance appraisals, and strategic HR planning. We tailor our solutions to meet the specific needs of our clients, ensuring high-quality outcomes."
             }
-            whyTitleHeading={"Why Choose Timtom Aviation Ltd ?"}
+            whyTitleHeading={"Why Choose Timtom Aviation Ltd for Consultancy?"}
             whyMainPragraphContent={
-              "People choose Timtom Aviation Ltd because our guides are the face of the company who are very well trained in sharing great stories and accurate information for your benefit."
+              "At Timtom Aviation Ltd, we pride ourselves on delivering exceptional consultancy services to a diverse range of clients. Our experts have years of experience in project and program evaluation, ensuring that we provide tailored solutions that align with our clients' goals."
             }
             whyPragraphContent1={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Experienced in project and program evaluation across multiple industries."
             }
             whyPragraphContent2={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Comprehensive HR consultancy, including recruitment and performance management."
             }
             whyPragraphContent3={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Tailored solutions for both large-scale projects and smaller, focused evaluations."
             }
             whyPragraphContent4={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Commitment to delivering timely, high-quality outcomes for our clients."
             }
             howTitleHeading={"How We Can Help"}
             howMainImage={howImageIs}
-            howMainPragraphContent={"We help our clients by keeping up with ever-changing technology\
-            and providing the finest available answer. The breadth of these\
-            commercial projects, which span from offices to industrial plants,\
-            offers us the expertise to take on any commercial project."}
-            howPragraphContent1={"Leading industrial solutions with machinery"}
-            howPragraphContent2={"Leading industrial solutions with machinery"}
-            howPragraphContent3={"Leading industrial solutions with machinery"}
-            howPragraphContent4={"Leading industrial solutions with machinery"}
-            howPragraphContent5={"Leading industrial solutions with machinery"}
+            howMainPragraphContent={
+              "We assist organizations by providing in-depth consultancy services across several areas, including project management, human resources, and strategic planning. Our team of experts works closely with clients to deliver customized solutions that drive success."
+            }
+            howPragraphContent1={
+              "Project evaluation and monitoring for both ongoing and completed projects."
+            }
+            howPragraphContent2={
+              "HR management services, including strategic planning and recruitment."
+            }
+            howPragraphContent3={
+              "Customized consultancy solutions based on client needs."
+            }
+            howPragraphContent4={"Research studies and program evaluations."}
+            howPragraphContent5={
+              "Organizational structure development and process optimization."
+            }
           />
         </section>
       </main>
@@ -97,5 +96,4 @@ function AirTicket() {
   );
 }
 
-export default AirTicket;
-
+export default Consultancy;

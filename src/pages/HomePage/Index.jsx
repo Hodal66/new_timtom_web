@@ -28,7 +28,7 @@ function HomePageIndex() {
       <section className="px-4 grid grid-cols-1 gap-24 md:px-8 lg:px-12 py-16">
         <ExpertTeam />
       </section>
-      <section className="px-8 grid grid-cols-1 gap-24 md:px-8 lg:px-12 py-16">
+      <section className="px-4 grid grid-cols-1 gap-24 md:px-8 lg:px-12 py-16">
         <ClientTestmonials />
         <Subscribe />
       </section>

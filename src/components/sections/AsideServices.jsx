@@ -97,7 +97,7 @@ function AsideServices({ selectedServiceOption }) {
             </div>
           </Link>
 
-          <Link to={"/services/counsultancy"}>
+          <Link to={"/services/consultancy"}>
             <div
               className={`${style.asidePaddingEffect} ${
                 selectedServiceOption === "Consultancy"

@@ -14,27 +14,23 @@ function HotelBooking() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 8000); // 60000 milliseconds = 1 minute
+    }, 8000);
 
     return () => clearTimeout(timeout);
-  }, []); // Runs only once when the component mounts
-
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // };
+  }, []);
 
   return (
     <main className="bg-white">
       <header>
         {isVisible && <OtherFirstTopNavigationBar />}
-        <div className={`bg-orange pt-32}`}>
+        <div className="">
           <CompanyInfoNav />
         </div>
         <section>
           <HeaderSection
             backgroundImage={backgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
-            headingTitle={"All Our Services"}
+            headingTitle={"Hotel Booking Services"}
             nexNavLink={"/"}
             currentNavLink={"/services"}
             currentNavName={"Services"}
@@ -42,54 +38,61 @@ function HotelBooking() {
           />
         </section>
       </header>
-      <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
         <section className="col-span-3">
-          <AsideServices selectedServiceOption={"HotelBooking"}/>
+          <AsideServices selectedServiceOption={"HotelBooking"} />
         </section>
         <section className="col-span-9">
-        <Services
+          <Services
             mainImage1={backgroundImage}
-            altImage1={"This is Air Ticketing Image"}
-            roleOnImage1={"This is Air Ticketing Image"}
-            headingTitle1={"All About Hotel Booking"}
-            headingTitle2={"Hotel Booking overview"}
+            altImage1={"Hotel Booking Service"}
+            roleOnImage1={"Hotel Booking Service"}
+            headingTitle1={"Comprehensive Hotel Booking Services"}
+            headingTitle2={"Service Overview"}
             pragraphContent1={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Timtom Aviation Ltd offers seamless hotel booking services in partnership with trusted hotels both locally and internationally. Whether you're traveling for business or leisure, we ensure that you have a comfortable stay at competitive rates."
             }
             pragraphContent2={
-              "Consectetur adipisicing elit sed do eiusmod tempor dolor magna aliquat enim veniam, quis nostrud exdra anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan catium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
+              "Our team works closely with hotel partners to secure the best deals for our clients, offering a range of options from budget accommodations to luxury stays. We also provide additional services such as airport transfers and special requests for clients."
             }
-            whyTitleHeading={"Why Choose Timtom Aviation Ltd ?"}
+            whyTitleHeading={
+              "Why Choose Timtom Aviation Ltd for Hotel Booking?"
+            }
             whyMainPragraphContent={
-              "People choose Timtom Aviation Ltd because our guides are the face of the company who are very well trained in sharing great stories and accurate information for your benefit."
+              "Timtom Aviation Ltd guarantees a stress-free hotel booking experience. With our strong partnerships and focus on customer satisfaction, we ensure that you get the best possible accommodations at affordable prices."
             }
             whyPragraphContent1={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Exclusive partnerships with local and international hotels."
             }
             whyPragraphContent2={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Competitive rates with a wide range of accommodation options."
             }
             whyPragraphContent3={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "24/7 customer support for hotel bookings and special requests."
             }
             whyPragraphContent4={
-              " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA and INDIA,"
+              "Additional services like airport transfers and customized arrangements."
             }
             howTitleHeading={"How We Can Help"}
             howMainImage={howImageIs}
-            howMainPragraphContent={"We help our clients by keeping up with ever-changing technology\
-            and providing the finest available answer. The breadth of these\
-            commercial projects, which span from offices to industrial plants,\
-            offers us the expertise to take on any commercial project."}
-            howPragraphContent1={"Leading industrial solutions with machinery"}
-            howPragraphContent2={"Leading industrial solutions with machinery"}
-            howPragraphContent3={"Leading industrial solutions with machinery"}
-            howPragraphContent4={"Leading industrial solutions with machinery"}
-            howPragraphContent5={"Leading industrial solutions with machinery"}
+            howMainPragraphContent={
+              "We assist our clients with booking the best hotels based on their preferences and budget. From arranging airport transfers to meeting any special accommodation requirements, we ensure a smooth and enjoyable stay."
+            }
+            howPragraphContent1={
+              "Seamless booking process for both local and international hotels."
+            }
+            howPragraphContent2={
+              "Special discounts for corporate clients and large groups."
+            }
+            howPragraphContent3={
+              "Tailored services for airport transfers and other requests."
+            }
+            howPragraphContent4={
+              "Collaboration with top hotel brands worldwide."
+            }
+            howPragraphContent5={
+              "24/7 customer support to handle booking modifications."
+            }
           />
         </section>
       </main>
@@ -98,4 +101,3 @@ function HotelBooking() {
 }
 
 export default HotelBooking;
-

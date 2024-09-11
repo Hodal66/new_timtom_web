@@ -27,7 +27,7 @@ export const NavLinks = [
           {
             id: 5,
             subLinkTitle: "Consultance",
-            linkname: "/services/counsultancy",
+            linkname: "/services/consultancy",
           },
           {
             id: 6,
@@ -48,24 +48,20 @@ export const NavLinks = [
       },
       {
         id: 2,
-        subLinkTitle: "Civil Aviation Mngt",
-        linkname: "/courses/1",
+        subLinkTitle: "Local Certificates",
+        linkname: "/courses/local-certificates-courses",
       },
       {
         id: 3,
-        subLinkTitle: "Airline & Airport Mngt",
-        linkname: "/courses/2",
+        subLinkTitle: "Local Advanced Certificates",
+        linkname: "/courses/local-advanced-certificates-courses",
       },
       {
         id: 4,
-        subLinkTitle: "Travel & Tourism Mngt",
-        linkname: "/courses/3",
+        subLinkTitle: "International Certificates",
+        linkname: "/courses/international-certificates-courses",
       },
-      {
-        id: 5,
-        subLinkTitle: "ICT Courses",
-        linkname: "/courses/4",
-      },
+    
     ],
   },
  
