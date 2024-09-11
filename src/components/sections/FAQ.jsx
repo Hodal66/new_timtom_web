@@ -184,9 +184,18 @@ function FAQ() {
             >
               <Pragraph
                 pragraphContent={
-                  "To apply, visit our offices at Union Plaza 2nd floor, Remera – Giporoso, or contact us at timtomaviation@gmail.com. You can also apply through our online form: https://forms.gle/LkJz3w75ntLoeTyE6."
+                  "To apply, visit our offices at Union Plaza 2nd floor, Remera – Giporoso, or contact us at timtomaviation@gmail.com. You can also apply through our online form: ."
                 }
               />
+              <a
+                href="https://forms.gle/LkJz3w75ntLoeTyE6"
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary font-bold"
+              >
+               
+               Through this Link Here! 
+              </a>
             </div>
           )}
         </div>

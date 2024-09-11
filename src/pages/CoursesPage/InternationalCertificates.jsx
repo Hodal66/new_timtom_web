@@ -10,36 +10,97 @@ function InternationalCertificates() {
       courseName: "Personnel Licensing",
       duration: "1 month",
       fees: "300,000 RWF",
+      usdFees: null,
     },
     {
       courseName: "Auditing Techniques in Civil Aviation",
       duration: "1 month",
       fees: "300,000 RWF",
+      usdFees: null,
     },
     {
       courseName: "Safety Management System",
       duration: "1 month",
       fees: "300,000 RWF",
+      usdFees: null,
     },
     {
       courseName: "USOAP CMA AUDIT",
       duration: "1 month",
       fees: "400,000 RWF",
+      usdFees: null,
     },
     {
       courseName: "Aviation Management",
       duration: "2 months",
       fees: "400,000 RWF",
+      usdFees: null,
     },
     {
       courseName: "Airport Operations",
       duration: "1 month",
       fees: "200,000 RWF",
+      usdFees: null,
     },
     {
       courseName: "Airline Marketing",
       duration: "1 month",
       fees: "200,000 RWF",
+      usdFees: null,
+    },
+    {
+      courseName: "Airport Ground Handling",
+      duration: "1 month",
+      fees: "200,000 RWF",
+      usdFees: null,
+    },
+    {
+      courseName: "Air Cabin Crew",
+      duration: "1 month",
+      fees: "200,000 RWF",
+      usdFees: "490 USD",
+    },
+    {
+      courseName: "Dangerous Goods",
+      duration: "1 month",
+      fees: "200,000 RWF",
+      usdFees: null,
+    },
+    {
+      courseName: "Air fares and ticketing with Amadeus",
+      duration: "1 month",
+      fees: "200,000 RWF",
+      usdFees: null,
+    },
+    {
+      courseName: "IATA Diploma in Airport Operations",
+      duration: "6 months",
+      fees: "400,000 RWF",
+      usdFees: "455 USD",
+    },
+    {
+      courseName: "IATA Diploma in Foundation in Travel and Tourism",
+      duration: "6 months",
+      fees: "400,000 RWF",
+      usdFees: "670 USD",
+    },
+    {
+      courseName: "IATA Diploma in Aviation Fundamentals",
+      duration: "6 months",
+      fees: "400,000 RWF",
+      usdFees: "975 USD",
+    },
+    {
+      courseName: "IATA Diploma in Air Cargo Management",
+      duration: "6 months",
+      fees: "400,000 RWF",
+      usdFees: "341 USD",
+    },
+    {
+      courseName: "ICAO Course (Various Specializations)",
+      duration: "3 months",
+      fees: "400,000 RWF",
+      usdFees: "800 USD",
     },
   ];
 
@@ -77,7 +138,10 @@ function InternationalCertificates() {
                   Duration
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
-                  Fees
+                  Fees (RWF)
+                </th>
+                <th className="py-3 px-6 text-left border-b border-gray-300">
+                  Fees (USD)
                 </th>
               </tr>
             </thead>
@@ -92,6 +156,7 @@ function InternationalCertificates() {
                   <td className="py-3 px-6">{course.courseName}</td>
                   <td className="py-3 px-6">{course.duration}</td>
                   <td className="py-3 px-6">{course.fees}</td>
+                  <td className="py-3 px-6">{course.usdFees || "-"}</td>
                 </tr>
               ))}
             </tbody>

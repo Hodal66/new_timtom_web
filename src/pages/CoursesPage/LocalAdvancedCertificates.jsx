@@ -41,6 +41,7 @@ function LocalAdvancedCertificates() {
       duration: "1 month",
       fees: "200,000 RWF",
     },
+    // Add any additional courses if required
   ];
 
   return (
@@ -52,7 +53,9 @@ function LocalAdvancedCertificates() {
         <HeaderSection
           backgroundImage={backgroundImage}
           MainHeading={<OtherSecondMainNavigationBar />}
-          headingTitle={"All About Our Courses With Local Advanced Certificates"}
+          headingTitle={
+            "All About Our Courses With Local Advanced Certificates"
+          }
           nexNavLink={"/"}
           currentNavLink={"/courses"}
           currentNavName={"Our Local Advanced Certificates Courses"}
@@ -62,7 +65,7 @@ function LocalAdvancedCertificates() {
 
       <div className="container mx-auto my-10 p-5">
         <div className="flex justify-center">
-          <HeadingTwo headingTitle={"   Local Advanced Certificate Courses"} />
+          <HeadingTwo headingTitle={"Local Advanced Certificate Courses"} />
         </div>
 
         {/* The table section */}
