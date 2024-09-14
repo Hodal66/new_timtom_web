@@ -5,13 +5,17 @@ import AsideServices from "../../../components/sections/AsideServices";
 import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/hotelBooking1.jpg";
 import howImageIs from "/images/ServicesImages/hotelBooking.jpg";
+import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
 
 function HotelBooking() {
   return (
     <main className="bg-white">
       <header>
-        <div className="">
+        <div>
           <CompanyInfoNav />
+        </div>
+        <div className="lg:hidden">
+          <MainNavigationBar />
         </div>
         <section>
           <HeaderSection
@@ -25,8 +29,8 @@ function HotelBooking() {
           />
         </section>
       </header>
-      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
-        <section className="col-span-3">
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
+      <section className="lg:col-span-3">
           <AsideServices selectedServiceOption={"HotelBooking"} />
         </section>
         <section className="col-span-9">

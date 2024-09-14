@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
+// import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
 import HeaderSection from "../../components/sections/HeaderSection";
 // import CoursesPage from "./CoursesPage";
@@ -13,6 +13,8 @@ import AsideGetAnyQuestion from "../../components/sections/AsideGetAnyQuestion";
 import HeadingOne from "../../components/Headings/HeadingOne";
 import { CourseData } from "../../database/static/CoursesData";
 import CoursesCard from "../../components/Cards/CoursesCard";
+import MainNavigationBar from "../../components/navBar/MainNavigationBar";
+import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 
 
 function CoursesIndex() {
@@ -36,8 +38,11 @@ function CoursesIndex() {
   return (
     <main className="bg-white">
     <header>
-      <div className={`bg-orange pt-32}`}>
-        <CompanyInfoNav />
+    <div>
+          <CompanyInfoNav/>
+        </div>
+      <div className="lg:hidden">
+        <MainNavigationBar />
       </div>
       <section >
         <HeaderSection
@@ -52,11 +57,11 @@ function CoursesIndex() {
         />
       </section>
     </header>
-    <main className={`px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12`}>
-      <section className="col-span-3">
+    <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
+    <section className="lg:col-span-3">
         {/* <AsideCourses /> ///////////////////////////////////
         /////////////////////////////////////////////////////////*/}
-    <aside>
+    <aside className="hidden lg:block">
       <main className="flex gap-8 flex-col text-white">
         <section className="flex gap-2 flex-col">
           <div className={`${style.asidePaddingEffect} ${isCategorySelected.All ? "border-l-4 border-orange" : ""} group`} onClick={()=>{setFilter("All");
@@ -178,12 +183,12 @@ function CoursesIndex() {
     </aside>
 
       </section>
-      <section className="col-span-9">
+      <section className="lg:col-span-9">
         {/* < CoursesPage/> //////////////////////////
         /////////////////////////////////////////////*/}
 <main>
       <HeadingOne headingTitle={"Courses Offered at Timtom Aviation"} />
-      <section className="grid grid-cols-2 gap-4 py-8">
+      <section className="grid lg:grid-cols-2 gap-4 py-8">
         {filteredDataContents.map((course) => {
           return (
             <div key={course.id}>

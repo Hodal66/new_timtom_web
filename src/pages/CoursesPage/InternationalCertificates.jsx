@@ -1,8 +1,10 @@
 import backgroundImage from "/images/bgImage/bg2.png";
-import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
+// import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
+import MainNavigationBar from "../../components/navBar/MainNavigationBar";
 import HeaderSection from "../../components/sections/HeaderSection";
 import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
 import HeadingTwo from "../../components/Headings/HeadingTwo";
+import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 
 function InternationalCertificates() {
   const courses = [
@@ -107,9 +109,12 @@ function InternationalCertificates() {
   return (
     <div>
       <header>
-        <div>
-          <CompanyInfoNav />
+      <div>
+          <CompanyInfoNav/>
         </div>
+        <div className="lg:hidden">
+        <MainNavigationBar />
+      </div>
         <HeaderSection
           backgroundImage={backgroundImage}
           MainHeading={<OtherSecondMainNavigationBar />}

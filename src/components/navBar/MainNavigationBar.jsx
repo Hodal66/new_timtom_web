@@ -4,23 +4,14 @@ import { useState } from "react";
 import IconClose from "../../assets/icons/IconClose";
 import IconRightArrow from "../../assets/icons/IconRightArrow";
 import IconDownArrow from "../../assets/icons/IconDownArrow";
-import { NavLinks } from "../../database/links/NavLinks";
-import { CourseData } from "../../database/static/CoursesData";
-import { ServicesDb } from "../../database/static/Services";
-// import { AiOutlineDown } from "react-icons/ai";
-// import Button1 from "../button/Button1";
+import { coursesLinkMobile, NavLinks, servicesLinkMobile } from "../../database/links/NavLinks";
+// import { ServicesDb } from "../../database/static/Services";
 
 function MainNavigationBar() {
   const [navMenu, setNavMenu] = useState(false); //in Mobile
   const [showService, setShowService] = useState(false); //in Mobile
   const [showCourse, setShowCourses] = useState(false); //in Mobile
   const [heading, setHeading] = useState("");
-  // const [homeMenu, setHomeMenu] = useState(true);
-  // const [aboutUsMenu, setAboutUsMenu] = useState(false);
-  // const [servicesMenu, setServicesMenu] = useState(false);
-  // const [coursesMenu, setCoursesMenu] = useState(false);
-  // const [contactUsMenu, setContactUsMenu] = useState(false);
-  // const [galleryMenu, setGalleryMenu] = useState(false);
 
   return (
     //Mobile View
@@ -64,9 +55,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   Home
                 </li>
               </Link>
@@ -76,9 +65,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   AboutUs
                 </li>
               </Link>
@@ -96,10 +83,10 @@ function MainNavigationBar() {
                 </div>
                 {showService && (
                   <ul className="flex flex-col gap-2 px-4">
-                    {ServicesDb.map((service) => (
+                    {servicesLinkMobile.map((service) => (
                       <div key={service.id}>
                         <Link
-                          to={`services/${service.link}`}
+                          to={service.linkname}
                           onClick={() => {
                             setNavMenu(!navMenu);
                           }}
@@ -107,7 +94,7 @@ function MainNavigationBar() {
                           <li
                             className={`py-2 border-b border-b-gray hover:text-orange`}
                           >
-                            {service.title}
+                            {service.subLinkTitle}
                           </li>
                         </Link>
                       </div>
@@ -129,10 +116,10 @@ function MainNavigationBar() {
                 </div>
                 {showCourse && (
                   <ul className="flex flex-col gap-2 px-4">
-                    {CourseData.map((course) => (
+                    {coursesLinkMobile.map((course) => (
                       <div key={course.id}>
                         <Link
-                          to={`/courses/${course.id}`}
+                          to={course.linkname}
                           onClick={() => {
                             setNavMenu(!navMenu);
                           }}
@@ -140,7 +127,7 @@ function MainNavigationBar() {
                           <li
                             className={`py-2 border-b border-b-gray hover:text-orange`}
                           >
-                            {course.courseName}
+                            {course.subLinkTitle}
                           </li>
                         </Link>
                       </div>
@@ -154,9 +141,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   ContactUs
                 </li>
               </Link>
@@ -166,9 +151,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   Gallery
                 </li>
               </Link>

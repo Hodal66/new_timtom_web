@@ -23,7 +23,7 @@ function CompanyInfoNav() {
                   strokeWidth={2}
                 />
                 <div className="flex flex-col justify-center items-center">
-                  <p className="text-sm text-gray-dark">Call Us Today</p>
+                  <p className="text-sm text-gray-dark no-select">Call Us Today</p>
                   <p>(+250)788519634</p>
                 </div>
               </li>
@@ -36,7 +36,7 @@ function CompanyInfoNav() {
                   strokeWidth={2}
                 />
                 <div className="flex flex-col justify-center items-center">
-                  <p className="text-sm text-gray-dark">Reply to this Email</p>
+                  <p className="text-sm text-gray-dark no-select">Reply to this Email</p>
                   <p>info@timtomaviation.com</p>
                 </div>
               </li>

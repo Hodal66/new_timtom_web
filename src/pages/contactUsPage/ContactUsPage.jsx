@@ -21,7 +21,7 @@ const ContactUs = () => {
 
   return (
     <div className="bg-gray-100 p-8">
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <MainNavigationBar/>
       </div>
       <div className="max-w-7xl mx-auto">

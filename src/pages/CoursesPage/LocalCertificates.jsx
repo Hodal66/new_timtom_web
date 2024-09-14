@@ -3,6 +3,7 @@ import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import HeaderSection from "../../components/sections/HeaderSection";
 import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
 import HeadingTwo from "../../components/Headings/HeadingTwo";
+import MainNavigationBar from "../../components/navBar/MainNavigationBar";
 
 function LocalCertificates() {
   const courses = [
@@ -47,8 +48,11 @@ function LocalCertificates() {
     <div>
       <header>
         <div>
-          <CompanyInfoNav />
+          <CompanyInfoNav/>
         </div>
+        <div className="lg:hidden">
+        <MainNavigationBar />
+      </div>
         <HeaderSection
           backgroundImage={backgroundImage}
           MainHeading={<OtherSecondMainNavigationBar />}

@@ -25,7 +25,7 @@ function HeaderSection({
   return (
     <div
       style={{ backgroundImage: `url(${backgroundImage})` }}
-      className={`h-80 w-full bg-cover bg-center ${style.heading1} text-black`}
+      className={`h-80 w-full bg-cover bg-center ${style.heading1} text-black pt-24 lg:pt-0`}
     >
       {MainHeading}
       <main className="px-4 grid grid-cols-1 gap-24 md:px-8 lg:px-32 pt-20">

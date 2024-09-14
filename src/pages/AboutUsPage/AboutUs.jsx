@@ -6,14 +6,14 @@ import TeacherTeam from "../../components/TeacherTeam";
 const AboutUs = () => {
   return (
     <div className="bg-gray-100 py-8 px-4 lg:px-12 md:px-8 ">
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <MainNavigationBar />
       </div>
       <div className="max-w-7xl mx-auto flex flex-col gap-8 md:gap-16 lg:gap-24 ">
         <section className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <img
-              src="/images/Aboutus/About3.png"
+              src="/images/Aboutus/AboutImage.JPG"
               alt="About Timtom Aviation"
               className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg mb-4 md:mb-0"
             />
@@ -117,17 +117,16 @@ const AboutUs = () => {
               </p>
             </div>
             <img
-              src="/images/Aboutus/About3.png"
+              src="/images/Aboutus/AboutUsImage3.jpg"
               alt="Our Mission"
               className="w-full h-80 sm:h-96 object-cover rounded-lg shadow-lg"
             />
           </div>
         </section>
-
         <section className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
-              src="/images/Aboutus/About3.png"
+               src="/images/Aboutus/AboutUsImage5.jpg"
               alt="Our Vision"
               className="w-full h-80 md:h-96 object-cover rounded-lg shadow-xl"
             />
@@ -217,7 +216,7 @@ const AboutUs = () => {
               </div>
             </div>
             <img
-              src="/images/Aboutus/About3.png"
+              src="/images/Aboutus/consultancyx.jpg"
               alt="Team of Consultants"
               className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg mb-4 md:mb-0"
             />

@@ -32,7 +32,7 @@ function Services({
 }) {
   return (
     <main className="h-full w-full md:pr-8 lg:pr-12">
-      <div className="bg-whiteWhite p-4 rounded-xl">
+      <div className="bg-whiteWhite p-2 lg:p-4 rounded-sm lg:rounded-xl">
         <img
           src={mainImage1}
           alt={altImage1}
@@ -52,16 +52,16 @@ function Services({
         <section>
           <HeadingTwo headingTitle={whyTitleHeading} />
           <Pragraph pragraphContent={whyMainPragraphContent} />
-          <div className="cardContainer grid grid-cols-2 gap-8 py-2">
+          <div className="cardContainer grid grid-cols-1 lg:grid-cols-2 gap-8 py-2">
             <div>
               <div className="flex gap-2 py-2">
-                <div>
+                <div className="scale-75 lg:scale-100">
                   <Progress1 />
                 </div>
                 <Pragraph pragraphContent={whyPragraphContent1} />
               </div>
               <div className="flex gap-2 py-2">
-                <div>
+              <div className="scale-75 lg:scale-100">
                   <Progress1 />
                 </div>
                 <Pragraph pragraphContent={whyPragraphContent2} />
@@ -69,13 +69,13 @@ function Services({
             </div>
             <div>
               <div className="flex gap-2 py-2">
-                <div>
+              <div className="scale-75 lg:scale-100">
                   <Progress1 />
                 </div>
                 <Pragraph pragraphContent={whyPragraphContent3} />
               </div>
               <div className="flex gap-2 py-2">
-                <div>
+              <div className="scale-75 lg:scale-100">
                   <Progress1 />
                 </div>
                 <Pragraph pragraphContent={whyPragraphContent4} />
@@ -83,15 +83,15 @@ function Services({
             </div>
           </div>
         </section>
-        <section className="grid grid-cols-5 gap-4">
-          <div className="col-span-2">
+        <section className="lg:grid grid-cols-5 gap-4">
+          <div className="lg:col-span-2">
             <img
               src={howMainImage}
               alt="This the Home Image on our services"
               className="h-full"
             />
           </div>
-          <div className="col-span-3 flex flex-col gap-4">
+          <div className="lg:col-span-3 flex flex-col gap-4">
             <HeadingTwo headingTitle={howTitleHeading} />
             <Pragraph pragraphContent={howMainPragraphContent} />
 

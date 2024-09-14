@@ -5,14 +5,18 @@ import AsideServices from "../../../components/sections/AsideServices";
 import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/AirTicket6.jpg";
 import howImageIs from "/images/ServicesImages/AirTicket4.jpg";
+import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
 
 function AirTicket() {
   return (
     <main className="bg-white">
       <header>
-        <div className="">
-          <CompanyInfoNav />
+      <div>
+          <CompanyInfoNav/>
         </div>
+        <div className="lg:hidden">
+        <MainNavigationBar />
+      </div>
         <section>
           <HeaderSection
             backgroundImage={backgroundImage}
@@ -25,11 +29,11 @@ function AirTicket() {
           />
         </section>
       </header>
-      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
-        <section className="col-span-3">
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
+        <section className="lg:col-span-3">
           <AsideServices selectedServiceOption={"AirTicket"} />
         </section>
-        <section className="col-span-9">
+        <section className="lg:col-span-9">
           <Services
             mainImage1={backgroundImage}
             altImage1={"Air Ticketing Service"}

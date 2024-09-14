@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
-import OtherFirstTopNavigationBar from "../../components/navBar/OtherFirstTopNavigationBar";
+import {  useState } from "react";
 import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import HeaderSection from "../../components/sections/HeaderSection";
 import backgroundImage from "/images/bgImage/bg2.png";
@@ -13,18 +12,12 @@ import HeadingThree from "../../components/Headings/HeadingThree";
 import SocialMedia from "../../components/footer/SocialMedia";
 import FileBronchule from "../../assets/icons/FileBronchule";
 import Button1 from "../../components/Buttons/Button1";
+import MainNavigationBar from "../../components/navBar/MainNavigationBar";
+
 // import { style } from "../../style";
 
 function CoursePage() {
-  const [isVisible, setIsVisible] = useState(true);
   const [showMoreContent, setShowMoreContent] = useState(false);
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsVisible(false);
-    }, 8000); // 60000 milliseconds = 1 minute
-
-    return () => clearTimeout(timeout);
-  }, []); // Runs only once when the component mounts
 
   let { moreInformation } = useParams();
   console.log("The Id of this Element is ", moreInformation);
@@ -37,10 +30,12 @@ function CoursePage() {
   return (
     <main className="bg-white">
       <header>
-        {isVisible && <OtherFirstTopNavigationBar />}
         <div className={`bg-orange pt-32}`}>
           <CompanyInfoNav />
         </div>
+        <div className="lg:hidden">
+        <MainNavigationBar />
+      </div>
         <HeaderSection
           backgroundImage={backgroundImage}
           MainHeading={<OtherSecondMainNavigationBar />}
@@ -52,17 +47,17 @@ function CoursePage() {
         />
       </header>
 
-      <main className={`ap-24 md:px-8 lg:px-12 py-16 grid grid-cols-6 gap-8`}>
-        <section className="col-span-4 ">
-          <div className="bg-whiteWhite p-4 rounded-xl h-[500px] ">
+      <main className={`px-4  md:px-8 lg:px-12 py-16 grid lg:grid-cols-6 gap-8`}>
+        <section className="lg:col-span-4 ">
+          <div className="bg-whiteWhite lg:p-4 p-2 lg:rounded-xl rounded-sm lg:h-[500px] ">
             <img
               src={newCourseData.image}
               alt={newCourseData.imageAlt}
-              className="w-full rounded-sm h-full"
+              className="w-full rounded-sm lg:h-full"
             />
           </div>
-          <div className="my-12">
-            <div className="bg-whiteWhite px-12 pb-12 pt-4 myShadow rounded-md">
+          <div className="lg:my-12 my-4">
+            <div className="bg-whiteWhite p-4 lg:px-12 pb-4 lg:pb-12  myShadow rounded-md">
               <HeadingTwo
                 headingTitle={"About Courses"}
                 classNameProps={"border-b-2 border-white w-full"}
@@ -70,7 +65,7 @@ function CoursePage() {
               <div className="py-2">
                 <Pragraph pragraphContent={newCourseData.aboutCourses[0]} classNameText={"font-medium"} />
 
-                <div className="grid grid-cols-2 gap-4 pb-2">
+                <div className="lg:grid grid-cols-2 gap-4 pb-2">
                   <Pragraph pragraphContent={newCourseData.aboutCourses[1]} />
                   <Pragraph pragraphContent={newCourseData.aboutCourses[2]} />
                 </div>
@@ -156,8 +151,8 @@ function CoursePage() {
             </div>
           </div>
         </section>
-        <aside className="col-span-2 sticky">
-          <section className="flex flex-col gap-4 p-8 border border-primary m-4 rounded-lg">
+        <aside className="lg:col-span-2 sticky">
+          <section className="flex flex-col gap-4 lg:p-8 p-4 border border-primary lg:m-4 rounded-lg">
             <div className="flex justify-between items-center">
               <div className="flex gap-2">
                 <div className="flex">
@@ -188,35 +183,35 @@ function CoursePage() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex justify-between items-center">
-                <span>Start Date </span>
+                <span className="font-bold">Start Date </span>
                 <span>{newCourseData.courseAsideContent[3]} </span>
               </div>
               <div className="flex justify-between items-center">
-                <span>Enrlled</span>
+                <span className="font-bold">Enrlled</span>
                 <span>{newCourseData.courseAsideContent[4]}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span>Lectures</span>
+                <span className="font-bold">Lectures</span>
                 <span>{newCourseData.courseAsideContent[5]}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span>Skill Level</span>
+                <span className="font-bold">Skill Level</span>
                 <span>{newCourseData.courseAsideContent[6]}</span>
               </div>
               <div className="flex justify-between items-center">
-                <nav>Language</nav>
+                <nav className="font-bold">Language</nav>
                 <nav>{newCourseData.courseAsideContent[7]}</nav>
               </div>
               <div className="flex justify-between items-center">
-                <nav>Quizzes</nav>
+                <nav className="font-bold">Quizzes</nav>
                 <nav>{newCourseData.courseAsideContent[8]}</nav>
               </div>
               <div className="flex justify-between items-center">
-                <nav>Certificate</nav>
+                <nav className="font-bold">Certificate</nav>
                 <nav>{newCourseData.courseAsideContent[9]}</nav>
               </div>
               <div className="flex justify-between items-center">
-                <nav>Pass Percentage</nav>
+                <nav className="font-bold">Pass Percentage</nav>
                 <nav>{newCourseData.courseAsideContent[10]}</nav>
               </div>
             </div>

@@ -9,7 +9,7 @@ function GalleryIndex() {
   return (
     <main className="bg-textWhite">
       <header>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <MainNavigationBar />
         </div>
         <div className={`bg-orange pt-32}`}>

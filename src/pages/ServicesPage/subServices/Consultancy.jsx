@@ -5,15 +5,19 @@ import AsideServices from "../../../components/sections/AsideServices";
 import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/consultancy1.jpeg";
 import howImageIs from "/images/ServicesImages/consultancy2.jpg";
+import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
 
 function Consultancy() {
 
   return (
     <main className="bg-white">
       <header>
-        <div className="">
-          <CompanyInfoNav />
+      <div>
+          <CompanyInfoNav/>
         </div>
+        <div className="lg:hidden">
+        <MainNavigationBar/>
+      </div>
         <section>
           <HeaderSection
             backgroundImage={backgroundImage}
@@ -26,11 +30,11 @@ function Consultancy() {
           />
         </section>
       </header>
-      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 grid grid-cols-12">
-        <section className="col-span-3">
+      <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
+      <section className="lg:col-span-3">
           <AsideServices selectedServiceOption={"Consultancy"} />
         </section>
-        <section className="col-span-9">
+        <section className="lg:col-span-9">
           <Services
             mainImage1={backgroundImage}
             altImage1={"Consultancy Services Image"}
