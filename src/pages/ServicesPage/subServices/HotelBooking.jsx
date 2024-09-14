@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import OtherFirstTopNavigationBar from "../../../components/navBar/OtherFirstTopNavigationBar";
 import CompanyInfoNav from "../../../components/navBar/CompanyInfoNav";
 import HeaderSection from "../../../components/sections/HeaderSection";
 import OtherSecondMainNavigationBar from "../../../components/navBar/OtherSecondNavigation";
@@ -9,20 +7,9 @@ import backgroundImage from "/images/ServicesImages/hotelBooking1.jpg";
 import howImageIs from "/images/ServicesImages/hotelBooking.jpg";
 
 function HotelBooking() {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsVisible(false);
-    }, 8000);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <main className="bg-white">
       <header>
-        {isVisible && <OtherFirstTopNavigationBar />}
         <div className="">
           <CompanyInfoNav />
         </div>

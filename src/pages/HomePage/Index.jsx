@@ -3,7 +3,6 @@ import MainNavigationBar from "../../components/navBar/MainNavigationBar";
 import TopNavigationBar from "../../components/navBar/TopNavigationBar";
 import ClientTestmonials from "./ClientTestmonials";
 import CoursesHome from "./coursesHome";
-// import CoursesSection from "./CoursesSection";
 import HeroArea from "./HeroArea";
 import ProfessionalExperty from "./ProfessionalExperty";
 import ServicesHome from "./ServicesHome";

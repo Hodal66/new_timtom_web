@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
-import OtherFirstTopNavigationBar from "../../components/navBar/OtherFirstTopNavigationBar";
 import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
 import HeaderSection from "../../components/sections/HeaderSection";
 // import CoursesPage from "./CoursesPage";
@@ -15,8 +14,8 @@ import HeadingOne from "../../components/Headings/HeadingOne";
 import { CourseData } from "../../database/static/CoursesData";
 import CoursesCard from "../../components/Cards/CoursesCard";
 
+
 function CoursesIndex() {
-    const [isVisible, setIsVisible] = useState(true);
     const [filter, setFilter] = useState("All");
     const [isCategorySelected, setIsCategorySelected] = useState({
       All:true,
@@ -34,20 +33,9 @@ function CoursesIndex() {
       }
     })
      
-    console.log(filteredDataContents);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-          setIsVisible(false);
-        }, 8000); // 60000 milliseconds = 1 minute
-    
-        return () => clearTimeout(timeout);
-      }, []); // Runs only once when the component mounts
-    
   return (
     <main className="bg-white">
     <header>
-      {isVisible && <OtherFirstTopNavigationBar />}
       <div className={`bg-orange pt-32}`}>
         <CompanyInfoNav />
       </div>

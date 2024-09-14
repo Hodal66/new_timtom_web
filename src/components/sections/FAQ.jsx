@@ -193,8 +193,7 @@ function FAQ() {
                 rel="noreferrer"
                 className="text-primary font-bold"
               >
-               
-               Through this Link Here! 
+                Through this Link Here! 
               </a>
             </div>
           )}

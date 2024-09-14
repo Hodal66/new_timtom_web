@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import OtherFirstTopNavigationBar from "../../../components/navBar/OtherFirstTopNavigationBar";
 import CompanyInfoNav from "../../../components/navBar/CompanyInfoNav";
 import HeaderSection from "../../../components/sections/HeaderSection";
 import OtherSecondMainNavigationBar from "../../../components/navBar/OtherSecondNavigation";
@@ -9,20 +7,9 @@ import backgroundImage from "/images/ServicesImages/AirTicket6.jpg";
 import howImageIs from "/images/ServicesImages/AirTicket4.jpg";
 
 function AirTicket() {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsVisible(false);
-    }, 8000); // Set the visibility timeout for the navigation bar
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <main className="bg-white">
       <header>
-        {isVisible && <OtherFirstTopNavigationBar />}
         <div className="">
           <CompanyInfoNav />
         </div>

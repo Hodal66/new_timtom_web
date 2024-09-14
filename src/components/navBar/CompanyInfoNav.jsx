@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Message from "../../assets/icons/Message";
+import Location from "../../assets/icons/Location";
+import CallIcon from "../../assets/icons/CallIcon";
 
 function CompanyInfoNav() {
   return (
@@ -11,14 +13,14 @@ function CompanyInfoNav() {
             <Link to={"/"}>
               <img src="/images/Logo1.png" alt="" className="w-40 h-20" />
             </Link>
-            <ul className="flex ga">
+            <ul className="flex">
               <li className="flex px-2">
-                <Message 
-                 width={60}
-                 height={60}
-                 fill={"none"}
-                 strokeCollor={"red"}
-                 strokeWidth={2}
+                <CallIcon
+                  width={60}
+                  height={60}
+                  fill={"red"}
+                  strokeCollor={"red"}
+                  strokeWidth={2}
                 />
                 <div className="flex flex-col justify-center items-center">
                   <p className="text-sm text-gray-dark">Call Us Today</p>
@@ -26,12 +28,12 @@ function CompanyInfoNav() {
                 </div>
               </li>
               <li className="flex px-2">
-                <Message 
-                 width={60}
-                 height={60}
-                 fill={"none"}
-                 strokeCollor={"red"}
-                 strokeWidth={2}
+                <Message
+                  width={60}
+                  height={60}
+                  fill={"none"}
+                  strokeCollor={"red"}
+                  strokeWidth={2}
                 />
                 <div className="flex flex-col justify-center items-center">
                   <p className="text-sm text-gray-dark">Reply to this Email</p>
@@ -39,12 +41,12 @@ function CompanyInfoNav() {
                 </div>
               </li>
               <li className="flex px-2">
-                <Message 
-                 width={60}
-                 height={60}
-                 fill={"none"}
-                 strokeCollor={"red"}
-                 strokeWidth={2}
+                <Location
+                  width={60}
+                  height={60}
+                  fill={"none"}
+                  strokeCollor={"red"}
+                  strokeWidth={2}
                 />
                 <div className="flex flex-col justify-center items-center">
                   <p className="text-sm text-gray-dark">Kicukiro-Remera</p>
@@ -52,7 +54,6 @@ function CompanyInfoNav() {
                 </div>
               </li>
             </ul>
-         
           </div>
         </div>
       </div>

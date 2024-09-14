@@ -1,35 +1,46 @@
 import { useForm } from 'react-hook-form';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import SocialMedia from "../../components/footer/SocialMedia";
 import MainNavigationBar from '../../components/navBar/MainNavigationBar';
 
 const ContactUs = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
   const onSubmit = (data) => {
     // Save the data to local storage
-    const formData = JSON.parse(localStorage.getItem('formData')) || [];
+    const formData = JSON.parse(localStorage.getItem("formData")) || [];
     formData.push(data);
-    localStorage.setItem('formData', JSON.stringify(formData));
-    alert('Form submitted successfully!');
+    localStorage.setItem("formData", JSON.stringify(formData));
+    alert("Form submitted successfully!");
     reset(); // Reset form fields
   };
 
   return (
     <div className="bg-gray-100 p-8">
-       <div className="md:hidden">
-      <MainNavigationBar/>
+      <div className="md:hidden">
+        <MainNavigationBar/>
       </div>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Contact Us</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+          Contact Us
+        </h2>
 
         <div className="flex flex-col md:flex-row justify-between">
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg md:w-1/2 mb-8 md:mb-0 md:mr-4">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Get in Touch</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">
+              Get in Touch
+            </h3>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="name"
+                >
                   Name
                 </label>
                 <input
@@ -37,12 +48,19 @@ const ContactUs = () => {
                   id="name"
                   type="text"
                   placeholder="Your Name"
-                  {...register('name', { required: 'Name is required' })}
+                  {...register("name", { required: "Name is required" })}
                 />
-                {errors.name && <span className="text-red text-sm">{errors.name.message}</span>}
+                {errors.name && (
+                  <span className="text-red text-sm">
+                    {errors.name.message}
+                  </span>
+                )}
               </div>
               <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="email"
+                >
                   Email
                 </label>
                 <input
@@ -50,19 +68,26 @@ const ContactUs = () => {
                   id="email"
                   type="email"
                   placeholder="Your Email"
-                  {...register('email', {
-                    required: 'Email is required',
+                  {...register("email", {
+                    required: "Email is required",
                     pattern: {
                       value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-                      message: 'Invalid email address'
-                    }
+                      message: "Invalid email address",
+                    },
                   })}
                 />
-                {errors.email && <span className="text-red text-sm">{errors.email.message}</span>}
+                {errors.email && (
+                  <span className="text-red text-sm">
+                    {errors.email.message}
+                  </span>
+                )}
               </div>
-    
+
               <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="message"
+                >
                   Message
                 </label>
                 <textarea
@@ -70,12 +95,19 @@ const ContactUs = () => {
                   id="message"
                   rows="4"
                   placeholder="Your Message"
-                  {...register('message', { required: 'Message is required' })}
+                  {...register("message", { required: "Message is required" })}
                 ></textarea>
-                {errors.message && <span className="text-red text-sm">{errors.message.message}</span>}
+                {errors.message && (
+                  <span className="text-red text-sm">
+                    {errors.message.message}
+                  </span>
+                )}
               </div>
               <div className="text-center">
-                <button className="bg-blue hover:bg-white text-white hover:text-blue hite font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline" type="submit">
+                <button
+                  className="bg-blue hover:bg-white text-white hover:text-blue hite font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="submit"
+                >
                   Send Message
                 </button>
               </div>
@@ -84,32 +116,28 @@ const ContactUs = () => {
 
           {/* Contact Information */}
           <div className="bg-white p-8 rounded-lg shadow-lg md:w-1/2 md:ml-4">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">
+              Contact Information
+            </h3>
             <p className="text-gray-700 mb-4">
-              <strong>Address:</strong> Kanombe, Kigali, Rwanda
+              <strong>Address:</strong> Rwanda, Kigali, Kicukiro, Remera - Kanombe.
             </p>
             <p className="text-gray-700 mb-4">
-              <strong>Phone:</strong> +250 788 519 634
+              <strong>Street No:</strong> Giporoso, Union plaza, 2nd floor
+
+towards kabeza road, KK 18 AV
+            </p>
+            <p className="text-gray-700 mb-4">
+              <strong>Phone:</strong> +250 788 519 634 | +250 788 631 197
             </p>
             <p className="text-gray-700 mb-4">
               <strong>Email:</strong> info@timtomaviation.com
             </p>
             <div className="mt-6">
-              <h4 className="text-xl font-bold text-gray-800 mb-4">Follow Us</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-800 hover:text-blue-600">
-                  <FontAwesomeIcon icon={faFacebook} size="2x" />
-                </a>
-                <a href="#" className="text-gray-800 hover:text-pink-500">
-                  <FontAwesomeIcon icon={faInstagram} size="2x" />
-                </a>
-                <a href="#" className="text-gray-800 hover:text-green-500">
-                  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-                </a>
-                <a href="#" className="text-gray-800 hover:text-blue-700">
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                </a>
-              </div>
+              <h4 className="text-xl font-bold text-gray-800 mb-4">
+                Follow Us
+              </h4>
+              <SocialMedia />
             </div>
           </div>
         </div>

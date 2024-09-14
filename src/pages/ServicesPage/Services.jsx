@@ -132,7 +132,9 @@ function Services({
         <section>
           <FAQ />
         </section>
+     
       </section>
+     
     </main>
   );
 }
