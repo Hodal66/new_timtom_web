@@ -2,16 +2,17 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import AdminLayout from './AdminLayout';
 import Overview from './Overview';
 import SubmitedInfo from './SubmitedInfo';
+import Users from "./Users";
 // import Houses from './Houses';
-
 
 const AdminDashboard = () => {
   return (
     <AdminLayout>
-      <Routes> 
+      <Routes>
         <Route path="overview" element={<Overview />} />
         {/* <Route path="houses" element={<Houses />} /> */}
-        <Route path="submissions" element={<SubmitedInfo/>} />
+        <Route path="submissions" element={<SubmitedInfo />} />
+        <Route path="users" element={<Users />} />
         <Route path="*" element={<Navigate to="overview" />} />
       </Routes>
     </AdminLayout>

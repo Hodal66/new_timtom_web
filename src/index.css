@@ -68,3 +68,11 @@ tr:hover {
   transition: background-color 0.3s ease;
   /* Smooth hover transition */
 }
+
+/* Disable text selection for a specific element */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

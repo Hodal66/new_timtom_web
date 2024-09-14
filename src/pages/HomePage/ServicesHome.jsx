@@ -1,6 +1,4 @@
-import HeadingOne from "../../components/Headings/HeadingOne";
 import HeadingThree from "../../components/Headings/HeadingThree";
-import Pragraph from "../../components/Pragraph";
 import { style } from "../../style";
 import Slider from "react-slick";
 import ServicesCard from "../../components/Cards/ServicesCard";
@@ -48,29 +46,7 @@ function ServicesHome() {
         <div className="header_container">
           <header className={`${style.flexColCenterAlignCenter}`}>
             <HeadingThree headingTitle={"The Timtom Aviation services"} />
-            <HeadingOne headingTitle={"This is Our Services & Solution"} />
-            <div
-              className={`${style.flexColCenterAlignCenter} gap-0 text-black`}
-            >
-              <Pragraph
-                pragraphContent={
-                  " We have partnership with internationally recognized Aviation\
-          management institutes from CANADA "
-                }
-              />
-              <Pragraph
-                pragraphContent={
-                  "and INDIA We also offer other services related to hospitality and tourism, these include;\
-           "
-                }
-              />
 
-              <Pragraph
-                pragraphContent={
-                  "  Air ticketing, Hotel reservation and Visa application"
-                }
-              />
-            </div>
           </header>
         </div>
         <section className=" text-black">

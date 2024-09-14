@@ -4,7 +4,7 @@ function Pragraph({ pragraphContent, classNameText }) {
     <div className={` text-lg font-normal text-justify py-2`}>
       <span className={`${classNameText}`}>{pragraphContent}</span>
     </div>
-  );
+  ); 
 }
 
 export default Pragraph;

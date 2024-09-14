@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-no-duplicate-props */
-function CallIcon({height,width,fill, strokeColor,strokeWidth,strokeLinejoin}) {
+function CallIcon({height,
+  width,
+  fill, 
+  strokeColor,
+  strokeWidth,
+  strokeLinejoin}) {
   return (
     <div>
       <svg
           width={width}
           height={height}
-          viewBox="0 0 24 24"
+          viewBox="0 0 44 45"
           fill={fill}
           xmlns="http://www.w3.org/2000/svg"
       >

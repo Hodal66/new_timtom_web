@@ -4,23 +4,14 @@ import { useState } from "react";
 import IconClose from "../../assets/icons/IconClose";
 import IconRightArrow from "../../assets/icons/IconRightArrow";
 import IconDownArrow from "../../assets/icons/IconDownArrow";
-import { NavLinks } from "../../database/links/NavLinks";
-import { CourseData } from "../../database/static/CoursesData";
-import { ServicesDb } from "../../database/static/Services";
-// import { AiOutlineDown } from "react-icons/ai";
-// import Button1 from "../button/Button1";
+import { coursesLinkMobile, NavLinks, servicesLinkMobile } from "../../database/links/NavLinks";
+// import { ServicesDb } from "../../database/static/Services";
 
 function MainNavigationBar() {
   const [navMenu, setNavMenu] = useState(false); //in Mobile
   const [showService, setShowService] = useState(false); //in Mobile
   const [showCourse, setShowCourses] = useState(false); //in Mobile
   const [heading, setHeading] = useState("");
-  // const [homeMenu, setHomeMenu] = useState(true);
-  // const [aboutUsMenu, setAboutUsMenu] = useState(false);
-  // const [servicesMenu, setServicesMenu] = useState(false);
-  // const [coursesMenu, setCoursesMenu] = useState(false);
-  // const [contactUsMenu, setContactUsMenu] = useState(false);
-  // const [galleryMenu, setGalleryMenu] = useState(false);
 
   return (
     //Mobile View
@@ -64,9 +55,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   Home
                 </li>
               </Link>
@@ -76,9 +65,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   AboutUs
                 </li>
               </Link>
@@ -96,10 +83,10 @@ function MainNavigationBar() {
                 </div>
                 {showService && (
                   <ul className="flex flex-col gap-2 px-4">
-                    {ServicesDb.map((service) => (
+                    {servicesLinkMobile.map((service) => (
                       <div key={service.id}>
                         <Link
-                          to={`services/${service.link}`}
+                          to={service.linkname}
                           onClick={() => {
                             setNavMenu(!navMenu);
                           }}
@@ -107,7 +94,7 @@ function MainNavigationBar() {
                           <li
                             className={`py-2 border-b border-b-gray hover:text-orange`}
                           >
-                            {service.title}
+                            {service.subLinkTitle}
                           </li>
                         </Link>
                       </div>
@@ -129,10 +116,10 @@ function MainNavigationBar() {
                 </div>
                 {showCourse && (
                   <ul className="flex flex-col gap-2 px-4">
-                    {CourseData.map((course) => (
+                    {coursesLinkMobile.map((course) => (
                       <div key={course.id}>
                         <Link
-                          to={`/courses/${course.id}`}
+                          to={course.linkname}
                           onClick={() => {
                             setNavMenu(!navMenu);
                           }}
@@ -140,7 +127,7 @@ function MainNavigationBar() {
                           <li
                             className={`py-2 border-b border-b-gray hover:text-orange`}
                           >
-                            {course.courseName}
+                            {course.subLinkTitle}
                           </li>
                         </Link>
                       </div>
@@ -154,9 +141,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   ContactUs
                 </li>
               </Link>
@@ -166,9 +151,7 @@ function MainNavigationBar() {
                   setNavMenu(!navMenu);
                 }}
               >
-                <li
-                  className={`py-2 border-b border-b-gray hover:text-orange`}
-                >
+                <li className={`py-2 border-b border-b-gray hover:text-orange`}>
                   Gallery
                 </li>
               </Link>
@@ -185,7 +168,7 @@ function MainNavigationBar() {
             </Link>
             <ul className="flex gap-8 justify-center items-center">
               <Link to={"/"}>
-                <li className="text-primary font-semibold hover:hover:transition hover:duration-150">
+                <li className="text-primary font-black hover:transition hover:duration-150 hover:bg-whiteWhite rounded-md p-4">
                   Home
                 </li>
               </Link>
@@ -210,11 +193,11 @@ function MainNavigationBar() {
                     mt-1 bg-white rotate-45"
                           ></div>
                         </div>
-                        <ul className="bg-white p-5">
+                        <ul className="bg-white rounded-lg">
                           {link.sublinks.map((mysublinks) => (
                             <li
                               key={mysublinks.id}
-                              className="text-black font-semibold hover:hover:transition hover:duration-150 py-2"
+                              className="hover:text-primary font-semibold hover:transition hover:duration-150 hover:bg-whiteWhite p-4 rounded-md"
                             >
                               <Link to={mysublinks.linkname}>
                                 {mysublinks.subLinkTitle}
@@ -228,19 +211,25 @@ function MainNavigationBar() {
                 </div>
               ))}
               <Link to={"/about"}>
-                <li className="text-black font-semibold hover:hover:transition hover:duration-150">
+                <li className="text-black font-semibold hover:transition hover:duration-150 hover:bg-whiteWhite rounded-md p-4">
                   About
                 </li>
               </Link>
               <Link to={"/contact"}>
-                <li className="text-black font-semibold hover:hover:transition hover:duration-150">
+                <li className="text-black font-semibold hover:transition hover:duration-150 hover:bg-whiteWhite rounded-md p-4">
                   ContactUs
                 </li>
               </Link>
               <Link to={"/gallery"}>
                 {" "}
-                <li className="text-black font-semibold hover:hover:transition hover:duration-150">
+                <li className="text-black font-semibold hover:transition hover:duration-150 hover:bg-whiteWhite rounded-md p-4">
                   Gallery
+                </li>
+              </Link>
+              <Link to={"/admin"}>
+                {" "}
+                <li className="text-black bg-primary font-semibold hover:transition hover:duration-150 hover:bg-secondary rounded-md p-4">
+                  Login
                 </li>
               </Link>
             </ul>

@@ -18,6 +18,7 @@ import AdvancedLoader from "./components/AdvancedLoader"; // Import the new Adva
 import LocalCertificates from "./pages/CoursesPage/LocalCertificates";
 import LocalAdvancedCertificates from "./pages/CoursesPage/LocalAdvancedCertificates";
 import InternationalCertificates from "./pages/CoursesPage/InternationalCertificates";
+import Paternership from "./pages/HomePage/Paternership";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -75,6 +76,7 @@ function App() {
           {/*Admin Dashboards*/}
           <Route path="/admin/*" element={<AdminDashboard />} />
         </Routes>
+        <Paternership />
         <FooterComponent />
       </BrowserRouter>
     </div>

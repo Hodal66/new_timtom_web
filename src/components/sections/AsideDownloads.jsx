@@ -1,23 +1,11 @@
 import IconUser from "../../assets/icons/IconUser";
 function AsideDownloads() {
   const handleDownloadPDF = () => {
-    // Get the element to capture When you want content inside the file
-    // const element = document.getElementById('pdf-content');
-
-    // html2canvas(element)
-    //   .then((canvas) => {
-    //     const imgData = canvas.toDataURL('image/png');
-    //     const pdf = new jsPDF();
-    //     pdf.addImage(imgData, 'PNG', 0, 0);
-    //     pdf.save('download.pdf');
-    //   });
-
-    //When we embed file inside our codes
-    window.open("src/assets/myPDFs/test.pdf", "_blank");
+    window.open("/myPDFs/Aviation_courses_2024.pdf", "_blank");
   };
 
   const handleDownloadPdf2 = () => {
-    window.open("/src/assets/myPDFs/1_merged.pdf", "_blank");
+    window.open("/myPDFs/Aviation_courses_2024.pdf", "_blank");
   };
   return (
     <main id="pdf-content" className="text-black">

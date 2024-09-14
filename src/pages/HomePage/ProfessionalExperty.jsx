@@ -40,21 +40,17 @@ function ProfessionalExperty() {
       </section>
       {/* Cards Container */}
       <section className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-        {Card1Data.map(({ id, number, content, spanned }) => {
-          return (
-            <div key={id} className=" bg-white max-h-96 p-8 flex flex-col gap-4">
-              <div className="flex justify-between">
-                <p className="krona-one-regular text-3xl text-pink2">
-                  {number} 
-                </p>
-                {/* <p>{iconContent}</p> */}
-              </div>
-              <p>
-                {content} <span className="font-semibold">{spanned}</span>
-              </p>
+        {Card1Data.map(({ id, number, content, spanned }) => (
+          <div key={id} className=" bg-white max-h-96 p-8 flex flex-col gap-4">
+            <div className="flex justify-between">
+              <p className="krona-one-regular text-3xl text-pink2">{number}</p>
+              {/* <p>{iconContent}</p> */}
             </div>
-          );
-        })}
+            <p>
+              {content} <span className="font-semibold">{spanned}</span>
+            </p>
+          </div>
+        ))}
       </section>
     </div>
   );

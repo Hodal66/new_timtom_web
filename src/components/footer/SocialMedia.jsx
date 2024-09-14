@@ -3,29 +3,19 @@ import { Link } from "react-router-dom";
 import { style } from "../../style";
 
 function SocialMedia({
-  phoneNumber,
-  facebookUsername,
-  instagramUsername,
-  linkedInUsername,
-  twitterUsername,
+  phoneNumber="+250788519634",
+  facebookUsername="imtom.aviation",
+  instagramUsername="timtomaviation7",
+  linkedInUsername="timtom-aviation-ltd-901301271",
+  twitterUsername="TimtomAviation",
 }) {
 
   return (
     <div>
       <div className="flex gap-4 ">
-        <Link
-          to={`https://www.facebook.com/${facebookUsername}`}
-          target="_blank"
-        >
-          <img
-            src="/images/SocialMedia/Facebook.png"
-            alt=""
-            className={`${style.hoverTransitionScale}`}
-          />
-        </Link>
         <Link to={`https://wa.me/${phoneNumber}`} target="_blank">
           <img
-            src="/public/images/SocialMedia/WhatSap.png"
+            src="/images/SocialMedia/WhatSap.png"
             alt=""
             className={`${style.hoverTransitionScale}`}
           />
@@ -43,6 +33,16 @@ function SocialMedia({
         <Link to={`https://twitter.com/${twitterUsername}`} target="_blank">
           <img
             src="/images/SocialMedia/Twitter.png"
+            alt=""
+            className={`${style.hoverTransitionScale}`}
+          />
+        </Link>
+        <Link
+          to={`https://www.facebook.com/${facebookUsername}`}
+          target="_blank"
+        >
+          <img
+            src="/images/SocialMedia/Facebook.png"
             alt=""
             className={`${style.hoverTransitionScale}`}
           />

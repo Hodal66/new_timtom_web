@@ -12,11 +12,11 @@ function Whatsap({
       <svg
         width={width}
         height={height}
-        viewBox="0 0  60 60"
+        viewBox="1 1"
         fill={fill}
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect y="0.5" width={width} height={height} rx="22" fill={fill} />
+        <rect y="2" width={100} height={height} rx="44" fill={fill} />
         <path
           fillRule="evenodd"
           clipRule="evenodd"

@@ -3,52 +3,49 @@ import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import HeaderSection from "../../components/sections/HeaderSection";
 import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
 import HeadingTwo from "../../components/Headings/HeadingTwo";
+import MainNavigationBar from "../../components/navBar/MainNavigationBar";
+import { CourseData } from "../../database/static/CoursesData";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { ClipLoader } from "react-spinners";
 
 function LocalAdvancedCertificates() {
-  const courses = [
-    {
-      courseName: "Personnel Licensing",
-      duration: "1 month",
-      fees: "300,000 RWF",
-    },
-    {
-      courseName: "Auditing Techniques in Civil Aviation",
-      duration: "1 month",
-      fees: "300,000 RWF",
-    },
-    {
-      courseName: "Safety Management System",
-      duration: "1 month",
-      fees: "300,000 RWF",
-    },
-    {
-      courseName: "USOAP CMA AUDIT",
-      duration: "1 month",
-      fees: "400,000 RWF",
-    },
-    {
-      courseName: "Aviation Management",
-      duration: "2 months",
-      fees: "400,000 RWF",
-    },
-    {
-      courseName: "Airport Operations",
-      duration: "1 month",
-      fees: "200,000 RWF",
-    },
-    {
-      courseName: "Airline Marketing",
-      duration: "1 month",
-      fees: "200,000 RWF",
-    },
-    // Add any additional courses if required
-  ];
+  const [loading, setLoading] = useState(false); // Loading state
+  const navigate = useNavigate();
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 20,
+      behavior: "smooth",
+    });
+  };
+  const handleLinkClick = (path) => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      navigate(`/courses/${path}`);
+      scrollToTop();
+    }, 300);
+  };
+  const getAllLocalAdvancedCourses = CourseData.filter(
+    (localAdvancedCourse) => {
+      return localAdvancedCourse.typeOfCetificate == "Advanced Certificate";
+    }
+  );
 
   return (
     <div>
       <header>
+        {loading && (
+          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <ClipLoader color={"#ffffff"} loading={loading} size={50} />
+          </div>
+        )}
         <div>
           <CompanyInfoNav />
+        </div>
+        <div className="lg:hidden">
+          <MainNavigationBar />
         </div>
         <HeaderSection
           backgroundImage={backgroundImage}
@@ -80,21 +77,26 @@ function LocalAdvancedCertificates() {
                   Duration
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
-                  Fees
+                  Training Fees
                 </th>
               </tr>
             </thead>
             <tbody className="text-gray-600">
-              {courses.map((course, index) => (
+              {getAllLocalAdvancedCourses.map((course, index) => (
                 <tr
                   key={index}
                   className={`border-b border-gray-200 ${
                     index % 2 === 0 ? "bg-gray-100" : "bg-white"
                   } hover:bg-blue-100 transition-colors duration-200`}
                 >
-                  <td className="py-3 px-6">{course.courseName}</td>
-                  <td className="py-3 px-6">{course.duration}</td>
-                  <td className="py-3 px-6">{course.fees}</td>
+                  <td
+                    className="py-3 px-6"
+                    onClick={() => handleLinkClick(course.id)}
+                  >
+                    {course.courseName}
+                  </td>
+                  <td className="py-3 px-6">{course.duration} Months</td>
+                  <td className="py-3 px-6">{course.money}</td>
                 </tr>
               ))}
             </tbody>

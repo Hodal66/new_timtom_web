@@ -6,29 +6,29 @@ import { NavLink } from 'react-router-dom';
 const AdminLayout = ({ children }) => {
   return (
     <div className="flex h-screen">
-      <aside className="w-64 bg-gray-800 text-white flex-shrink-0">
+      <aside className="w-64 bg-primary text-white flex-shrink-0">
         <div className="p-4">
           <h1 className="text-2xl font-bold">Admin Dashboard</h1>
         </div>
-        <nav className="mt-4 bg-gray h-screen">
+        <nav className="mt-4 bg-primary h-screen">
           <NavLink
             to="/admin/overview"
-            className="block px-4 py-2 text-blue hover:bg-textWhite"
+            className="block px-4 py-2 hover:bg-secondary text-white"
             activeClassName="bg-blue"
           >
             <FaHome className="inline-block mr-2" /> Overview
           </NavLink>
           <NavLink
-            to="/admin/houses"
-            className="block px-4 py-2 text-blue hover:bg-textWhite"
-            activeClassName="bg-gray-900"
+            to="/admin/users"
+            className="block px-4 py-2 hover:bg-secondary text-white"
+            activeClassName="bg-primary"
           >
-            <FaList className="inline-block mr-2" /> Houses
+            <FaList className="inline-block mr-2" /> Users
           </NavLink>
           <NavLink
             to="/admin/submissions"
-            className="block px-4 py-2 text-blue hover:bg-textWhite"
-            activeClassName="bg-gray-900"
+            className="block px-4 py-2 hover:bg-secondary text-white"
+            activeClassName="bg-primary"
           >
             <FaEnvelope className="inline-block mr-2" /> Submissions
           </NavLink>
@@ -47,7 +47,7 @@ const AdminLayout = ({ children }) => {
             />
           </div>
         </header>
-        <main className="flex-1 overflow-auto p-4 bg-gray-100">
+        <main className="flex-1 overflow-auto p-4 bg-primary-100">
           {children}
         </main>
       </div>

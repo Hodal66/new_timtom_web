@@ -5,6 +5,13 @@ import Button1 from "../Buttons/Button1";
 
 /* eslint-disable react/prop-types */
 function CoursesCard({ image, money, imageAlt, title, content, myId }) {
+  const getShortDescription = (description) => {
+    if (!description) {
+      return ""; // Ensure the content is defined
+    }
+    return description.split(" ").slice(0, 30).join(" ") + "...";
+  };
+
   return (
     <div className="card_container grid grid-cols-1 md:h-auto shadow-md rounded-lg hover:scale-105 hover:shadow-lg hover:transition duration-75 m-4">
       <div className="image_container h-64">
@@ -16,7 +23,10 @@ function CoursesCard({ image, money, imageAlt, title, content, myId }) {
       </div>
       <div className="content_container flex flex-col gap-2 px-4 py-4 justify-between min-h-[300px]">
         <HeadingThree headingTitle={title} />
-        <Pragraph pragraphContent={content} classNameText={"font-normal"} />
+
+        {/* Updated the getShortDescription to handle undefined content */}
+        <Pragraph pragraphContent={getShortDescription(content)} classNameText={"font-normal"} />
+        
         <div className="py-4 grid grid-cols-2 justify-between items-center">
           <p className="font-medium text-xl">{money} Rwf</p>
           <Link to={`/courses/${myId}`} className="flex justify-end">
