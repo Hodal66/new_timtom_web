@@ -13,16 +13,6 @@ function SocialMedia({
   return (
     <div>
       <div className="flex gap-4 ">
-        <Link
-          to={`https://www.facebook.com/${facebookUsername}`}
-          target="_blank"
-        >
-          <img
-            src="/images/SocialMedia/Facebook.png"
-            alt=""
-            className={`${style.hoverTransitionScale}`}
-          />
-        </Link>
         <Link to={`https://wa.me/${phoneNumber}`} target="_blank">
           <img
             src="/public/images/SocialMedia/WhatSap.png"
@@ -43,6 +33,16 @@ function SocialMedia({
         <Link to={`https://twitter.com/${twitterUsername}`} target="_blank">
           <img
             src="/images/SocialMedia/Twitter.png"
+            alt=""
+            className={`${style.hoverTransitionScale}`}
+          />
+        </Link>
+        <Link
+          to={`https://www.facebook.com/${facebookUsername}`}
+          target="_blank"
+        >
+          <img
+            src="/images/SocialMedia/Facebook.png"
             alt=""
             className={`${style.hoverTransitionScale}`}
           />

@@ -85,7 +85,7 @@ function CoursesIndex() {
               />
             </span>
           </div>
-          <div className={`${style.asidePaddingEffect} ${isCategorySelected.civilAviation ? "border-l-4 border-orange" : ""} group`} onClick={()=>{setFilter("Aviation");
+          <div className={`${style.asidePaddingEffect} ${isCategorySelected.civilAviation ? "border-l-4 border-orange" : ""} group`} onClick={()=>{setFilter("civilAviation");
           setIsCategorySelected({
             All:false,
             civilAviation:true,
@@ -106,7 +106,7 @@ function CoursesIndex() {
               />
             </span>
           </div>
-           <div className={`${style.asidePaddingEffect} ${isCategorySelected.airlineAndAirport ? "border-l-4 border-orange" : ""} group`} onClick={()=>{setFilter("airlineAndAiport");
+           <div className={`${style.asidePaddingEffect} ${isCategorySelected.airlineAndAirport ? "border-l-4 border-orange" : ""} group`} onClick={()=>{setFilter("airlineAndAirport");
           setIsCategorySelected({
             All:false,
             civilAviation:false,
@@ -193,7 +193,7 @@ function CoursesIndex() {
           return (
             <div key={course.id}>
               <CoursesCard
-                content={course.courseName}
+                content={course.smallDescription}
                 image={course.image}
                 imageAlt={course.imageAlt}
                 link={course.link}

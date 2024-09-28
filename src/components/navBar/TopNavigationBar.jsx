@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { style } from "../../style";
+import SocialMedia from "../footer/SocialMedia";
 
 /* eslint-disable react/no-unknown-property */
 function TopNavigationBar() {
@@ -10,8 +9,8 @@ function TopNavigationBar() {
     "timtom-aviation-ltd-901301271/?originalSubdomain=rw";
   const twitterUsername = "TimtomAviation";
   return (
-    <div className="hidden lg:grid grid-cols-2 absolute z-20 w-full">
-      <ul className="flex gap-2 bg-gradient-to-r from-primary to-secondary text-white text-md font-semibold pl-8 cursor-no-drop textWhite">
+    <div className="hidden lg:flex bg-gradient-to-r from-primary to-secondary justify-between absolute px-8 z-20 w-full">
+      <ul className="flex gap-2  text-white text-md font-semibold cursor-no-drop textWhite">
         <li className="flex justify-center items-center">
           <svg
             width="44"
@@ -69,53 +68,14 @@ function TopNavigationBar() {
           <span>kabeza road, KK 18 AV</span>
         </li>
       </ul>
-      <div className="flex justify-end pr-8 bg-gray-light py-2">
-        <div className="flex gap-4 ">
-          <Link
-            to={`https://www.facebook.com/${facebookUsername}`}
-            target="_blank"
-          >
-            <img
-              src="/images/SocialMedia/Facebook.png"
-              alt=""
-              className={`${style.hoverTransitionScale}`}
-            />
-          </Link>
-          <Link to={`https://wa.me/${phoneNumber}`} target="_blank">
-            <img
-              src="/public/images/SocialMedia/WhatSap.png"
-              alt=""
-              className={`${style.hoverTransitionScale}`}
-            />
-          </Link>
-          <Link
-            to={`https://www.linkedin.com/in/${linkedInUsername}`}
-            target="_blank"
-          >
-            <img
-              src="/images/SocialMedia/LinkedIn.png"
-              alt=""
-              className={`${style.hoverTransitionScale}`}
-            />
-          </Link>
-          <Link to={`https://twitter.com/${twitterUsername}`} target="_blank">
-            <img
-              src="/images/SocialMedia/Twitter.png"
-              alt=""
-              className={`${style.hoverTransitionScale}`}
-            />
-          </Link>
-          <Link
-            to={`https://www.instagram.com/${instagramUsername}`}
-            target="_blank"
-          >
-            <img
-              src="/images/SocialMedia/Instagram.png"
-              alt=""
-              className={`${style.hoverTransitionScale}`}
-            />
-          </Link>
-        </div>
+      <div className="flex justify-end py-2">
+        <SocialMedia
+          phoneNumber={phoneNumber}
+          facebookUsername={facebookUsername}
+          instagramUsername={instagramUsername}
+          linkedInUsername={linkedInUsername}
+          twitterUsername={twitterUsername}
+        />
       </div>
     </div>
   );

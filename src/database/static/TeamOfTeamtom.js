@@ -101,7 +101,7 @@ export const teachersOfTeamtomAviation = [
     altImage:"Airport Ground handling",
     role:"Airport Ground handling",
     socialMedia: {
-      facebook: "https://www.facebook.com/",
+      facebook: "https://www.facebook.com/Dieudus",
       facebookImage: "/images/SocialMedia/Facebook.png",
       whatsap: "https://wa.me/+250788396392",
       whatsapImage: "/public/images/SocialMedia/whatsapImage.png",
