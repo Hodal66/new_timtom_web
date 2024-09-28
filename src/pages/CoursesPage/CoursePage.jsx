@@ -26,6 +26,8 @@ function CoursePage() {
     return item.id === newItemId;
   });
 
+
+
   return (
     <main className="bg-white">
       <header>
