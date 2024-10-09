@@ -15,7 +15,7 @@ function SocialMedia({
       <div className="flex gap-4 ">
         <Link to={`https://wa.me/${phoneNumber}`} target="_blank">
           <img
-            src="/public/images/SocialMedia/WhatSap.png"
+            src="/images/SocialMedia/WhatSap.png"
             alt=""
             className={`${style.hoverTransitionScale}`}
           />

@@ -175,7 +175,7 @@ function FooterComponent() {
             <div className={`${style.hoverTransitionScale} relative group`}>
               <div onClick={() => handleLinkClick("services/air-ticket")}>
                 <img
-                  src="/images/HomeImage44.png"
+                  src="/images/FooterImage/FooterImageTicketing.png"
                   alt="altImage"
                   className="h-full"
                 />
@@ -185,98 +185,98 @@ function FooterComponent() {
               </div>
             </div>
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("services/training-in-aviation-courses")}>
                 <img
-                  src="/images/HomeImage44.png"
+                   src="/images/FooterImage/FooterImageLearn.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>Aviation </p>
                 </div>
               </div>
             </div>
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("services/hotel-booking")}>
                 <img
-                  src="/images/HomeImage44.png"
+                  src="/images/FooterImage/FooterImageHotelBooking.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>Hotel Boking</p>
                 </div>
               </div>
             </div>
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("services/admission-and-visa-assistance")}>
                 <img
-                  src="/images/HomeImage44.png"
+                  src="/images/FooterImage/FooterImageVisaApplication.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>Admission & Visa</p>
                 </div>
               </div>
             </div>{" "}
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("services/consultancy")}>
                 <img
-                  src="/images/HomeImage44.png"
+                   src="/images/FooterImage/FooterImagelConsultancy.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>Consultancy </p>
                 </div>
               </div>
             </div>{" "}
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("services/ict-skills")}>
                 <img
-                  src="/images/HomeImage44.png"
+                  src="/images/FooterImage/FooterImageICT.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>ICT </p>
                 </div>
               </div>
             </div>{" "}
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("/courses/local-certificates-courses")}>
                 <img
-                  src="/images/HomeImage44.png"
+                  src="/images/FooterImage/FooterImageLocation.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>Local Courses </p>
                 </div>
               </div>
             </div>{" "}
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("/courses/local-advanced-certificates-courses")}>
                 <img
-                  src="/images/HomeImage44.png"
+                   src="/images/FooterImage/FooterImageTicketing.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>Advanced Courses </p>
                 </div>
               </div>
             </div>{" "}
             <div className={`${style.hoverTransitionScale} relative group`}>
-              <div onClick={() => handleLinkClick("services/air-ticket")}>
+              <div onClick={() => handleLinkClick("/courses/international-certificates-courses")}>
                 <img
-                  src="/images/HomeImage44.png"
+                   src="/images/FooterImage/FooterImageCourse.png"
                   alt="altImage"
                   className="h-full"
                 />
                 <div className="hidden absolute top-0 hover:cursor-pointer left-0 group-hover:flex group-hover:items-center group-hover:justify-center bg-primary bg-opacity-75 h-full w-full font-semibold">
-                  <p>Ticketing </p>
+                  <p>Internation Courses </p>
                 </div>
               </div>
             </div>

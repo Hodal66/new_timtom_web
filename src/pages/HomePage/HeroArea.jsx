@@ -2,16 +2,15 @@ import { useEffect, useState } from "react";
 import Pragraph from "../../components/Pragraph";
 import Button1 from "../../components/Buttons/Button1";
 import { Link } from "react-router-dom";
-
 function HeroArea() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    "/images/HomeImage1.png",
-    "/images/HomeImage2.png",
-    "/images/HomeImage4.png",
-    "/images/HomeImage44.png",
-
-    // Add more images as needed
+    "/images/HeroAreaImages/Desktop/HomeImage1.png",
+    "/images/HeroAreaImages/Desktop/HomeImage2.png",
+    "/images/HeroAreaImages/Desktop/HomeImage3.png",
+    "/images/HeroAreaImages/Desktop/HomeImage4.png",
+    "/images/HeroAreaImages/Desktop/HomeImage5.png",
+    "/images/HeroAreaImages/Desktop/HomeImage6.png",
   ];
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -22,9 +21,7 @@ function HeroArea() {
 
     return () => clearInterval(intervalId);
   }, [images.length]);
-  const goToSlide = (slideIndex) => {
-    setCurrentSlide(slideIndex);
-  };
+
   return (
     <div>
       <div className="relative">
@@ -36,7 +33,7 @@ function HeroArea() {
           className="mx-auto w-full h-[480px] md:h-[800px] lg:h-[650px]"
         />
       </div>
-      <div className="absolute lg:top-10 top-0 bg-blue bg-opacity-50 md:gap-20 gap-8 flex justify-center content-center items-center w-full lg:h-[96vh] md:h-min-[78vh] h-[72vh] flex-col">
+      <div className="absolute hidden lg:top-10 top-0 bg-blue bg-opacity-50 md:gap-20 gap-8 flex justify-center content-center items-center w-full lg:h-[96vh] md:h-min-[78vh] h-[72vh] flex-col">
         <div className="lg:px-64 px-4 lg:mt-32 md:mt-24 mt-20 flex justify-center  gap-8 md:gap-2 flex-col items-center ">
           <p className="lg:text-[32px] md:text-[32px] text-24px text-white font-bold">
             Welcome to timtom aviation ltd
@@ -58,17 +55,7 @@ function HeroArea() {
               }
             />
           </div>
-          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                className={`md:h-4 md:w-4 h-3 w-3  rounded-full border ${
-                  currentSlide === index ? "bg-black" : "bg-white"
-                }`}
-                onClick={() => goToSlide(index)}
-              />
-            ))}
-          </div>
+       
         </div>
         <div>
          <Link to={"/courses"}>

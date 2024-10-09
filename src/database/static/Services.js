@@ -1,7 +1,7 @@
 export const ServicesDb = [ {
     id: 1,
     title: "Air ticketing",
-    image:"/images/HomeImage4.png",
+    image:"/images/ServicesImages/AirTicket10.jpg",
     imageAlt:"Ticketing ImageContent",
     link: "air-ticket",
     content:
@@ -12,7 +12,7 @@ export const ServicesDb = [ {
   {
     id: 2,
     title: "Training In Aviation Courses",
-    image:"/images/HomeImage4.png",
+    image:"/images/ServicesImages/Aviation1.jpg",
     imageAlt:"Training In Aviation Courses ImageContent",
     link: "training-in-aviation-courses",
     content:
@@ -23,7 +23,7 @@ export const ServicesDb = [ {
   {
     id: 3,
     title: "Hotel Booking",
-    image:"/images/HomeImage4.png",
+    image:"/images/ServicesImages/hotelBooking1.jpg",
     imageAlt:"Hotel Booking ImageContent",
     link: "hotel-booking",
     content:
@@ -45,7 +45,7 @@ export const ServicesDb = [ {
   {
     id:5,
     title: "Consultancy",
-    image:"/images/HomeImage4.png",
+    image:"/images/ServicesImages/consultancy2.jpg",
     imageAlt:"Admission and Visa Assistance ImageContent",
     link: "consultancy",
     content:
@@ -55,7 +55,7 @@ export const ServicesDb = [ {
   },  {
     id:6,
     title: "ICT & Computer Skills",
-    image:"/images/HomeImage4.png",
+    image:"/images/ServicesImages/ICT3.avif",
     imageAlt:"Admission and Visa Assistance ImageContent",
     link: "ict-skills",
     content:

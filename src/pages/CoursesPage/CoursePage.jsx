@@ -95,6 +95,39 @@ function CoursePage() {
                 </div>
               </div>
             </div>
+            <div >
+              
+              {newCourseData.coursePackage[0] ? <HeadingTwo headingTitle={`Main FullPackage of ${newCourseData.courseName} Lesson`}/> : ""}
+              <div className={`${newCourseData.coursePackage[0] ? "block" : "hidden"}`}>
+                <Pragraph
+                  pragraphContent={newCourseData.coursePackage[0]}
+                />
+                <Pragraph
+                  pragraphContent={newCourseData.coursePackage[1]}
+                />
+                <Pragraph
+                  pragraphContent={newCourseData.coursePackage[2]}
+                />
+                <Pragraph
+                  pragraphContent={newCourseData.coursePackage[3]}
+                />
+                 <Pragraph
+                  pragraphContent={newCourseData.coursePackage[4]}
+                />
+                 <Pragraph
+                  pragraphContent={newCourseData.coursePackage[5]}
+                />
+                 <Pragraph
+                  pragraphContent={newCourseData.coursePackage[6]}
+                />
+                 <Pragraph
+                  pragraphContent={newCourseData.coursePackage[7]}
+                /> <Pragraph
+                pragraphContent={newCourseData.coursePackage[8]}
+              />
+              </div>
+
+            </div>
             <div>
               <HeadingTwo headingTitle={"Course Content"} />
               <div>

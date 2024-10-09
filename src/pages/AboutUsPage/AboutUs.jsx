@@ -5,11 +5,11 @@ import TeacherTeam from "../../components/TeacherTeam";
 
 const AboutUs = () => {
   return (
-    <div className="bg-gray-100 py-8 px-4 lg:px-12 md:px-8 ">
+    <div className="bg-gray-100 py-8 px-4 lg:px-12 md:px-8">
       <div className="lg:hidden">
         <MainNavigationBar />
       </div>
-      <div className="max-w-7xl mx-auto flex flex-col gap-8 md:gap-16 lg:gap-24 ">
+      <div className="max-w-7xl mx-auto flex flex-col gap-8 md:gap-16 lg:gap-24">
         <section className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <img
