@@ -25,10 +25,13 @@ function CoursesCard({ image, money, imageAlt, title, content, myId }) {
         <HeadingThree headingTitle={title} />
 
         {/* Updated the getShortDescription to handle undefined content */}
-        <Pragraph pragraphContent={getShortDescription(content)} classNameText={"font-normal"} />
-        
+        <Pragraph
+          pragraphContent={getShortDescription(content)}
+          classNameText={"font-normal"}
+        />
+
         <div className="py-4 grid grid-cols-2 justify-between items-center">
-          <p className="font-medium text-xl">{money} Rwf</p>
+          <p className="font-medium text-xl">{money} $</p>
           <Link to={`/courses/${myId}`} className="flex justify-end">
             <Button1 title={"ReadMore..."} />
           </Link>
