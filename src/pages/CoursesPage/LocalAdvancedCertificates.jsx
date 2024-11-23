@@ -77,7 +77,7 @@ function LocalAdvancedCertificates() {
                   Duration
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
-                  Training Fees
+                  Training Fees (USD)
                 </th>
               </tr>
             </thead>
@@ -95,8 +95,11 @@ function LocalAdvancedCertificates() {
                   >
                     {course.courseName}
                   </td>
-                  <td className="py-3 px-6">{course.duration} Months</td>
-                  <td className="py-3 px-6">{course.money}</td>
+                  <td className="py-3 px-6">
+                    {course.duration}
+                    {course.duration == 1 ? "Month" : "Months"}
+                  </td>
+                  <td className="py-3 px-6">{course.money} $</td>
                 </tr>
               ))}
             </tbody>

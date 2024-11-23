@@ -50,7 +50,7 @@ const slides = [
     id: 6,
     image: "/images/HeroAreaImages/Desktop/book1.jpg",
     title: "Do you want to buy our Book?",
-    description: "Fandamental of Air craft Maintainance is Out Now!!",
+    description: "Fundamentals of aircraft maintenance management is Out Now!!",
     link: "https://www.amazon.com/Fundamentals-Aircraft-Maintenance-Management-Timothee/dp/1945825995",
     buttonText: "Buy Book Now",
   },

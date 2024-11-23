@@ -23,7 +23,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Understand the standards and regulations for licensing personnel in the aviation sector.",
-    money: "300,000",
+    money: "300",
     role: "This course provides the necessary knowledge for aviation personnel licensing, covering regulations, procedures, and compliance requirements.",
     mainPragrapContents:
       "Learn the processes and regulatory standards needed for licensing aviation personnel, ensuring compliance with international aviation standards.",
@@ -99,7 +99,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Learn the essential techniques for conducting audits in civil aviation.",
-    money: "300,000",
+    money: "300",
     role: "This course provides an in-depth understanding of auditing processes within the civil aviation sector, focusing on compliance and safety standards.",
     mainPragrapContents:
       "Master the skills required to audit civil aviation operations, ensuring safety and compliance with international standards.",
@@ -178,7 +178,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Learn how to manage safety in aviation operations to ensure compliance and risk mitigation.",
-    money: "300,000",
+    money: "300",
     role: "This course provides the necessary knowledge to implement and manage safety systems in aviation, ensuring operational safety and regulatory compliance.",
     mainPragrapContents:
       "Understand how to design, implement, and manage an effective safety management system (SMS) in an aviation environment, with a focus on hazard identification and risk mitigation.",
@@ -257,7 +257,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Gain a comprehensive understanding of the USOAP CMA audit process and its importance in aviation safety.",
-    money: "400,000",
+    money: "400",
     role: "This course provides in-depth knowledge on conducting USOAP Continuous Monitoring Approach (CMA) audits for aviation safety compliance.",
     mainPragrapContents:
       "Learn how to conduct and manage audits under the USOAP CMA framework to ensure aviation safety, focusing on safety oversight and compliance.",
@@ -336,7 +336,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Learn the essential skills and knowledge to manage aviation operations efficiently.",
-    money: "400,000",
+    money: "400",
     role: "This course equips you with the knowledge to handle aviation management responsibilities, focusing on airport operations, airline management, and safety.",
     mainPragrapContents:
       "Master the principles of aviation management, covering the roles and responsibilities in managing airports, airlines, and regulatory compliance in the aviation industry.",
@@ -421,7 +421,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Master the core functions and responsibilities involved in managing airport operations.",
-    money: "200,000",
+    money: "200",
     role: "This course provides essential knowledge on how airports function, including logistics, passenger handling, and regulatory compliance.",
     mainPragrapContents:
       "Gain comprehensive knowledge of airport operations, covering key areas like airport logistics, passenger services, security, and compliance with international aviation regulations.",
@@ -494,7 +494,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Gain the essential skills for managing ground handling operations at airports.",
-    money: "200,000",
+    money: "200",
     role: "This course covers the fundamentals of ground handling, including baggage handling, aircraft servicing, and ensuring operational safety at airports.",
     mainPragrapContents:
       "Learn how to manage ground handling operations efficiently, focusing on safety, logistics, and service quality in an airport setting.",
@@ -566,7 +566,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Learn the key strategies and tactics for successful airline marketing and customer engagement.",
-    money: "200,000",
+    money: "200",
     role: "This course covers airline-specific marketing strategies, including customer acquisition, brand positioning, and passenger loyalty programs.",
     mainPragrapContents:
       "Gain in-depth knowledge of how airlines use marketing to attract passengers, enhance customer satisfaction, and manage competitive positioning in the global market.",
@@ -649,7 +649,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Prepare for a career as an air cabin crew member with essential skills in safety, service, and customer care.",
-    money: "200,000",
+    money: "200",
     role: "This course trains individuals in air cabin crew responsibilities, focusing on safety procedures, customer service, and in-flight operations.",
     mainPragrapContents:
       "Learn the roles and responsibilities of air cabin crew members, including safety, emergency procedures, and ensuring passenger comfort during flights.",
@@ -735,7 +735,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Learn the fundamental skills of air fares and ticketing using the Amadeus Global Distribution System.",
-    money: "200,000",
+    money: "200",
     role: "This course provides comprehensive training in using the Amadeus system for air fares and ticketing, enabling you to issue and manage flight tickets efficiently.",
     mainPragrapContents:
       "Master the art of fare calculations, ticketing, and reservations using Amadeus, one of the world’s leading Global Distribution Systems (GDS) used by airlines and travel agencies.",
@@ -822,7 +822,7 @@ export const CourseData = [
     ],
     smallDescription:
       "Master advanced skills in managing airport and airline operations, focusing on ground handling, airport services, and marketing strategies.",
-    money: "500,000",
+    money: "500",
     role: "This course provides a comprehensive understanding of airport and airline management, focusing on operational efficiency, ground handling, and strategic marketing in the aviation industry.",
     mainPragrapContents:
       "Learn to manage the core operations of airports and airlines, including logistics, ground handling, passenger services, and marketing strategies to optimize both operational efficiency and customer satisfaction. Gain insights into regulatory frameworks, safety protocols, and marketing tactics that drive success in aviation management.",
@@ -922,7 +922,7 @@ export const CourseData = [
     ],
     smallDescription:
       "Develop advanced expertise in managing air cargo operations, handling dangerous goods, and optimizing logistics in the aviation industry.",
-    money: "500,000",
+    money: "500",
     role: "This course offers in-depth training on air cargo management, including cargo handling, logistics, and the safe transport of dangerous goods in compliance with international regulations.",
     mainPragrapContents:
       "Gain a comprehensive understanding of air cargo operations, focusing on cargo handling processes, logistics management, and the safe handling of dangerous goods. The course covers essential knowledge for managing air cargo efficiently, ensuring safety, compliance, and operational excellence in aviation logistics.",
@@ -1022,7 +1022,7 @@ export const CourseData = [
     ],
     smallDescription:
       "Develop advanced skills in managing travel and tourism operations, including ticketing, fare calculations, and consultancy.",
-    money: "500,000",
+    money: "500",
     role: "This course provides comprehensive training in the foundational aspects of travel and tourism, air ticketing, fare calculations, and consulting, preparing students for roles in travel management and tourism consultancy.",
     mainPragrapContents:
       "Gain in-depth knowledge in travel and tourism operations, focusing on ticketing, fare calculations, and consultancy services. This course covers essential topics for managing travel agencies, working as a tourism consultant, and understanding international travel regulations and procedures.",
@@ -1123,7 +1123,7 @@ export const CourseData = [
     ],
     smallDescription:
       "Develop advanced expertise in aviation safety management, security operations, legal frameworks, and crew resource management.",
-    money: "500,000",
+    money: "500",
     role: "This course provides comprehensive training on managing aviation safety and security operations, ensuring compliance with legal frameworks, and enhancing crew resource management for optimal safety.",
     mainPragrapContents:
       "Gain a deep understanding of aviation safety management systems, security protocols, legal environments, and crew resource management. This course is designed to equip students with advanced skills to handle safety and security challenges in aviation while maintaining regulatory compliance and operational efficiency.",
@@ -1228,7 +1228,7 @@ export const CourseData = [
     ],
     smallDescription:
       "Gain advanced expertise in managing aviation operations, regulatory compliance, aircraft operations, and maintenance management.",
-    money: "700,000",
+    money: "700",
     role: "This course covers all the essential aspects of advanced aviation management, including airport operations, auditing, aviation law, personnel licensing, and aircraft maintenance, preparing students for senior management roles in the aviation industry.",
     mainPragrapContents:
       "This comprehensive program provides advanced training in airport operations, aviation law, auditing, and aircraft management. Students will learn how to handle airport certification, manage aviation compliance, oversee aircraft operations, and ensure adherence to aviation safety and legal standards, including personnel licensing and aircraft maintenance.",
@@ -1344,7 +1344,7 @@ export const CourseData = [
     ],
     smallDescription:
       "Develop advanced skills in air cabin crew operations, safety management, passenger handling, and aviation security.",
-    money: "500,000",
+    money: "500",
     role: "This course provides comprehensive training in cabin crew operations, focusing on safety management, passenger handling, and aviation security, preparing students for leadership roles in cabin crew management.",
     mainPragrapContents:
       "Gain expertise in the essential functions of air cabin crew operations, including safety management, handling passengers, and ensuring aviation security. The course focuses on ensuring safety protocols, managing passenger services, and maintaining high standards of security during flights.",
@@ -1434,8 +1434,8 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Gain comprehensive knowledge and skills in airport operations, including safety, logistics, and passenger handling, with an internationally recognized IATA Diploma.",
-    money: "400,000",
-    internationalMoney: "USD 455",
+    money: "400",
+    internationalMoney: "455",
     role: "This course provides extensive training in all aspects of airport operations, ensuring that students are prepared for key roles in managing airport logistics, safety, passenger services, and operational efficiency.",
     mainPragrapContents:
       "Learn the essential skills required for managing airport operations, including logistics, passenger services, safety protocols, and compliance with international standards. This IATA diploma equips you with the expertise to handle daily operations and manage airport services with efficiency and safety.",
@@ -1530,8 +1530,8 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Acquire foundational skills in travel and tourism operations, customer service, and ticketing with an internationally recognized IATA Diploma.",
-    money: "400,000",
-    internationalMoney: "USD 670",
+    money: "400",
+    internationalMoney: "670",
     role: "This course equips you with a strong foundation in travel and tourism management, preparing you to work in travel agencies, airlines, and tourism organizations. It covers essential topics such as customer service, air ticketing, fare calculations, and global tourism trends.",
     mainPragrapContents:
       "Learn the core principles of travel and tourism, focusing on customer service, ticketing, and fare calculations. This IATA Diploma provides an in-depth understanding of the global travel industry, preparing you for various roles in travel agencies, airlines, and tourism management.",
@@ -1626,8 +1626,8 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Build a strong foundation in aviation with an internationally recognized IATA Diploma, covering key aspects of the global aviation industry.",
-    money: "400,000",
-    internationalMoney: "USD 975",
+    money: "400",
+    internationalMoney: "975",
     role: "This course offers a comprehensive introduction to the aviation industry, covering essential topics such as airline operations, airport management, aviation safety, and regulatory frameworks. It prepares students for a variety of roles within the aviation sector, providing a solid foundation for career advancement.",
     mainPragrapContents:
       "Gain a deep understanding of the aviation industry with this IATA Diploma. The course covers key topics such as airline operations, airport management, aviation safety, and international regulations. You will develop essential skills for working in various aviation-related roles, from airlines to airport operations, while learning about the global standards that drive the industry.",
@@ -1723,8 +1723,8 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Become a professional air cabin crew member, mastering safety procedures, passenger handling, and in-flight customer service, with an internationally recognized certification.",
-    money: "200,000",
-    internationalMoney: "USD 490",
+    money: "200",
+    internationalMoney: "490",
     role: "This course prepares you to become a highly skilled air cabin crew member, focusing on safety, security, passenger handling, and customer service. You will gain the knowledge required to manage in-flight services, emergency situations, and ensure the safety and comfort of passengers on both domestic and international flights.",
     mainPragrapContents:
       "Learn the essential responsibilities of air cabin crew members, including in-flight safety, customer service, and emergency procedures. This IATA-certified course equips you with the practical skills needed to deliver exceptional service while ensuring passenger safety during flights. You will also gain insights into aviation security, crisis management, and international safety standards.",
@@ -1813,8 +1813,8 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Develop expertise in air cargo operations, logistics, and supply chain management with an internationally recognized IATA Diploma.",
-    money: "400,000",
-    internationalMoney: "USD 341",
+    money: "400",
+    internationalMoney: "341",
     role: "This course provides comprehensive training in air cargo management, including logistics, cargo handling, and compliance with international standards. It prepares students for leadership roles in cargo operations, logistics companies, airlines, and freight forwarding organizations.",
     mainPragrapContents:
       "Gain an in-depth understanding of air cargo management, focusing on cargo logistics, handling, and transportation. This IATA-certified course equips students with the skills to manage the logistics of air cargo, from freight forwarding to regulatory compliance and global supply chain coordination. You will learn how to handle cargo efficiently while maintaining international safety and legal standards.",
@@ -1897,7 +1897,7 @@ export const CourseData = [
     lastUpdated: "Any Time",
     languageNeeded: "English",
     rating: 9.5,
-    duration: "40 to 60 hours",
+    duration: "3",
     startDate: "Any Time",
     subCoursesUnllorment: 30,
     lectures: 5,
@@ -1909,8 +1909,8 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Gain expertise in conducting Universal Safety Oversight Audit Programme (USOAP) Continuous Monitoring Approach (CMA) activities, with a focus on aviation safety audits.",
-    money: "400,000",
-    internationalMoney: "USD 800",
+    money: "400",
+    internationalMoney: "800",
     role: "This course offers comprehensive training on the USOAP CMA methodology, focusing on auditing principles, ICAO standards, and safety oversight systems. It prepares prospective auditors to effectively carry out audits under the ICAO safety oversight framework.",
     mainPragrapContents:
       "Learn about ICAO’s Universal Safety Oversight Audit Programme Continuous Monitoring Approach (USOAP CMA), including auditing basics, ICAO’s safety oversight tools, and processes. This course will prepare you to conduct safety audits while complying with ICAO standards and ensure proper safety oversight in civil aviation.",
@@ -1996,8 +1996,8 @@ export const CourseData = [
     howMuchToGetCertificate: 85,
     smallDescription:
       "Enhance your expertise in aviation safety through the USOAP CMA Phase II Specialization, covering critical areas of personnel licensing, aircraft operations, and more.",
-    money: "400,000",
-    internationalMoney: "USD 341",
+    money: "400",
+    internationalMoney: "341",
     role: "This course offers in-depth training on the USOAP CMA Phase II areas, preparing participants for roles in civil aviation oversight and safety auditing.",
     mainParagraphContents:
       "Explore key components of USOAP CMA Phase II, including regulations and standards in personnel licensing, aircraft operations, airworthiness, accident investigation, air navigation, and aerodromes. This comprehensive training equips you with the skills necessary for effective safety oversight.",
@@ -2102,7 +2102,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Understand the handling and management of dangerous goods, including air transportation regulations and safety protocols.",
-    money: "200,000",
+    money: "200",
     role: "This course provides essential training on the safe handling, classification, and regulations for the transport of dangerous goods, preparing students to manage hazardous materials in aviation and logistics industries.",
     mainPragrapContents:
       "The Dangerous Goods course offers comprehensive insights into international regulations, classification of hazardous materials, and safety practices for air transport. Learn how to identify, label, and manage dangerous goods according to international standards, ensuring compliance with aviation safety protocols.",
@@ -2185,7 +2185,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Acquire essential knowledge in airport operations, including safety protocols, ground handling, and airport management systems.",
-    money: "300,000",
+    money: "300",
     role: "This course provides comprehensive training in the management of airport operations, focusing on safety, ground handling, and the integration of airport systems, preparing students for roles in civil aviation management.",
     mainPragrapContents:
       "The Airport Operations course equips learners with the knowledge and skills required for efficient airport management. Topics include ground handling procedures, airport safety standards, airside and landside operations, and the use of airport management systems. Students will learn how to ensure the smooth functioning of airport activities in compliance with civil aviation regulations.",
@@ -2282,7 +2282,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Master essential skills in Irembo services, tax declaration, visa applications, EBM usage, and Microsoft Office applications. This course is perfect for individuals looking to enhance their personal, professional, and business skills.",
-    money: "300,000",
+    money: "300",
     role: "This course offers comprehensive training on navigating Rwanda's Irembo platform, understanding tax compliance, visa application processes, and using essential office software. These skills are crucial for professionals and business operators alike.",
     mainPragrapContents:
       "This course provides in-depth training on various important topics such as using Irembo for government services, completing tax declarations, visa application assistance, utilizing the Electronic Billing Machine (EBM), and mastering Microsoft Office tools (Word, Excel, and PowerPoint).",
@@ -2368,7 +2368,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Master essential skills in Irembo services, tax declaration, visa applications, EBM usage, and Microsoft Office applications. This course is perfect for individuals looking to enhance their personal, professional, and business skills.",
-    money: "100,000",
+    money: "100",
     role: "This course offers comprehensive training on navigating Rwanda's Irembo platform, understanding tax compliance, visa application processes, and using essential office software. These skills are crucial for professionals and business operators alike.",
     mainPragrapContents:
       "This course provides in-depth training on various important topics such as using Irembo for government services, completing tax declarations, visa application assistance, utilizing the Electronic Billing Machine (EBM), and mastering Microsoft Office tools (Word, Excel, and PowerPoint).",
@@ -2471,7 +2471,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Master essential skills in Irembo services, tax declaration, visa applications, EBM usage, and Microsoft Office applications. This course is perfect for individuals looking to enhance their personal, professional, and business skills.",
-    money: "200,000",
+    money: "200",
     role: "This course offers comprehensive training on navigating Rwanda's Irembo platform, understanding tax compliance, visa application processes, and using essential office software. These skills are crucial for professionals and business operators alike.",
     mainPragrapContents:
       "This course provides in-depth training on various important topics such as using Irembo for government services, completing tax declarations, visa application assistance, utilizing the Electronic Billing Machine (EBM), and mastering Microsoft Office tools (Word, Excel, and PowerPoint).",
@@ -2575,7 +2575,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Master essential skills in Irembo services, tax declaration, visa applications, EBM usage, and Microsoft Office applications. This course is perfect for individuals looking to enhance their personal, professional, and business skills.",
-    money: "200,000",
+    money: "200",
     role: "This course offers comprehensive training on navigating Rwanda's Irembo platform, understanding tax compliance, visa application processes, and using essential office software. These skills are crucial for professionals and business operators alike.",
     mainPragrapContents:
       "This course provides in-depth training on various important topics such as using Irembo for government services, completing tax declarations, visa application assistance, utilizing the Electronic Billing Machine (EBM), and mastering Microsoft Office tools (Word, Excel, and PowerPoint).",
@@ -2680,7 +2680,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Gain hands-on experience in the aviation industry by learning essential skills in air ticketing and hotel booking systems, preparing you for a successful career in travel and tourism.",
-    money: "30,000",
+    money: "30",
     role: "This internship program is designed for individuals interested in gaining practical skills in the aviation industry, specifically focusing on air ticketing and hotel booking. Participants will learn about reservation systems, customer service, and industry best practices to prepare for roles in travel agencies, airlines, and hospitality services.",
     mainPragrapContents:
       "The Aviation Industry Internship offers a comprehensive training experience, combining both theoretical knowledge and practical skills. Interns will gain familiarity with airline reservation systems, ticket issuance, and hotel booking procedures. The program focuses on key areas such as customer service, ticketing software (GDS), fare calculations, and managing client reservations, equipping participants to handle real-world scenarios effectively.",
@@ -2790,7 +2790,7 @@ export const CourseData = [
     coursePackage: [""],
     smallDescription:
       "Learn the essential skills in Web Design, Web Development, and cutting-edge ICT technologies like AI tools, equipping you for a dynamic career in tech.",
-    money: "30,000",
+    money: "30",
     role: "This course provides a holistic approach to learning web design, web development, and the integration of emerging technologies like Artificial Intelligence. It is designed for individuals seeking to build a career in tech, offering training in front-end and back-end development, responsive web design, and the use of AI tools for smart solutions.",
     mainPragrapContents:
       "The Comprehensive Web Design, Web Development, and ICT Technologies course equips learners with the skills needed to create modern, responsive, and user-friendly websites. The curriculum covers HTML, CSS, JavaScript, and popular frameworks like ReactJS, Node.js, and Express. Additionally, participants will learn about integrating AI tools for enhanced website functionality, as well as fundamental concepts in machine learning and cloud computing. This course prepares you for a successful career in web development, design, and emerging ICT technologies.",

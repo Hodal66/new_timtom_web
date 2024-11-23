@@ -226,12 +226,12 @@ function MainNavigationBar() {
                   Gallery
                 </li>
               </Link>
-              <Link to={"/admin"}>
+              {/* <Link to={"/admin"}>
                 {" "}
                 <li className="text-black bg-primary font-semibold hover:transition hover:duration-150 hover:bg-secondary rounded-md p-4">
                   Login
                 </li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>

@@ -78,7 +78,7 @@ function InternationalCertificates() {
                   Duration
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
-                  Training Fees (RWF)
+                  Training Fees (USD)
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
                   IATA Fees (USD)
@@ -99,10 +99,13 @@ function InternationalCertificates() {
                   >
                     {course.courseName}
                   </td>
-                  <td className="py-3 px-6">{course.duration} Months</td>
-                  <td className="py-3 px-6">{course.money}</td>
                   <td className="py-3 px-6">
-                    {course.internationalMoney || "-"}
+                    {course.duration}
+                    {course.duration == 1 ? "Month" : "Months"}
+                  </td>
+                  <td className="py-3 px-6">{course.money} $</td>
+                  <td className="py-3 px-6">
+                    {course.internationalMoney || "-"} $
                   </td>
                 </tr>
               ))}

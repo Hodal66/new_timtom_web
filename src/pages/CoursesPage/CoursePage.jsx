@@ -84,7 +84,9 @@ function CoursePage() {
                     <Pragraph pragraphContent={newCourseData.aboutCourses[7]} />
                     <Pragraph pragraphContent={newCourseData.aboutCourses[8]} />
                     <Pragraph pragraphContent={newCourseData.aboutCourses[9]} />
-                    <Pragraph pragraphContent={newCourseData.aboutCourses[10]} />
+                    <Pragraph
+                      pragraphContent={newCourseData.aboutCourses[10]}
+                    />
                   </div>
                 )}
                 <div
@@ -95,38 +97,31 @@ function CoursePage() {
                 </div>
               </div>
             </div>
-            <div >
-              
-              {newCourseData.coursePackage[0] ? <HeadingTwo headingTitle={`Main FullPackage of ${newCourseData.courseName} Lesson`}/> : ""}
-              <div className={`${newCourseData.coursePackage[0] ? "block" : "hidden"}`}>
+            <div>
+              {newCourseData.coursePackage[0] ? (
+                <HeadingTwo
+                  headingTitle={`Main FullPackage of ${newCourseData.courseName} Lesson`}
+                />
+              ) : (
+                ""
+              )}
+              <div
+                className={`${
+                  newCourseData.coursePackage[0] ? "block" : "hidden"
+                }`}
+              >
+                <Pragraph pragraphContent={newCourseData.coursePackage[0]} />
+                <Pragraph pragraphContent={newCourseData.coursePackage[1]} />
+                <Pragraph pragraphContent={newCourseData.coursePackage[2]} />
+                <Pragraph pragraphContent={newCourseData.coursePackage[3]} />
+                <Pragraph pragraphContent={newCourseData.coursePackage[4]} />
+                <Pragraph pragraphContent={newCourseData.coursePackage[5]} />
+                <Pragraph pragraphContent={newCourseData.coursePackage[6]} />
                 <Pragraph
-                  pragraphContent={newCourseData.coursePackage[0]}
-                />
-                <Pragraph
-                  pragraphContent={newCourseData.coursePackage[1]}
-                />
-                <Pragraph
-                  pragraphContent={newCourseData.coursePackage[2]}
-                />
-                <Pragraph
-                  pragraphContent={newCourseData.coursePackage[3]}
-                />
-                 <Pragraph
-                  pragraphContent={newCourseData.coursePackage[4]}
-                />
-                 <Pragraph
-                  pragraphContent={newCourseData.coursePackage[5]}
-                />
-                 <Pragraph
-                  pragraphContent={newCourseData.coursePackage[6]}
-                />
-                 <Pragraph
                   pragraphContent={newCourseData.coursePackage[7]}
-                /> <Pragraph
-                pragraphContent={newCourseData.coursePackage[8]}
-              />
+                />{" "}
+                <Pragraph pragraphContent={newCourseData.coursePackage[8]} />
               </div>
-
             </div>
             <div>
               <HeadingTwo headingTitle={"Course Content"} />
@@ -158,13 +153,13 @@ function CoursePage() {
                 <Pragraph
                   pragraphContent={newCourseData.benefitsOfTheCourse[3]}
                 />
-                 <Pragraph
+                <Pragraph
                   pragraphContent={newCourseData.benefitsOfTheCourse[4]}
                 />
-                 <Pragraph
+                <Pragraph
                   pragraphContent={newCourseData.benefitsOfTheCourse[5]}
                 />
-                 <Pragraph
+                <Pragraph
                   pragraphContent={newCourseData.benefitsOfTheCourse[6]}
                 />
               </div>
@@ -199,7 +194,7 @@ function CoursePage() {
             </div>
             <div>
               <Link to={newCourseData.link} target="_blank">
-              <Button1 title={"Take this Course"} />
+                <Button1 title={"Take this Course"} />
               </Link>
             </div>
           </div>
@@ -210,18 +205,20 @@ function CoursePage() {
               <div className="flex gap-2">
                 <div className="flex">
                   <HeadingThree
-                    headingTitle={` Fees: ${newCourseData.money}`}
+                    headingTitle={` Fees: ${newCourseData.money} $`}
                   />
                 </div>
               </div>
               <div className="flex justify-between items-center">
-            
-                <span>🕝 In {newCourseData.duration} Months</span> 
+                <span>
+                  🕝 In {newCourseData.duration}{" "}
+                  {newCourseData.duration == 1 ? "Month" : "Months"}{" "}
+                </span>
               </div>
             </div>
             <div>
               <Link to={newCourseData.link} target="_blank">
-              <Button1 title={"Take this Course"} />
+                <Button1 title={"Take this Course"} />
               </Link>
             </div>
             <div className="flex flex-col gap-4">

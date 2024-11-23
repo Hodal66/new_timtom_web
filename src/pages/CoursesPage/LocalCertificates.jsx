@@ -91,7 +91,7 @@ function LocalCertificates() {
                   Duration
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
-                  Fees
+                  Training Fees (USD)
                 </th>
               </tr>
             </thead>
@@ -114,7 +114,9 @@ function LocalCertificates() {
                       {course.duration}{" "}
                       {course.duration == 1 ? "Month" : "Months"}
                     </td>
-                    <td className="py-3 px-6 cursor-pointer">{course.money}</td>
+                    <td className="py-3 px-6 cursor-pointer">
+                      {course.money} $
+                    </td>
                   </tr>
                 )
               )}
@@ -144,7 +146,7 @@ function LocalCertificates() {
                   Duration
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
-                  Training Fees
+                  Training Fees (USD)
                 </th>
               </tr>
             </thead>
@@ -168,7 +170,9 @@ function LocalCertificates() {
                       {course.duration}{" "}
                       {course.duration == 1 ? "Month" : "Months"}
                     </td>
-                    <td className="py-3 px-6 cursor-pointer">{course.money}</td>
+                    <td className="py-3 px-6 cursor-pointer">
+                      {course.money} $
+                    </td>
                   </tr>
                 )
               )}
