@@ -3,23 +3,24 @@ import HeaderSection from "../../../components/sections/HeaderSection";
 import OtherSecondMainNavigationBar from "../../../components/navBar/OtherSecondNavigation";
 import AsideServices from "../../../components/sections/AsideServices";
 import Services from "../Services";
-import backgroundImage from "/images/ServicesImages/ICT3.avif";
-import howImageIs from "/images/ServicesImages/ICT4.avif";
+import backgroundImage from "/images/ServicesImages/ICT1.jpg";
+import howImageIs from "/images/ServicesImages/ICT3.jpeg";
 import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
+import BestBackgroundImage from "/images/bgImage/bestbg.jpg";
 
 function ICTSkills() {
   return (
     <main className="bg-white">
       <header>
-      <div>
-          <CompanyInfoNav/>
+        <div>
+          <CompanyInfoNav />
         </div>
         <div className="lg:hidden">
-        <MainNavigationBar />
-      </div>
+          <MainNavigationBar />
+        </div>
         <section>
           <HeaderSection
-            backgroundImage={backgroundImage}
+            backgroundImage={BestBackgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
             headingTitle={"ICT Skills Services"}
             nexNavLink={"/"}
@@ -30,7 +31,7 @@ function ICTSkills() {
         </section>
       </header>
       <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
-      <section className="lg:col-span-3">
+        <section className="lg:col-span-3">
           <AsideServices selectedServiceOption={"ICTSkills"} />
         </section>
         <section className="lg:col-span-9">

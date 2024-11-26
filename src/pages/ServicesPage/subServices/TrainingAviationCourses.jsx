@@ -5,6 +5,7 @@ import AsideServices from "../../../components/sections/AsideServices";
 import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/Aviation4.jpg";
 import howImageIs from "/images/ServicesImages/Aviation1.jpg";
+import BestBackgroundImage from "/images/bgImage/bestbg.jpg";
 import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
 
 function TrainingAviationCourses() {
@@ -19,7 +20,7 @@ function TrainingAviationCourses() {
         </div>
         <section>
           <HeaderSection
-            backgroundImage={backgroundImage}
+            backgroundImage={BestBackgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
             headingTitle={"Aviation Training Courses"}
             nexNavLink={"/"}
@@ -30,7 +31,7 @@ function TrainingAviationCourses() {
         </section>
       </header>
       <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
-      <section className="lg:col-span-3">
+        <section className="lg:col-span-3">
           <AsideServices selectedServiceOption={"trainingInAviationCourses"} />
         </section>
         <section className="lg:col-span-9">

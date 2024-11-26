@@ -1,4 +1,4 @@
-import backgroundImage from "/images/bgImage/bg2.png";
+import backgroundImage from "/images/bgImage/bestbgCourses.jpg";
 // import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import MainNavigationBar from "../../components/navBar/MainNavigationBar";
 import HeaderSection from "../../components/sections/HeaderSection";

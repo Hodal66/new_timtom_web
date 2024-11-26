@@ -6,7 +6,7 @@ import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/hotelBooking1.jpg";
 import howImageIs from "/images/ServicesImages/hotelBooking.jpg";
 import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
-
+import BestBackgroundImage from "/images/bgImage/bestbg.jpg";
 function HotelBooking() {
   return (
     <main className="bg-white">
@@ -19,7 +19,7 @@ function HotelBooking() {
         </div>
         <section>
           <HeaderSection
-            backgroundImage={backgroundImage}
+            backgroundImage={BestBackgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
             headingTitle={"Hotel Booking Services"}
             nexNavLink={"/"}
@@ -30,7 +30,7 @@ function HotelBooking() {
         </section>
       </header>
       <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
-      <section className="lg:col-span-3">
+        <section className="lg:col-span-3">
           <AsideServices selectedServiceOption={"HotelBooking"} />
         </section>
         <section className="col-span-9">

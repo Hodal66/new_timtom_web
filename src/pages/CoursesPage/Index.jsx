@@ -3,7 +3,7 @@ import { useState } from "react";
 import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
 import HeaderSection from "../../components/sections/HeaderSection";
 // import CoursesPage from "./CoursesPage";
-import backgroundImage from "/images/bgImage/bg2.png";
+import backgroundImage from "/images/bgImage/bestbgCourses.jpg";
 // import AsideCourses from "../../components/sections/AsideCourses";
 import { style } from "../../style";
 import IconExist from "../../assets/icons/IconExist";

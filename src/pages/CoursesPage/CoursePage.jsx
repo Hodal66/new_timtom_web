@@ -2,7 +2,7 @@
 import {  useState } from "react";
 import CompanyInfoNav from "../../components/navBar/CompanyInfoNav";
 import HeaderSection from "../../components/sections/HeaderSection";
-import backgroundImage from "/images/bgImage/bg2.png";
+import backgroundImage from "/images/bgImage/bestbgCourses.jpg";
 import OtherSecondMainNavigationBar from "../../components/navBar/OtherSecondNavigation";
 import { Link, useParams } from "react-router-dom";
 import { CourseData } from "../../database/static/CoursesData";
@@ -12,8 +12,6 @@ import HeadingThree from "../../components/Headings/HeadingThree";
 import SocialMedia from "../../components/footer/SocialMedia";
 import Button1 from "../../components/Buttons/Button1";
 import MainNavigationBar from "../../components/navBar/MainNavigationBar";
-
-// import { style } from "../../style";
 
 function CoursePage() {
   const [showMoreContent, setShowMoreContent] = useState(false);

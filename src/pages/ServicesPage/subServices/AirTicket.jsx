@@ -6,20 +6,20 @@ import Services from "../Services";
 import backgroundImage from "/images/ServicesImages/AirTicket6.jpg";
 import howImageIs from "/images/ServicesImages/AirTicket4.jpg";
 import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
-
+import BestBackgroundImage from "/images/bgImage/bestbg.jpg";
 function AirTicket() {
   return (
     <main className="bg-white">
       <header>
-      <div>
-          <CompanyInfoNav/>
+        <div>
+          <CompanyInfoNav />
         </div>
         <div className="lg:hidden">
-        <MainNavigationBar />
-      </div>
+          <MainNavigationBar />
+        </div>
         <section>
           <HeaderSection
-            backgroundImage={backgroundImage}
+            backgroundImage={BestBackgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
             headingTitle={"Our Air Ticketing Services"}
             nexNavLink={"/"}

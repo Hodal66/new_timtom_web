@@ -3,24 +3,23 @@ import HeaderSection from "../../../components/sections/HeaderSection";
 import OtherSecondMainNavigationBar from "../../../components/navBar/OtherSecondNavigation";
 import AsideServices from "../../../components/sections/AsideServices";
 import Services from "../Services";
-import backgroundImage from "/images/ServicesImages/consultancy1.jpeg";
+import backgroundImage from "/images/ServicesImages/consultancy1.jpg";
 import howImageIs from "/images/ServicesImages/consultancy2.jpg";
 import MainNavigationBar from "../../../components/navBar/MainNavigationBar";
-
+import BestBackgroundImage from "/images/bgImage/bestbg.jpg";
 function Consultancy() {
-
   return (
     <main className="bg-white">
       <header>
-      <div>
-          <CompanyInfoNav/>
+        <div>
+          <CompanyInfoNav />
         </div>
         <div className="lg:hidden">
-        <MainNavigationBar/>
-      </div>
+          <MainNavigationBar />
+        </div>
         <section>
           <HeaderSection
-            backgroundImage={backgroundImage}
+            backgroundImage={BestBackgroundImage}
             MainHeading={<OtherSecondMainNavigationBar />}
             headingTitle={"Consultancy Services"}
             nexNavLink={"/"}
@@ -31,7 +30,7 @@ function Consultancy() {
         </section>
       </header>
       <main className="px-4 gap-8 md:pl-8 lg:pl-12 py-16 lg:grid grid-cols-12">
-      <section className="lg:col-span-3">
+        <section className="lg:col-span-3">
           <AsideServices selectedServiceOption={"Consultancy"} />
         </section>
         <section className="lg:col-span-9">

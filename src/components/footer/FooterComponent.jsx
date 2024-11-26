@@ -164,7 +164,11 @@ function FooterComponent() {
               <span>International Certificates Courses</span>
             </li>
             <li className="py-4">
-              <a href="mailto:staff@timtomaviation.com">
+              <a
+                href="https://mwewe.afriregister.com:2096/cpsess7000969188/3rdparty/roundcube/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Button1 title={"Staff WebMail"} />
               </a>
             </li>

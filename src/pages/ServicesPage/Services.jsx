@@ -37,7 +37,7 @@ function Services({
           src={mainImage1}
           alt={altImage1}
           role={roleOnImage1}
-          className="w-full h-96 rounded-sm "
+          className="w-full h-auto rounded-sm "
         />
       </div>
       <HeadingOne headingTitle={headingTitle1} classNameProps={"pt-16"} />
@@ -61,7 +61,7 @@ function Services({
                 <Pragraph pragraphContent={whyPragraphContent1} />
               </div>
               <div className="flex gap-2 py-2">
-              <div className="scale-75 lg:scale-100">
+                <div className="scale-75 lg:scale-100">
                   <Progress1 />
                 </div>
                 <Pragraph pragraphContent={whyPragraphContent2} />
@@ -69,13 +69,13 @@ function Services({
             </div>
             <div>
               <div className="flex gap-2 py-2">
-              <div className="scale-75 lg:scale-100">
+                <div className="scale-75 lg:scale-100">
                   <Progress1 />
                 </div>
                 <Pragraph pragraphContent={whyPragraphContent3} />
               </div>
               <div className="flex gap-2 py-2">
-              <div className="scale-75 lg:scale-100">
+                <div className="scale-75 lg:scale-100">
                   <Progress1 />
                 </div>
                 <Pragraph pragraphContent={whyPragraphContent4} />
@@ -88,7 +88,7 @@ function Services({
             <img
               src={howMainImage}
               alt="This the Home Image on our services"
-              className="h-full"
+              className="h-fit w-full"
             />
           </div>
           <div className="lg:col-span-3 flex flex-col gap-4">
@@ -132,9 +132,7 @@ function Services({
         <section>
           <FAQ />
         </section>
-     
       </section>
-     
     </main>
   );
 }
