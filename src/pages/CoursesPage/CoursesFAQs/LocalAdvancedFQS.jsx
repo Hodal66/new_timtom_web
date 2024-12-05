@@ -115,13 +115,15 @@ function LocalAdvancedFQS() {
                   <div
                     key={localCivilAviationCourse.id}
                     onClick={() => handleLinkClick(localCivilAviationCourse.id)}
+                    className="flex hover:text-primary hover:font-bold items-center justify-between p-2 rounded-sm hover:bg-white cursor-pointer"
                   >
                     <Pragraph
                       pragraphContent={localCivilAviationCourse.courseName}
-                      classNameText={
-                        "w-full hover:text-primary hover:text-bold"
-                      }
+                      classNameText={"w-full "}
                     />
+                    <div className="bg-third p-1 px-3 rounded-full text-primary font-medium">
+                      {localCivilAviationCourse.availability}
+                    </div>
                   </div>
                 )
               )}
@@ -136,14 +138,15 @@ function LocalAdvancedFQS() {
                   <div
                     key={localAirlineCourse.id}
                     onClick={() => handleLinkClick(localAirlineCourse.id)}
+                    className="flex hover:text-primary hover:font-bold items-center justify-between p-2 rounded-sm hover:bg-white cursor-pointer"
                   >
                     <Pragraph
-                      key={localAirlineCourse.id}
                       pragraphContent={localAirlineCourse.courseName}
-                      classNameText={
-                        "w-full hover:text-primary hover:text-bold"
-                      }
+                      classNameText={"w-full "}
                     />
+                    <div className="bg-third p-1 px-3 rounded-full text-primary font-medium">
+                      {localAirlineCourse.availability}
+                    </div>
                   </div>
                 )
               )}
@@ -181,12 +184,15 @@ function LocalAdvancedFQS() {
                 <div
                   key={localAdvancedCourse.id}
                   onClick={() => handleLinkClick(localAdvancedCourse.id)}
+                  className="flex hover:text-primary hover:font-bold items-center justify-between p-2 rounded-sm hover:bg-white cursor-pointer"
                 >
                   <Pragraph
-                    key={localAdvancedCourse.id}
                     pragraphContent={localAdvancedCourse.courseName}
-                    classNameText={"w-full hover:text-primary hover:text-bold"}
+                    classNameText={"w-full "}
                   />
+                  <div className="bg-third p-1 px-3 rounded-full text-primary font-medium">
+                    {localAdvancedCourse.availability}
+                  </div>
                 </div>
               ))}
             </div>
@@ -223,12 +229,15 @@ function LocalAdvancedFQS() {
                 <div
                   key={internationalCourse.id}
                   onClick={() => handleLinkClick(internationalCourse.id)}
+                  className="flex hover:text-primary hover:font-bold items-center justify-between p-2 rounded-sm hover:bg-white cursor-pointer"
                 >
                   <Pragraph
-                    key={internationalCourse.id}
                     pragraphContent={internationalCourse.courseName}
-                    classNameText={"w-full hover:text-primary hover:text-bold"}
+                    classNameText={"w-full "}
                   />
+                  <div className="bg-third p-1 px-3 rounded-full text-primary font-medium">
+                    {internationalCourse.availability}
+                  </div>
                 </div>
               ))}
             </div>
@@ -265,12 +274,15 @@ function LocalAdvancedFQS() {
                 <div
                   key={ictCourse.id}
                   onClick={() => handleLinkClick(ictCourse.id)}
+                  className="flex hover:text-primary hover:font-bold items-center justify-between p-2 rounded-sm hover:bg-white cursor-pointer"
                 >
                   <Pragraph
-                    key={ictCourse.id}
                     pragraphContent={ictCourse.courseName}
-                    classNameText={"w-full hover:text-primary hover:text-bold"}
+                    classNameText={"w-full "}
                   />
+                  <div className="bg-third p-1 px-3 rounded-full text-primary font-medium">
+                    {ictCourse.availability}
+                  </div>
                 </div>
               ))}
             </div>
@@ -307,12 +319,15 @@ function LocalAdvancedFQS() {
                 <div
                   key={internshp.id}
                   onClick={() => handleLinkClick(internshp.id)}
+                  className="flex hover:text-primary hover:font-bold items-center justify-between p-2 rounded-sm hover:bg-white cursor-pointer"
                 >
                   <Pragraph
-                    key={internshp.id}
                     pragraphContent={internshp.courseName}
-                    classNameText={"w-full hover:text-primary hover:text-bold"}
+                    classNameText={"w-full "}
                   />
+                  <div className="bg-third p-1 px-3 rounded-full text-primary font-medium">
+                    {internshp.availability}
+                  </div>
                 </div>
               ))}
             </div>

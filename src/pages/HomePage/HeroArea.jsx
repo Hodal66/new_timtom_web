@@ -35,7 +35,7 @@ const slides = [
     title: "We Offer Internership In Air Afairs and Ticketing",
     description: "Get Internship, Improve your Skills In Air ticketing.",
     link: "/courses/30",
-    buttonText: "Find Hotels",
+    buttonText: "Get Internership in Ticketing",
   },
   {
     id: 5,
@@ -51,8 +51,8 @@ const slides = [
     image: "/images/HeroAreaImages/Desktop/book1.jpg",
     title: "Do you want to buy our Book?",
     description: "Fundamentals of aircraft maintenance management is Out Now!!",
-    link: "https://www.amazon.com/Fundamentals-Aircraft-Maintenance-Management-Timothee/dp/1945825995",
-    buttonText: "Buy Book Now",
+    link: "https://www.abebooks.com/9781945825996/Fundamentals-Aircraft-Maintenance-Management-Timothee-1945825995/plp?fbclid=IwY2xjawGzxFVleHRuA2FlbQIxMQABHTc2ev4DkavFt04EBr_yZQFshcrT8nrdNbmhjYysP28g8rhxhe-RCiq7EQ_aem_0BudsXJBqTUxAv6emPFbXg",
+    buttonText: "Book available Now",
   },
   // Add more slides as needed
 ];
@@ -77,10 +77,10 @@ const HeroArea = () => {
       setLoading(false); // Stop loading after navigation
       if (
         path ===
-        "https://www.amazon.com/Fundamentals-Aircraft-Maintenance-Management-Timothee/dp/1945825995"
+        "https://www.abebooks.com/9781945825996/Fundamentals-Aircraft-Maintenance-Management-Timothee-1945825995/plp?fbclid=IwY2xjawGzxFVleHRuA2FlbQIxMQABHTc2ev4DkavFt04EBr_yZQFshcrT8nrdNbmhjYysP28g8rhxhe-RCiq7EQ_aem_0BudsXJBqTUxAv6emPFbXg"
       ) {
         window.open(
-          "https://www.amazon.com/Fundamentals-Aircraft-Maintenance-Management-Timothee/dp/1945825995",
+          "https://www.abebooks.com/9781945825996/Fundamentals-Aircraft-Maintenance-Management-Timothee-1945825995/plp?fbclid=IwY2xjawGzxFVleHRuA2FlbQIxMQABHTc2ev4DkavFt04EBr_yZQFshcrT8nrdNbmhjYysP28g8rhxhe-RCiq7EQ_aem_0BudsXJBqTUxAv6emPFbXg",
           "_blank"
         );
       } else {

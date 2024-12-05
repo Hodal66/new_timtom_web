@@ -50,7 +50,7 @@ function CoursePage() {
         className={`px-4  md:px-8 lg:px-12 py-16 grid lg:grid-cols-6 gap-8`}
       >
         <section className="lg:col-span-4 ">
-          <div className="bg-whiteWhite lg:p-4 p-2 lg:rounded-xl rounded-sm lg:h-[500px] ">
+          <div className="bg-whiteWhite lg:p-4 p-2 lg:rounded-xl rounded-sm lg:h-[550px] ">
             <img
               src={newCourseData.image}
               alt={newCourseData.imageAlt}
@@ -221,6 +221,12 @@ function CoursePage() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex justify-between items-center">
+                <span className="font-bold">Availabity Mode: </span>
+                <span className="bg-third text-primary font-medium rounded-full p-2 px-4">
+                  {newCourseData.availability}{" "}
+                </span>
+              </div>
+              <div className="flex justify-between items-center">
                 <span className="font-bold">Start Date </span>
                 <span>{newCourseData.startDate} </span>
               </div>
@@ -246,7 +252,7 @@ function CoursePage() {
               </div>
               <div className="flex justify-between items-center">
                 <nav className="font-bold">Certificate</nav>
-                <nav>{newCourseData.isCertificateOffered}</nav>
+                <nav>{newCourseData.typeOfCetificate}</nav>
               </div>
               <div className="flex justify-between items-center">
                 <nav className="font-bold">Pass Percentage</nav>

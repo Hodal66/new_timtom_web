@@ -78,6 +78,9 @@ function InternationalCertificates() {
                   Duration
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
+                  Availability
+                </th>
+                <th className="py-3 px-6 text-left border-b border-gray-300">
                   Training Fees (USD)
                 </th>
                 <th className="py-3 px-6 text-left border-b border-gray-300">
@@ -89,20 +92,17 @@ function InternationalCertificates() {
               {getAllInternationalCourses.map((course) => (
                 <tr
                   key={course.id}
-                  className={`border-b border-gray-200 ${
+                  className={`border-b border-gray-200 cursor-pointer ${
                     course.id % 2 === 0 ? "bg-gray-100" : "bg-white"
                   } hover:bg-blue-100 transition-colors duration-200`}
+                  onClick={() => handleLinkClick(course.id)}
                 >
-                  <td
-                    className="py-3 px-6"
-                    onClick={() => handleLinkClick(course.id)}
-                  >
-                    {course.courseName}
-                  </td>
+                  <td className="py-3 px-6">{course.courseName}</td>
                   <td className="py-3 px-6">
                     {course.duration}
                     {course.duration == 1 ? "Month" : "Months"}
                   </td>
+                  <td className="py-3 px-6">({course.availability})</td>
                   <td className="py-3 px-6">{course.money} $</td>
                   <td className="py-3 px-6">
                     {course.internationalMoney || "-"} $

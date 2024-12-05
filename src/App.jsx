@@ -19,6 +19,7 @@ import LocalCertificates from "./pages/CoursesPage/LocalCertificates";
 import LocalAdvancedCertificates from "./pages/CoursesPage/LocalAdvancedCertificates";
 import InternationalCertificates from "./pages/CoursesPage/InternationalCertificates";
 import Paternership from "./pages/HomePage/Paternership";
+import WhatsAppPopup from "./pages/WhatsAppPopup";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -79,6 +80,7 @@ function App() {
         <Paternership />
         <FooterComponent />
       </BrowserRouter>
+      <WhatsAppPopup phoneNumber="+250788519634" />
     </div>
   );
 }

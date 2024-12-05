@@ -27,6 +27,7 @@ function FooterComponent() {
       scrollToTop();
     }, 500);
   };
+  const currentYear = new Date().getFullYear();
   return (
     <div className=" px-4 md:px-8 lg:px-12 py-16 bg-blue text-textWhite flex flex-col gap-4">
       {loading && (
@@ -313,7 +314,10 @@ function FooterComponent() {
       </main>
       <section className="">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <p>© 2024 | Timtom Aviation | All Rights Reserved</p>
+          <p>
+            © {currentYear} | All Rights Reserved | Powered by
+            <span className="font-bold"> Timtom Group</span>
+          </p>
           <SocialMedia />
         </div>
       </section>
