@@ -5,7 +5,7 @@ function AsideDownloads() {
   };
 
   const handleDownloadPdf2 = () => {
-    window.open("/myPDFs/Aviation_courses_2024.pdf", "_blank");
+    window.open("/myPDFs/TimtomAviationLtd_Bronchure.pdf", "_blank");
   };
   return (
     <main id="pdf-content" className="text-black">

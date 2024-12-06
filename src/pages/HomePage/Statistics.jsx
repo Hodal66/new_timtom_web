@@ -67,7 +67,11 @@ function Statistics() {
   return (
     <div className="gap-8 grid grid-cols-1 md:grid-cols-2">
       <div className="left_side">
-        <img src="/images/HomeImage44.png" alt="" />
+        <img
+          src="/images/HomeImage44.jpg"
+          alt="Timtom Aviation Statistic image"
+          className="sm:h-fit lg:h-full "
+        />
       </div>
       <div className="right_side grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="Rectangles grid grid-cols-1 gap-4">
@@ -99,7 +103,7 @@ function Statistics() {
         <div className="circles">
           <div className="card">
             <div>
-              <Pragraph pragraphContent={"Statistics of Company Overview"}/>
+              <Pragraph pragraphContent={"Statistics of Company Overview"} />
             </div>
             <div className="grid grid-cols-1 gap-4">
               <div className="h-64 w-64">
