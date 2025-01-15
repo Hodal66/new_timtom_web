@@ -838,15 +838,15 @@ export const CourseData = [
     mainPragrapContents:
       "Learn to manage the core operations of airports and airlines, including logistics, ground handling, passenger services, and marketing strategies to optimize both operational efficiency and customer satisfaction. Gain insights into regulatory frameworks, safety protocols, and marketing tactics that drive success in aviation management.",
     teacher: {
-      name: "HAGUMA Timothee",
-      profilePicture: "/images/teamMember/Timothee.png",
-      bio: "Aviation expert with extensive experience in managing airport and airline operations, as well as marketing strategies.",
-      email: "info@timtomaviation.com",
-      whatSapp: "+250782439775",
-      facebook: "timtom.aviation",
-      instagram: "timtomaviation7",
-      linkedIn: "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
-      twitter: "TimtomAviation",
+      name: "DUSHIMIMANA Dieudonne",
+      profilePicture: "/images/teamMember/DieuDonne.png",
+      bio: "Expert in travel and tourism management with extensive experience in fare calculations, travel consultancy, and tourism operations.",
+      email: "dieudus@gmail.com",
+      whatSapp: "+250788396392",
+      facebook: "Dieudus",
+      instagram: "dieudus",
+      linkedIn: "dushimimana-dieudonne-589849a7",
+      twitter: "dieudus1",
     },
 
     aboutCourses: [
@@ -1554,15 +1554,15 @@ export const CourseData = [
     mainPragrapContents:
       "Learn the core principles of travel and tourism, focusing on customer service, ticketing, and fare calculations. This IATA Diploma provides an in-depth understanding of the global travel industry, preparing you for various roles in travel agencies, airlines, and tourism management.",
     teacher: {
-      name: "HAGUMA Timothee",
-      profilePicture: "/images/teamMember/Timothee.png",
-      bio: "Expert in travel and tourism management with extensive experience in ticketing, fare calculations, and customer service.",
-      email: "info@timtomaviation.com",
-      whatSapp: "+250782439775",
-      facebook: "timtom.aviation",
-      instagram: "timtomaviation7",
-      linkedIn: "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
-      twitter: "TimtomAviation",
+      name: "DUSHIMIMANA Dieudonne",
+      profilePicture: "/images/teamMember/DieuDonne.png",
+      bio: "Expert in travel and tourism management with extensive experience in fare calculations, travel consultancy, and tourism operations.",
+      email: "dieudus@gmail.com",
+      whatSapp: "+250788396392",
+      facebook: "Dieudus",
+      instagram: "dieudus",
+      linkedIn: "dushimimana-dieudonne-589849a7",
+      twitter: "dieudus1",
     },
 
     aboutCourses: [
@@ -1937,15 +1937,15 @@ export const CourseData = [
     mainPragrapContents:
       "Learn about ICAO’s Universal Safety Oversight Audit Programme Continuous Monitoring Approach (USOAP CMA), including auditing basics, ICAO’s safety oversight tools, and processes. This course will prepare you to conduct safety audits while complying with ICAO standards and ensure proper safety oversight in civil aviation.",
     teacher: {
-      name: "HAGUMA Timothee",
-      profilePicture: "/images/teamMember/Timothee.png",
-      bio: "Specialist in aviation safety and auditing, with extensive experience in conducting ICAO audits and overseeing regulatory compliance.",
-      email: "info@timtomaviation.com",
-      whatSapp: "+250782439775",
-      facebook: "timtom.aviation",
-      instagram: "timtomaviation7",
-      linkedIn: "timtom-aviation-ltd-901301271/?originalSubdomain=rw",
-      twitter: "TimtomAviation",
+      name: "DUSHIMIMANA Dieudonne",
+      profilePicture: "/images/teamMember/DieuDonne.png",
+      bio: "Expert in travel and tourism management with extensive experience in fare calculations, travel consultancy, and tourism operations.",
+      email: "dieudus@gmail.com",
+      whatSapp: "+250788396392",
+      facebook: "Dieudus",
+      instagram: "dieudus",
+      linkedIn: "dushimimana-dieudonne-589849a7",
+      twitter: "dieudus1",
     },
 
     aboutCourses: [
@@ -2889,6 +2889,128 @@ export const CourseData = [
         courseHeading: "Final Revision and Get Certification",
         courseSubHeadingInfo:
           "Pass the final Revision and receive a professional certificate to validate your newly acquired skills.",
+      },
+    ],
+  },
+  {
+    id: 32,
+    courseName: "Advanced Flight Operations Management",
+    image: "/images/CourseImage/32.jpg",
+    imageAlt: "Advanced Flight Operations Management",
+    category: "civilAviation",
+    link: "https://forms.gle/jhaZiEKfD4y52uLH6",
+    numberOfStudents: 20,
+    lastUpdated: "Any Time",
+    availability: "On Campus",
+    languageNeeded: "English",
+    rating: 9.7,
+    duration: 6,
+    startDate: "Any Time",
+    subCoursesUnllorment: 60,
+    lectures: 6,
+    skillsLevel: "Advanced",
+    numberOfQuizes: 5,
+    typeOfCetificate: "Advanced Certificate",
+    isCertificateOffered: "Yes",
+    houMuchToGetCeriticate: 70,
+    coursePackage: [
+      "1. Meteologogy",
+      "2. Air Traffic Control",
+      "3. Security and Emergency",
+      "4. Aerodynamics and systems",
+      "5. Aircraft performance",
+      "6. Navigation",
+      "7. Practical Dispatch Application",
+      "8. Humana Factors and Resource Manament",
+    ],
+    smallDescription:
+      "Gain comprehensive expertise in advanced flight operations management through modules covering meteorology, air traffic control, security and emergency protocols, aerodynamics and systems, aircraft performance, navigation, practical dispatch applications, and human factors and resource management. This course equips you with the knowledge and hands-on skills required for safe, efficient, and effective aviation operations.",
+    money: "500",
+    role: "Prepare for leadership roles in aviation by mastering critical areas of flight operations management. This course focuses on equipping professionals with the ability to analyze and manage complex aviation scenarios, ensure regulatory compliance, enhance safety standards, optimize aircraft performance, and implement effective resource management strategies. Graduates will be equipped to address industry challenges, lead operational teams, and contribute to the efficiency and safety of global aviation operations.",
+    mainPragrapContents:
+      "Master the critical skills needed for advanced flight operations management, including meteorology, navigation, aircraft performance, and air traffic control. This course combines theoretical knowledge with practical applications, preparing you for leadership roles in aviation by focusing on safety, efficiency, and innovation in flight operations.",
+    teacher: {
+      name: "DUSHIMIMANA Dieudonne",
+      profilePicture: "/images/teamMember/DieuDonne.png",
+      bio: "Expert in travel and tourism management with extensive experience in fare calculations, travel consultancy, and tourism operations.",
+      email: "dieudus@gmail.com",
+      whatSapp: "+250788396392",
+      facebook: "Dieudus",
+      instagram: "dieudus",
+      linkedIn: "dushimimana-dieudonne-589849a7",
+      twitter: "dieudus1",
+    },
+
+    aboutCourses: [
+      "Master the fundamentals of flight operations management, including meteorology, navigation, and aircraft performance analysis.",
+      "Understand air traffic control systems and their role in maintaining safe and efficient aviation operations.",
+      "Gain expertise in aviation security and emergency protocols to handle crises effectively.",
+      "Learn advanced principles of aerodynamics and aircraft systems to optimize operational efficiency and safety.",
+      "Develop skills in practical dispatch applications through hands-on training and real-world scenarios.",
+      "Explore human factors and resource management to enhance teamwork, safety, and decision-making in aviation.",
+      "Understand international aviation standards and regulatory compliance to operate within global aviation frameworks.",
+      "Prepare for leadership roles in flight operations by integrating technical knowledge with strategic management skills.",
+    ],
+
+    benefitsOfTheCourse: [
+      "Develop advanced expertise in managing flight operations, ensuring safety, efficiency, and compliance.",
+      "Master the principles of meteorology, navigation, and aircraft performance to optimize operational decisions.",
+      "Gain hands-on experience in practical dispatch applications and real-world flight operations scenarios.",
+      "Learn how to implement effective aviation security and emergency management protocols.",
+      "Understand the strategic role of human factors and resource management in enhancing teamwork and decision-making.",
+      "Prepare for leadership roles in aviation by combining technical knowledge with operational and management skills.",
+      "Enhance your understanding of global aviation standards and regulations for international operations.",
+      "Leverage data-driven insights to improve operational efficiency and performance in flight operations management.",
+    ],
+
+    courseContents: [
+      {
+        id: 1,
+        courseHeading: "Meteorology",
+        courseSubHeadingInfo:
+          "Understand atmospheric science and its impact on aviation, including weather analysis and forecasting for safe flight operations.",
+      },
+      {
+        id: 2,
+        courseHeading: "Air Traffic Control",
+        courseSubHeadingInfo:
+          "Explore the role of air traffic management systems in ensuring efficient and safe airspace operations.",
+      },
+      {
+        id: 3,
+        courseHeading: "Security and Emergency Management",
+        courseSubHeadingInfo:
+          "Learn the protocols for aviation security and managing emergency situations to maintain safety and operational continuity.",
+      },
+      {
+        id: 4,
+        courseHeading: "Aerodynamics and Aircraft Systems",
+        courseSubHeadingInfo:
+          "Study the principles of aerodynamics and the functionality of aircraft systems to optimize performance and safety.",
+      },
+      {
+        id: 5,
+        courseHeading: "Aircraft Performance",
+        courseSubHeadingInfo:
+          "Analyze the factors influencing aircraft performance, including weight, thrust, and environmental conditions.",
+      },
+      {
+        id: 6,
+        courseHeading: "Navigation",
+        courseSubHeadingInfo:
+          "Master modern navigation tools and techniques essential for accurate and efficient flight routing.",
+      },
+      {
+        id: 7,
+        courseHeading: "Practical Dispatch Application",
+        courseSubHeadingInfo:
+          "Engage in hands-on dispatch training, learning how to manage real-time flight operations and decision-making.",
+      },
+      {
+        id: 8,
+        courseHeading: "Human Factors and Resource Management",
+        courseSubHeadingInfo:
+          "Understand the impact of human factors on aviation safety and learn resource management strategies to enhance operational efficiency.",
       },
     ],
   },

@@ -54,6 +54,14 @@ const slides = [
     link: "https://www.abebooks.com/9781945825996/Fundamentals-Aircraft-Maintenance-Management-Timothee-1945825995/plp?fbclid=IwY2xjawGzxFVleHRuA2FlbQIxMQABHTc2ev4DkavFt04EBr_yZQFshcrT8nrdNbmhjYysP28g8rhxhe-RCiq7EQ_aem_0BudsXJBqTUxAv6emPFbXg",
     buttonText: "Book available Now",
   },
+  {
+    id: 7,
+    image: "/images/HeroAreaImages/Desktop/Book2.jpg",
+    title: "Do you want to buy our New Book?",
+    description: "Advanced Flight Operations Management is Out Now!!",
+    link: "https://www.amazon.com/dp/B0DR893B8P",
+    buttonText: "New Book available Now",
+  },
   // Add more slides as needed
 ];
 
@@ -83,6 +91,8 @@ const HeroArea = () => {
           "https://www.abebooks.com/9781945825996/Fundamentals-Aircraft-Maintenance-Management-Timothee-1945825995/plp?fbclid=IwY2xjawGzxFVleHRuA2FlbQIxMQABHTc2ev4DkavFt04EBr_yZQFshcrT8nrdNbmhjYysP28g8rhxhe-RCiq7EQ_aem_0BudsXJBqTUxAv6emPFbXg",
           "_blank"
         );
+      } else if (path === "https://www.amazon.com/dp/B0DR893B8P") {
+        window.open("https://www.amazon.com/dp/B0DR893B8P", "_blank");
       } else {
         navigate(path);
       }
