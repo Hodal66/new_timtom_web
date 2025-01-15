@@ -2925,7 +2925,7 @@ export const CourseData = [
     ],
     smallDescription:
       "Gain comprehensive expertise in advanced flight operations management through modules covering meteorology, air traffic control, security and emergency protocols, aerodynamics and systems, aircraft performance, navigation, practical dispatch applications, and human factors and resource management. This course equips you with the knowledge and hands-on skills required for safe, efficient, and effective aviation operations.",
-    money: "500",
+    money: "1,500",
     role: "Prepare for leadership roles in aviation by mastering critical areas of flight operations management. This course focuses on equipping professionals with the ability to analyze and manage complex aviation scenarios, ensure regulatory compliance, enhance safety standards, optimize aircraft performance, and implement effective resource management strategies. Graduates will be equipped to address industry challenges, lead operational teams, and contribute to the efficiency and safety of global aviation operations.",
     mainPragrapContents:
       "Master the critical skills needed for advanced flight operations management, including meteorology, navigation, aircraft performance, and air traffic control. This course combines theoretical knowledge with practical applications, preparing you for leadership roles in aviation by focusing on safety, efficiency, and innovation in flight operations.",

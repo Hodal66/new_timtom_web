@@ -13,7 +13,7 @@ const AboutUs = () => {
         <section className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <img
-              src="/images/Aboutus/AboutImage.JPG"
+              src="/images/Aboutus/AboutUsImage.jpg"
               alt="About Timtom Aviation"
               className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg mb-4 md:mb-0"
             />
@@ -117,7 +117,7 @@ const AboutUs = () => {
               </p>
             </div>
             <img
-              src="/images/Aboutus/AboutUsImage3.jpg"
+              src="/images/Aboutus/AboutUsImage1.jpg"
               alt="Our Mission"
               className="w-full h-80 sm:h-96 object-cover rounded-lg shadow-lg"
             />
@@ -126,7 +126,7 @@ const AboutUs = () => {
         <section className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
-               src="/images/Aboutus/AboutUsImage5.jpg"
+              src="/images/Aboutus/AboutUsImage2.jpg"
               alt="Our Vision"
               className="w-full h-80 md:h-96 object-cover rounded-lg shadow-xl"
             />
