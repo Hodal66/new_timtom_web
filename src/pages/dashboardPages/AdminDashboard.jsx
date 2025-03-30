@@ -3,6 +3,7 @@ import AdminLayout from './AdminLayout';
 import Overview from './Overview';
 import SubmitedInfo from './SubmitedInfo';
 import Users from "./Users";
+import ContactUsMoreDetails from "./usersDashboard/ContactUsMoreDetails";
 // import Houses from './Houses';
 
 const AdminDashboard = () => {
@@ -12,6 +13,10 @@ const AdminDashboard = () => {
         <Route path="overview" element={<Overview />} />
         {/* <Route path="houses" element={<Houses />} /> */}
         <Route path="submissions" element={<SubmitedInfo />} />
+        <Route
+          path="submissions/:contactUsId"
+          element={<ContactUsMoreDetails />}
+        />
         <Route path="users" element={<Users />} />
         <Route path="*" element={<Navigate to="overview" />} />
       </Routes>

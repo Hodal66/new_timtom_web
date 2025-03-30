@@ -1,6 +1,19 @@
-import { useForm } from 'react-hook-form';
+import { useForm } from "react-hook-form";
+import { useMutation, gql } from "@apollo/client";
 import SocialMedia from "../../components/footer/SocialMedia";
-import MainNavigationBar from '../../components/navBar/MainNavigationBar';
+import MainNavigationBar from "../../components/navBar/MainNavigationBar";
+
+const ADD_CONTACT_US_INFORMATION = gql`
+  mutation CreateContactUs($input: ContactInput) {
+    createContactUs(input: $input) {
+      _id
+      fullName
+      email
+      telephone
+      message
+    }
+  }
+`;
 
 const ContactUs = () => {
   const {
@@ -10,13 +23,24 @@ const ContactUs = () => {
     reset,
   } = useForm();
 
-  const onSubmit = (data) => {
-    // Save the data to local storage
-    const formData = JSON.parse(localStorage.getItem("formData")) || [];
-    formData.push(data);
-    localStorage.setItem("formData", JSON.stringify(formData));
-    alert("Form submitted successfully!");
-    reset(); // Reset form fields
+  // useMutation Hook
+  const [CreateContactUs, { loading, error }] = useMutation(
+    ADD_CONTACT_US_INFORMATION
+  );
+
+  const onSubmit = async (data) => {
+    try {
+      await CreateContactUs({
+        variables: { input: data }, // Ensure `input` wraps the form data
+      });
+      alert("Your Message has been successfully Submitted!");
+      reset(); // Reset form fields
+    } catch (err) {
+      console.error(
+        "Error Your Message is Not Submitted please Try again:",
+        err
+      );
+    }
   };
 
   return (
@@ -39,23 +63,24 @@ const ContactUs = () => {
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="name"
+                  htmlFor="fullName"
                 >
-                  Name
+                  Full Name
                 </label>
                 <input
                   className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline"
-                  id="name"
+                  id="fullName"
                   type="text"
                   placeholder="Your Name"
-                  {...register("name", { required: "Name is required" })}
+                  {...register("fullName", { required: "Name is required" })}
                 />
-                {errors.name && (
+                {errors.fullName && (
                   <span className="text-red text-sm">
-                    {errors.name.message}
+                    {errors.fullName.message}
                   </span>
                 )}
               </div>
+
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
@@ -86,16 +111,42 @@ const ContactUs = () => {
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="telephone"
+                >
+                  telephone
+                </label>
+                <input
+                  className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline"
+                  id="telephone"
+                  type="text"
+                  placeholder="Your telephone number"
+                  {...register("telephone", {
+                    required: "Telephone number is required",
+                  })}
+                />
+                {errors.telephone && (
+                  <span className="text-red text-sm">
+                    {errors.telephone.message}
+                  </span>
+                )}
+              </div>
+
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
                   htmlFor="message"
                 >
-                  Message
+                  message
                 </label>
                 <textarea
+                  cols="30"
+                  rows="3"
                   className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline"
                   id="message"
-                  rows="4"
-                  placeholder="Your Message"
-                  {...register("message", { required: "Message is required" })}
+                  placeholder="Your message"
+                  {...register("message", {
+                    required: "message is required",
+                  })}
                 ></textarea>
                 {errors.message && (
                   <span className="text-red text-sm">
@@ -103,14 +154,17 @@ const ContactUs = () => {
                   </span>
                 )}
               </div>
+
               <div className="text-center">
-                <input
+                <button
                   type="submit"
-                  value="Send Message"
                   className="font-bold p-4 bg-primary text-white lg:px-20 rounded-md lg:col-span-4 hover:bg-secondary"
-                />
+                >
+                  {loading ? "Submitting..." : "Sign Up"}
+                </button>
               </div>
             </form>
+            {error && <p className="text-red-500 mt-2">{error.message}</p>}
           </div>
 
           {/* Contact Information */}
@@ -124,7 +178,7 @@ const ContactUs = () => {
             </p>
             <p className="text-gray-700 mb-4">
               <strong>Street No:</strong> Giporoso, Union plaza, 2nd floor
-              towards kabeza road, KK 18 AV
+              towards Kabeza road, KK 18 AV.
             </p>
             <p className="text-gray-700 mb-4">
               <strong>Phone:</strong> +250 788 519 634 | +250 788 631 197
@@ -159,4 +213,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-

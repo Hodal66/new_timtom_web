@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import Arrow from "../../assets/icons/Arrow";
@@ -172,6 +172,13 @@ function FooterComponent() {
               >
                 <Button1 title={"Staff WebMail"} />
               </a>
+            </li>
+            <li>
+              <div className="bg-primary font-medium py-2 px-4 rounded-md text-center">
+                <Link to={"admin"} target="_blank">
+                  Admin Login
+                </Link>
+              </div>
             </li>
           </ul>
         </section>

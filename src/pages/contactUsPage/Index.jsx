@@ -4,24 +4,22 @@ import HeaderSection from "../../components/sections/HeaderSection";
 import ContactUsPage from "./ContactUsPage";
 import backgroundImage from "/images/bgImage/bg2.png";
 
-
 function ContactIndex() {
     return (
-      <main >
+      <main>
         <header>
           <div className={`bg-orange pt-32}`}>
             <CompanyInfoNav />
           </div>
-          <section >
+          <section>
             <HeaderSection
               backgroundImage={backgroundImage}
               MainHeading={<OtherSecondMainNavigationBar />}
-              headingTitle={"You can Contact Timtom Aviation Now"}
+              headingTitle={"You can Contact Timtom Aviation Now!!!"}
               nexNavLink={"/"}
               currentNavLink={"/contact"}
-              currentNavName ={"Contact US"}
+              currentNavName={"Contact US"}
               prevNavLink={"/"}
-          
             />
           </section>
         </header>
